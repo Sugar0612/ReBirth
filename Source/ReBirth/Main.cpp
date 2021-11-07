@@ -31,7 +31,7 @@ AMain::AMain()
 
 	GetCharacterMovement()->bOrientRotationToMovement = true; //基于移动方向角色正面的朝向旋转...
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.f, 0.0f); //...只旋转Yaw轴（学到了！）
-	GetCharacterMovement()->JumpZVelocity = 550.f; // 跳跃速度
+	GetCharacterMovement()->JumpZVelocity = 500.f; // 跳跃速度
 	
 	/*  *我认为在空中移动是不合理的, 所以我并没有添加
 		*GetCharacterMovement()->AirControl= 0.4f; */
@@ -56,7 +56,7 @@ void AMain::Tick(float DeltaTime)
 	if (is_quick) {
 		/* Player pressed left Shift add Walk speed... */
 		float speed = this->GetCharacterMovement()->GetMaxSpeed();
-		this->GetCharacterMovement()->MaxWalkSpeed = speed + 10.0f <= 330 ? speed + 10.0f : speed;
+		this->GetCharacterMovement()->MaxWalkSpeed = (speed + 10.0f <= 330) ? speed + 10.0f : speed;
 	}
 	else {
 		/* ...Released the Walk speed updata 230.0f */
