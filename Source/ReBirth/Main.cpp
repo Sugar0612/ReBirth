@@ -36,6 +36,16 @@ AMain::AMain()
 	/*  *我认为在空中移动是不合理的, 所以我并没有添加
 		*GetCharacterMovement()->AirControl= 0.4f; */
 
+
+	/* 初始化属性 */
+	MaxHp = 100.f;
+	CurrentHp = 70.f;
+	MaxEp = 100.f;
+	CurrentEp = 100.f;
+	cntCoins = 0.f;
+
+
+
 	//获取玩家控制器
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 }

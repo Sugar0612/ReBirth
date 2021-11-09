@@ -30,6 +30,23 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 	float LookupRate = 65.f;
 	
+public:
+	/* 添加人物的属性 */
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MaxHp")
+	float MaxHp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CurrentHp")
+	float CurrentHp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MaxEp")
+	float MaxEp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CurrentEp")
+	float CurrentEp;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CoinsCounts")
+	int cntCoins;
 
 
 protected:
