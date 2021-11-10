@@ -39,12 +39,18 @@ AMain::AMain()
 
 	/* 初始化属性 */
 	MaxHp = 100.f;
-	CurrentHp = 70.f;
+	CurrentHp = 100.f;
 	MaxEp = 100.f;
 	CurrentEp = 100.f;
 	cntCoins = 0.f;
 
+	/* Init Enums */
+	MovementStatus = EMovementStatus::EMS_WALK;
+	EpStatus = EEpStatus::EES_Normal;
 
+	/*当Ep 小于ExhaustLimite 大于MinmumLimite为黄色，当Ep小于 MinmumLimite时为红色*/
+	ExhaustLimite = 0.6f;
+	MinmumLimite = 0.25f;
 
 	//获取玩家控制器
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
@@ -63,14 +69,25 @@ void AMain::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	
 
-	if (is_quick) {
+	if (is_quick && CurrentEp > 0.f) {
 		/* Player pressed left Shift add Walk speed... */
 		float speed = this->GetCharacterMovement()->GetMaxSpeed();
 		this->GetCharacterMovement()->MaxWalkSpeed = (speed + 10.0f <= 330) ? speed + 10.0f : speed;
+		EpReduce(0.7);
+
+		if ((CurrentEp / MaxEp) <= 0.6f && (CurrentEp / MaxEp) > 0.25f) SetEpStatus(EEpStatus::EES_Exhaust);
+		else if ((CurrentEp / MaxEp) <= 0.25f) SetEpStatus(EEpStatus::EES_Minmum);
+		else SetEpStatus(EEpStatus::EES_Normal);
+
 	}
 	else {
 		/* ...Released the Walk speed updata 230.0f */
 		this->GetCharacterMovement()->MaxWalkSpeed = 230.0f;
+		EpRecovery(0.2);
+
+		if ((CurrentEp / MaxEp) >= 0.25f && (CurrentEp / MaxEp) < 0.6f) SetEpStatus(EEpStatus::EES_Exhaust);
+		else if ((CurrentEp / MaxEp) >=  0.6f) SetEpStatus(EEpStatus::EES_Normal);
+		else SetEpStatus(EEpStatus::EES_Minmum);
 	}
 }
 
@@ -128,6 +145,7 @@ void AMain::LookupAtRate(float input)
 	AddControllerPitchInput(input * LookupRate * GetWorld()->GetDeltaSeconds());
 }
 
+/* *加速 */
 void AMain::BeginQuicken() {
 	is_quick = true;
 }
@@ -135,4 +153,37 @@ void AMain::BeginQuicken() {
 
 void AMain::EndQuicken() {
 	is_quick = false;
+}
+
+
+/* *碰到炸弹收到伤害 */
+void AMain::HpReduce(float num)
+{
+	this->CurrentHp -= num;
+	if (this->CurrentHp <= 0.f) {
+		died();
+	}
+}
+
+/* *死亡 */
+void AMain::died()
+{
+
+}
+
+void AMain::IncreaseCoins()
+{
+	this->cntCoins++;
+}
+
+
+/* *当你开始奔跑你的体力将会减少 */
+void AMain::EpReduce(float num)
+{
+	this->CurrentEp -= num;
+}
+
+void AMain::EpRecovery(float num)
+{
+	if(CurrentEp < 100.f) this->CurrentEp += num;
 }

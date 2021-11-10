@@ -6,6 +6,21 @@
 #include "GameFramework/Character.h"
 #include "Main.generated.h"
 
+UENUM(BlueprintType)
+enum class EMovementStatus : uint8 {
+	EMS_RUNING UMETA(Display = "Running"),
+	EMS_WALK UMETA(Display = "Walking")
+};
+
+UENUM(BlueprintType)
+/* *Ep的状态 */
+enum class EEpStatus : uint8 {
+	EES_Normal UMETA(Display = "Normal"),
+	EES_Exhaust UMETA(Display = "Exhaust"),
+	EES_Minmum UMETA(Display = "Minmum"),
+	EES_MaxEp UMETA(Display = "Default Ep")
+};
+
 UCLASS()
 class REBIRTH_API AMain : public ACharacter
 {
@@ -16,7 +31,15 @@ public:
 	AMain();
 
 public:
-	
+	//Emun MovementStatus
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "status Movement")
+	EMovementStatus MovementStatus;
+
+	/* *Ep Status */
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Ep Status")
+	EEpStatus EpStatus;
+
+
 	//AllowPrivateAccess: 允许私人访问(只能在蓝图内访问)
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraArm;
@@ -49,6 +72,16 @@ public:
 	int cntCoins;
 
 
+public:
+	void HpReduce(float num);
+
+	void died();
+
+	void IncreaseCoins();
+
+	void EpReduce(float num);
+
+	void EpRecovery(float num);
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -62,8 +95,16 @@ public:
 
 
 public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Exhaust limite")
+	float ExhaustLimite;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Minmum limite")
+	float MinmumLimite;
+
+public:
 	FORCEINLINE class USpringArmComponent* GetCameraArmComponent() { return CameraArm; }
 	FORCEINLINE class UCameraComponent* GetPlayerEyeComponent() { return PlayerEye; }
+	FORCEINLINE void SetEpStatus(EEpStatus status) { EpStatus = status; }
 
 private:
 	void MoveForward(float input);
