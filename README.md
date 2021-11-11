@@ -3,7 +3,7 @@
   这是一件非常有意思的事情。
   当然你可以 `git clone https://github.com/Sugar0612/ReBirth.git` 或者 `git clone git@github.com:Sugar0612/ReBirth.git`来获取源码。
   
-  ![image](https://img.shields.io/badge/Base-ue4-blue.svg)   ![image](https://img.shields.io/badge/Language-c++-black.svg)
+  ![image](https://img.shields.io/badge/Base-ue4-blue.svg)   ![image](https://img.shields.io/badge/Language-c++-orange.svg)
   
 ## 目前的进程
 
@@ -16,10 +16,12 @@
 - 关于各种组件的使用与声明 (UStaticMeshComponent, UCameraComponent, USphereComponent, UParticleSystemComponent...)，他们都需要使用 
     ```cpp 
     CreateDefaultSubObject<class* T>(TEXT())
-    ``` 来进行创建声明，也都需要 
+    ``` 
+    来进行创建声明，也都需要 
     ```cpp
     SetupAttachment(GetComponent())
-    ``` 来依赖于根组件，值得注意的是碰撞组件一般都会成为根组件即:
+    ``` 
+    来依赖于根组件，值得注意的是碰撞组件一般都会成为根组件即:
     ```cpp
     RootComponent = CollisionComponent;
     ```
@@ -47,6 +49,6 @@
 - 动画蓝图 继承与于 `UAnimInstance`, 写一个 `UpdateAnimation()`函数在里面写一些动作的机制从而让每个动作之间切换有判断的标准，再次之前在蓝图中用 `Event Blueprint Update Animation`来调用他，注意：要加入宏定义 `UFUNCTION(BlueprintCallable, Category = Animations)`。
 - ...
 
-## 交流与联系
-你可以通过WeChat与我交流
-![wechat](./image/Wechat.jpg)
+## 学习与交流
+
+![wechat](./image/Wechat.png)
