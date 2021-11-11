@@ -32,7 +32,7 @@
     ```
 - 盒子的碰撞机制 
   ```cpp
-  void T::Begin() {
+  void T::BeginPlay() {
   /* trigger Box Bind Function */
     TriggerBox->OnComponentBeginOverlap.AddDynamic(this, &T::BeginOverlap);
     TriggerBox->OnComponentEndOverlap.AddDynamic(this, &T::EndOverlap);
