@@ -15,11 +15,11 @@
 目前还是以C++开发为主。
 - 关于各种组件的使用与声明 (UStaticMeshComponent, UCameraComponent, USphereComponent, UParticleSystemComponent...)，他们都需要使用 
     ```cpp 
-    CreateDefaultSubObject<class* T>(TEXT())
+    CreateDefaultSubObject<class* T>(TEXT());
     ``` 
     来进行创建声明，也都需要 
     ```cpp
-    SetupAttachment(GetComponent())
+    SetupAttachment(GetComponent());
     ``` 
     来依赖于根组件，值得注意的是碰撞组件一般都会成为根组件即:
     ```cpp
@@ -28,7 +28,7 @@
 - Tick函数 与 BeginPlay函数的使用 与 重写，重写一般的模板 `virtual T function() override;`
 - 对于人物控制的一些机制: 继承APawn / ACharacter 来使用函数 
     ```cpp 
-    SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+    SetupPlayerInputComponent(UInputComponent* PlayerInputComponent);
     ```
 - 盒子的碰撞机制 
   ```cpp
@@ -46,7 +46,12 @@
     void EndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
   ```
 - HUD窗口实现他在我的`MainPlayerController`中添加到游戏窗口的，并且在游戏模式`Player Controller Class`中设置他。
-- 动画蓝图 继承与于 `UAnimInstance`, 写一个 `UpdateAnimation()`函数在里面写一些动作的机制从而让每个动作之间切换有判断的标准，再次之前在蓝图中用 `Event Blueprint Update Animation`来调用他，注意：要加入宏定义 `UFUNCTION(BlueprintCallable, Category = Animations)`。
+- 动画蓝图 继承与于 `UAnimInstance`, 写一个
+```cpp
+UFUNCTION(BlueprintCallable, Category = Animations)
+void UpdateAnimation();
+```
+函数在里面写一些动作的机制从而让每个动作之间切换有判断的标准，再次之前在蓝图中用 `Event Blueprint Update Animation`来调用他。
 - ...
 
 ## 学习与交流
