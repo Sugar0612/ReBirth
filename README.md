@@ -13,9 +13,21 @@
 ## 目前涉及的一些有意思的功能
 
 目前还是以C++开发为主。
-- 关于各种组件的使用与声明 (UStaticMeshComponent, UCameraComponent, USphereComponent, UParticleSystemComponent...)，他们都需要使用 ```cpp CreateDefaultSubObject<class* T>(TEXT())``` 来进行创建声明，也都需要 ```cpp SetupAttachment(GetComponent())``` 来依赖于根组件，值得注意的是碰撞组件一般都会成为根组件即: ```cpp RootComponent = CollisionComponent;```
-- Tick函数 与 BeginPlay函数的使用 与 重写，重写一般的模板 ```cpp virtual T function() override;```
-- 对于人物控制的一些机制: 继承APawn / ACharacter 来使用函数 ```cpp SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) ```
+- 关于各种组件的使用与声明 (UStaticMeshComponent, UCameraComponent, USphereComponent, UParticleSystemComponent...)，他们都需要使用 
+    ```cpp 
+    CreateDefaultSubObject<class* T>(TEXT())
+    ``` 来进行创建声明，也都需要 
+    ```cpp
+    SetupAttachment(GetComponent())
+    ``` 来依赖于根组件，值得注意的是碰撞组件一般都会成为根组件即:
+    ```cpp
+    RootComponent = CollisionComponent;
+    ```
+- Tick函数 与 BeginPlay函数的使用 与 重写，重写一般的模板 `virtual T function() override;`
+- 对于人物控制的一些机制: 继承APawn / ACharacter 来使用函数 
+    ```cpp 
+    SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+    ```
 - 盒子的碰撞机制 
   ```cpp
   void T::Begin() {
@@ -37,4 +49,4 @@
 
 ## 交流与联系
 你可以通过WeChat与我交流
-![wechat](./image/Wechat.png)
+![wechat](./image/Wechat.jpg)
