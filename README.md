@@ -31,13 +31,13 @@
     SetupPlayerInputComponent(UInputComponent* PlayerInputComponent);
     ```
 - 盒子的碰撞机制 
-  ```cpp
-  void T::BeginPlay() {
-  /* trigger Box Bind Function */
-    TriggerBox->OnComponentBeginOverlap.AddDynamic(this, &T::BeginOverlap);
-    TriggerBox->OnComponentEndOverlap.AddDynamic(this, &T::EndOverlap);
-  }
-  ```
+    ```cpp
+    void T::BeginPlay() {
+    /* trigger Box Bind Function */
+      TriggerBox->OnComponentBeginOverlap.AddDynamic(this, &T::BeginOverlap);
+      TriggerBox->OnComponentEndOverlap.AddDynamic(this, &T::EndOverlap);
+    }
+    ```
   当然你也需要重写 BeginOverlap 和 EndOverlap
   ```cpp
     UFUNCTION()
@@ -47,10 +47,10 @@
   ```
 - HUD窗口实现他在我的`MainPlayerController`中添加到游戏窗口的，并且在游戏模式`Player Controller Class`中设置他。
 - 动画蓝图 继承与于 `UAnimInstance`, 写一个
-```cpp
-UFUNCTION(BlueprintCallable, Category = Animations)
-void UpdateAnimation();
-```
+    ```cpp
+    UFUNCTION(BlueprintCallable, Category = Animations)
+    void UpdateAnimation();
+    ```
 函数在里面写一些动作的机制从而让每个动作之间切换有判断的标准，再次之前在蓝图中用 `Event Blueprint Update Animation`来调用他。
 - ...
 
