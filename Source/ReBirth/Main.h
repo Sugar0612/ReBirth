@@ -31,6 +31,18 @@ public:
 	AMain();
 
 public:
+
+	/* ÎäÆ÷ */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Items | Weapon")
+	class AWeapon* equipWeapon;
+
+	/* *×°±¸ÖØµþ */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Items | Item")
+	class AItem* Overlapitem;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Items | Item")
+	bool bisEquip;
+
 	//Emun MovementStatus
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "status Movement")
 	EMovementStatus MovementStatus;
@@ -77,7 +89,7 @@ public:
 
 	void died();
 
-	void IncreaseCoins();
+	void IncreaseCoins(float Coinnum);
 
 	void EpReduce(float num);
 
@@ -105,6 +117,8 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraArmComponent() { return CameraArm; }
 	FORCEINLINE class UCameraComponent* GetPlayerEyeComponent() { return PlayerEye; }
 	FORCEINLINE void SetEpStatus(EEpStatus status) { EpStatus = status; }
+	FORCEINLINE void SetWeapon(AWeapon* SetWeapon) { equipWeapon = SetWeapon; }
+	FORCEINLINE void SetItemOverlap(AItem* SetItem) { Overlapitem = SetItem; }
 
 private:
 	void MoveForward(float input);
@@ -113,6 +127,8 @@ private:
 	void LookupAtRate(float input);
 	void BeginQuicken();
 	void EndQuicken();
+	void PickUpWeapon();
+	void DropWeapon();
 
 private:
 	bool is_quick = false;

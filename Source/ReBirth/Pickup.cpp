@@ -15,7 +15,10 @@ void APickup::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* O
 	if (OtherActor) {
 		AMain* mainPlayer = Cast<AMain>(OtherActor);
 		if (mainPlayer) {
-			mainPlayer->IncreaseCoins();
+			mainPlayer->IncreaseCoins(Coin);
+
+			/* Åö×²Ïú»Ù£¡ */
+			Destroy();
 		}
 	}
 }

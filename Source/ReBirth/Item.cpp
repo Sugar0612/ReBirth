@@ -68,9 +68,6 @@ void AItem::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 	if (OverlapSound) {
 		UGameplayStatics::PlaySound2D(this, OverlapSound);
 	}
-
-	/* Åö×²Ïú»Ù£¡ */
-	Destroy();
 }
 
 void AItem::OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)

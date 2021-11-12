@@ -6,6 +6,7 @@
 #include "Camera/CameraComponent.h"
 #include "Engine/World.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Weapon.h"
 
 // Sets default values
 AMain::AMain()
@@ -19,7 +20,7 @@ AMain::AMain()
 	CameraArm->TargetArmLength = 400.f;
 	CameraArm->bUsePawnControlRotation = true; // 希望弹簧杆可以跟着玩家运动
 
-
+	
 	// PlayerEyes
 	PlayerEye = CreateDefaultSubobject<UCameraComponent>(TEXT("PlayerEye"));
 	PlayerEye->SetupAttachment(CameraArm, USpringArmComponent::SocketName); // 我们需要在 弹簧杆上有一个插槽来插入一个 相机
@@ -51,6 +52,9 @@ AMain::AMain()
 	/*当Ep 小于ExhaustLimite 大于MinmumLimite为黄色，当Ep小于 MinmumLimite时为红色*/
 	ExhaustLimite = 0.6f;
 	MinmumLimite = 0.25f;
+
+	/* *是否装备了武器 */
+	bisEquip = false;
 
 	//获取玩家控制器
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
@@ -111,6 +115,9 @@ void AMain::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 	PlayerInputComponent->BindAction("Quicken", IE_Pressed, this, &AMain::BeginQuicken);
 	PlayerInputComponent->BindAction("Quicken", IE_Released, this, &AMain::EndQuicken);
+
+	PlayerInputComponent->BindAction("Pick up/drop weapon", IE_Pressed, this, &AMain::PickUpWeapon);
+	PlayerInputComponent->BindAction("Pick up/drop weapon", IE_Released, this, &AMain::DropWeapon);
 }
 
 void AMain::MoveForward(float input) {
@@ -171,9 +178,9 @@ void AMain::died()
 
 }
 
-void AMain::IncreaseCoins()
+void AMain::IncreaseCoins(float Coinnum)
 {
-	this->cntCoins++;
+	this->cntCoins += Coinnum;
 }
 
 
@@ -186,4 +193,20 @@ void AMain::EpReduce(float num)
 void AMain::EpRecovery(float num)
 {
 	if(CurrentEp < 100.f) this->CurrentEp += num;
+}
+
+void AMain::PickUpWeapon() {
+	bisEquip = true;
+
+	/* *使用的是 AItem 而不是 Weapon的原因就是：为了为玩家添加更多的装备，所以用的是分类，而不是本身 */
+	if (Overlapitem) {
+		AWeapon* Weapon = Cast<AWeapon>(Overlapitem);
+		if (Weapon) {
+			Weapon->equipWeapon(this);
+			SetItemOverlap(nullptr);
+		}
+	}
+}
+void AMain::DropWeapon() {
+	bisEquip = false;
 }

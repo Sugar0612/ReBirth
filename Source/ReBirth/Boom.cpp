@@ -18,6 +18,9 @@ void ABoom::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 		AMain* mainPlayer = Cast<AMain>(OtherActor);
 		if (mainPlayer) {
 			mainPlayer->HpReduce(harm);
+
+			/* Åö×²Ïú»Ù£¡ */
+			Destroy();
 		}
 	}
 }
