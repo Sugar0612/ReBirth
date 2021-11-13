@@ -9,12 +9,23 @@
 /**
  * 
  */
+
+/* *ÎäÆ÷×´Ì¬ */
+UENUM(BlueprintType)
+enum class EWeaponStatus : uint8 {
+	EWS_Ldle UMETA(DisplayName = "Ldle"),
+	EWS_Equip UMETA(DisplayName = "Equip"),
+	EWS_Default UMETA(DisplayName = "Default")
+};
+
 UCLASS()
 class REBIRTH_API AWeapon : public AItem
 {
 	GENERATED_BODY()
 
 public:
+	/* *ÎäÆ÷×´Ì¬ */
+	EWeaponStatus WeaponStatus;
 
 	/* *ÎäÆ÷¹Ç÷À¿Ø¼þ */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Skeletal")
@@ -38,4 +49,7 @@ public:
 	/* *×°±¸ÎäÆ÷ */
 	void equipWeapon(class AMain* player);
 
+public:
+	FORCEINLINE void SetWeaponStatus(EWeaponStatus Status) { WeaponStatus = Status; }
+	FORCEINLINE EWeaponStatus GetWeaponStatus() { return WeaponStatus; }
 };

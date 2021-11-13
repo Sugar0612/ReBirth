@@ -76,7 +76,25 @@
        }
    }
   ```
-- ...
+- Montage动画 总结了一下基本步骤：
+    1.创建
+    2.拖入动画
+    3.分段
+    4.创建 slot: 'combet'
+  下来就是对 AnimInstance_BP 的设定，需要将 `State Machine` -> `StateMacheCached`, `Use 'StateMacheCached'` -> `Slot 'combet'` -> `Output Pose`,
+  再按不同的标准对状态机进行修改。关于Montage在c++中的定义与使用:
+  定义蒙太奇：
+  ```cpp
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Anims")
+    class UAnimMontage* CombatMontage;
+  ```
+  调用不同片段的动画：
+  ```cpp
+    /* *获取蒙太奇的实例 */
+	UAnimInstance* AnimInstance = this->GetMesh()->GetAnimInstance();
+    AnimInstance->Montage_Play(CombatMontage, 1.2f);
+	AnimInstance->Montage_JumpToSection(FName("NAME"), CombatMontage);
+  ```
 
 ## 学习与交流
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">

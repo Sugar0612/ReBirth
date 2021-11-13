@@ -7,6 +7,8 @@
 #include "Engine/World.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Weapon.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "Animation/AnimInstance.h"
 
 // Sets default values
 AMain::AMain()
@@ -76,8 +78,8 @@ void AMain::Tick(float DeltaTime)
 	if (is_quick && CurrentEp > 0.f) {
 		/* Player pressed left Shift add Walk speed... */
 		float speed = this->GetCharacterMovement()->GetMaxSpeed();
-		this->GetCharacterMovement()->MaxWalkSpeed = (speed + 10.0f <= 330) ? speed + 10.0f : speed;
-		EpReduce(0.7);
+		this->GetCharacterMovement()->MaxWalkSpeed = (speed + 10.0f <= 600) ? speed + 100.0f : speed;
+		EpReduce(0.2);
 
 		if ((CurrentEp / MaxEp) <= 0.6f && (CurrentEp / MaxEp) > 0.25f) SetEpStatus(EEpStatus::EES_Exhaust);
 		else if ((CurrentEp / MaxEp) <= 0.25f) SetEpStatus(EEpStatus::EES_Minmum);
@@ -87,12 +89,19 @@ void AMain::Tick(float DeltaTime)
 	else {
 		/* ...Released the Walk speed updata 230.0f */
 		this->GetCharacterMovement()->MaxWalkSpeed = 230.0f;
-		EpRecovery(0.2);
+		EpRecovery(0.08);
 
 		if ((CurrentEp / MaxEp) >= 0.25f && (CurrentEp / MaxEp) < 0.6f) SetEpStatus(EEpStatus::EES_Exhaust);
 		else if ((CurrentEp / MaxEp) >=  0.6f) SetEpStatus(EEpStatus::EES_Normal);
 		else SetEpStatus(EEpStatus::EES_Minmum);
 	}
+
+
+	/* 实现当人物攻击的时候不可以移动...
+	*...只用当开始攻击 并且播放完成攻击动作之后...
+	*...才可以移动 
+	*/
+	if(bAttacking) AttackEnd();
 }
 
 // Called to bind functionality to input
@@ -118,10 +127,13 @@ void AMain::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 	PlayerInputComponent->BindAction("Pick up/drop weapon", IE_Pressed, this, &AMain::PickUpWeapon);
 	PlayerInputComponent->BindAction("Pick up/drop weapon", IE_Released, this, &AMain::DropWeapon);
+
+	PlayerInputComponent->BindAction("attack", IE_Pressed, this, &AMain::AttackBegin);
+	PlayerInputComponent->BindAction("attack", IE_Released, this, &AMain::AttackEnd);
 }
 
 void AMain::MoveForward(float input) {
-	if (Controller && input != 0.0f) {
+	if (Controller && input != 0.0f && (!bAttacking)) {
 		FRotator Rotation = Controller->GetControlRotation();
 		FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
 
@@ -132,7 +144,7 @@ void AMain::MoveForward(float input) {
 }
 
 void AMain::MoveRight(float input) {
-	if (Controller && input != 0.0f) {
+	if (Controller && input != 0.0f && (!bAttacking)) {
 		FRotator Rotation = Controller->GetControlRotation();
 		FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
 
@@ -196,12 +208,12 @@ void AMain::EpRecovery(float num)
 }
 
 void AMain::PickUpWeapon() {
-	bisEquip = true;
 
+	bisEquip = true;
 	/* *使用的是 AItem 而不是 Weapon的原因就是：为了为玩家添加更多的装备，所以用的是分类，而不是本身 */
 	if (Overlapitem) {
 		AWeapon* Weapon = Cast<AWeapon>(Overlapitem);
-		if (Weapon) {
+		if (Weapon && Weapon->WeaponStatus == EWeaponStatus::EWS_Ldle) {
 			Weapon->equipWeapon(this);
 			SetItemOverlap(nullptr);
 		}
@@ -209,4 +221,59 @@ void AMain::PickUpWeapon() {
 }
 void AMain::DropWeapon() {
 	bisEquip = false;
+}
+
+void AMain::AttackBegin() {
+	if (equipWeapon && !bAttacking) {
+		Attack();
+	}
+}
+
+void AMain::Attack()
+{
+
+	bAttacking = true;
+	/* *获取蒙太奇的实例 */
+	UAnimInstance* AnimInstance = this->GetMesh()->GetAnimInstance();
+	if (AnimInstance && CombatMontage) {
+		int32 Section = FMath::RandRange(1, 2);
+		
+		switch (Section)
+		{
+
+		case 1:
+			AnimInstance->Montage_Play(CombatMontage, 1.2f);
+			AnimInstance->Montage_JumpToSection(FName("attack1"), CombatMontage);
+			break;
+		case 2:
+			AnimInstance->Montage_Play(CombatMontage, 1.2f);
+			AnimInstance->Montage_JumpToSection(FName("attack2"), CombatMontage);
+			break;
+
+		default:
+			break;
+		}
+	}
+
+
+}
+
+void AMain::AttackEnd()
+{
+	//bAttacking = false;
+	UAnimInstance* AnimInstance = this->GetMesh()->GetAnimInstance();
+	if (AnimInstance->Montage_GetIsStopped(CombatMontage)) {
+		bAttacking = false;
+
+		/* repair bug Destroy weapon */
+		SetItemOverlap(nullptr);
+	}
+}
+
+void AMain::SetWeapon(AWeapon* SetWeapon)
+{
+	if (equipWeapon) {
+		equipWeapon->Destroy();
+	}
+	equipWeapon = SetWeapon;
 }

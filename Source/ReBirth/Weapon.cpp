@@ -14,6 +14,9 @@ AWeapon::AWeapon()
 	SkeletalComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Skeletal Mesh"));
 	SkeletalComponent->SetupAttachment(GetRootComponent());
 
+	/* *默认武器状态: 闲置 */
+	WeaponStatus = EWeaponStatus::EWS_Ldle;
+
 	bParticles = true;
 }
 
@@ -21,9 +24,11 @@ void AWeapon::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* O
 {
 	Super::OnBeginOverlap(OverlappedComponent, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
 
-	if (OtherActor) {
+	if (OtherActor && (WeaponStatus == EWeaponStatus::EWS_Ldle)) {
 		AMain* player = Cast<AMain>(OtherActor);
-		player->SetItemOverlap(this);
+		if (player) {
+			player->SetItemOverlap(this);
+		}
 	}
 	
 }
@@ -34,7 +39,9 @@ void AWeapon::OnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 
 	if (OtherActor) {
 		AMain* player = Cast<AMain>(OtherActor);
-		player->SetItemOverlap(nullptr);
+		if (player) {
+			player->SetItemOverlap(nullptr);
+		}
 	}
 }
 
@@ -52,8 +59,14 @@ void AWeapon::equipWeapon(AMain* player) {
 		/* *如果获取成功那么附加在插槽上 */
 		WeaponSocket->AttachActor(this, player->GetMesh());
 
+		/* *武器状态: 装备 */
+		//WeaponStatus = EWeaponStatus::EWS_Equip;
+
 		/* *停止旋转 */
 		is_Rotation = false;
+
+		player->SetWeapon(this);
+		player->SetItemOverlap(nullptr);
 	}
 
 	if (!bParticles) {

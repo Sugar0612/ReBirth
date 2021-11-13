@@ -33,7 +33,7 @@ public:
 public:
 
 	/* 武器 */
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Items | Weapon")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Items | Weapon")
 	class AWeapon* equipWeapon;
 
 	/* *装备重叠 */
@@ -117,7 +117,8 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraArmComponent() { return CameraArm; }
 	FORCEINLINE class UCameraComponent* GetPlayerEyeComponent() { return PlayerEye; }
 	FORCEINLINE void SetEpStatus(EEpStatus status) { EpStatus = status; }
-	FORCEINLINE void SetWeapon(AWeapon* SetWeapon) { equipWeapon = SetWeapon; }
+	FORCEINLINE AWeapon* GetWeapon() { return equipWeapon; }
+	FORCEINLINE AItem* GetItemOverlap() { return Overlapitem; }
 	FORCEINLINE void SetItemOverlap(AItem* SetItem) { Overlapitem = SetItem; }
 
 private:
@@ -129,7 +130,26 @@ private:
 	void EndQuicken();
 	void PickUpWeapon();
 	void DropWeapon();
-
-private:
+	void AttackBegin();
+public:
 	bool is_quick = false;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Attack")
+	bool bAttacking = false;
+
+public:
+
+	void Attack();
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Anims")
+	class UAnimMontage* CombatMontage;
+
+public:
+	//Other 一些不能分类比较特殊的函数
+
+	/* *需要在攻击的时候不让其跳跃，所以需要在Blurprint中调用 */
+	UFUNCTION(BlueprintCallable, Category = "Attack end")
+	void AttackEnd();
+
+	void SetWeapon(AWeapon* SetWeapon);
 };
