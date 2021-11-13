@@ -1,7 +1,7 @@
 # Unreal - ReBirth
   这是一款独立开发的游戏，目的是为了入门虚化4游戏引擎，更好的兼容BluePrint 与 C++的ue4开发，让我们懂得什么时候使用BluePrint进行开发，什么时候使用C++开发虚幻4。
-  这是一件非常有意思的事情。  
-  当然你可以 `git clone https://github.com/Sugar0612/ReBirth.git` 或者  `git clone git@github.com:Sugar0612/ReBirth.git`来获取源码。
+  这是一件非常有意思的事情。当然你可以:
+  `git clone https://github.com/Sugar0612/ReBirth.git` 或者 `git clone git@github.com:Sugar0612/ReBirth.git`来获取源码。
   
   ![image](https://img.shields.io/badge/Base-ue4-blue.svg)   ![image](https://img.shields.io/badge/Language-c++-orange.svg)
   
@@ -77,10 +77,12 @@
    }
   ```
 - Montage动画 总结了一下基本步骤：
+    ``
     1.创建
     2.拖入动画
     3.分段
     4.创建 slot: 'combet'
+    ``
   下来就是对 AnimInstance_BP 的设定，需要将 `State Machine` -> `StateMacheCached`, `Use 'StateMacheCached'` -> `Slot 'combet'` -> `Output Pose`,
   再按不同的标准对状态机进行修改。关于Montage在c++中的定义与使用:
   定义蒙太奇：
