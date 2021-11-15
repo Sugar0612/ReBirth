@@ -72,7 +72,7 @@
        if (WeaponSocket) {
 
 	       /* *如果获取成功那么附加在插槽上 */
-	       WeaponSocket->AttachActor(this, player->GetMesh());
+       		WeaponSocket->AttachActor(this, player->GetMesh());
        }
    }
   ```
@@ -121,14 +121,14 @@
   碰撞盒子改变状态：
   ```cpp
     if (OtherActor) {
-       AMain* Player = Cast<AMain>(OtherActor);
-           if (Player) {
-		if (MonsterController) {
-		bisOverlap = true;
-		SetMonsterState(EMonsterState::EMS_Attacking);
-		}
-	   }
-     }
+    	AMain* Player = Cast<AMain>(OtherActor);
+        	if (Player) {
+			if (MonsterController) {
+				bisOverlap = true;
+				SetMonsterState(EMonsterState::EMS_Attacking);
+			}
+    		}
+    }
   ```
 ## 学习与交流
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">
