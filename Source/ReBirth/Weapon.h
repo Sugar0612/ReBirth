@@ -13,9 +13,9 @@
 /* *ÎäÆ÷×´Ì¬ */
 UENUM(BlueprintType)
 enum class EWeaponStatus : uint8 {
-	EWS_Ldle UMETA(DisplayName = "Ldle"),
-	EWS_Equip UMETA(DisplayName = "Equip"),
-	EWS_Default UMETA(DisplayName = "Default")
+	EWS_Ldle UMETA(DeplayName = "Ldle"),
+	EWS_Equip UMETA(DeplayName = "Equip"),
+	EWS_Default UMETA(DeplayName = "Default")
 };
 
 UCLASS()

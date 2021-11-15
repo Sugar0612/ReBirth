@@ -97,6 +97,32 @@
     AnimInstance->Montage_Play(CombatMontage, 1.2f);
 	AnimInstance->Montage_JumpToSection(FName("NAME"), CombatMontage);
   ```
-
+- Ai跟随/自动攻击 利用 `黑板 + 行为树 + AIContorller` 来实现AI的随机找点和看见玩家追击动作。在黑板中创建你需要的变量，变量是用来在行为树中进行 `Selector` 判断的，需要将
+  黑板的变量附加在属性为 `Both` 的不同的 `Sequence` 上面来实现不同的 `Task` (你需要在行为树中自己去 `New Task`)。在AIController中首先需要设置Ai感知器官 `Ai Perception`
+  为 `AI Sight Config`，接着在Blueprint中：`Event BeginPlay -> Run Behavior Tree`...  
+  ...`Event On Target Perception Updated -> Cast To Main_BP -> Set View as Bool` (`Set View as Bool.Target = Get Blackboard`, `Set View as Bool.Keyname = Make Literal Name(is_viewPlayer)`)...  
+  ...`(Event On Target Perception Updated.Stimulus = Break AIStimulus.AIStimulus)`, (`Break AIStimulus.Successfully_Sensed = Set View as Bool.Bool_Value`)。
+  对于攻击动作的触发，我是选择在C++中设置盒子碰撞，并且创建了敌人的emun状态：
+  ```cpp
+    UENUM(BlueprintType)
+    enum class EMonsterState : uint8 {
+	    EMS_Ldle UMETA(DeplayName = "Ldle"),
+	    EMS_MoveToTarget UMETA(DeplayName = "MoveToPlayer"),
+	    EMS_Attacking UMETA(DeplayName = "Attack"),
+	    EMS_Default UMETA(DeplayName = "Default")
+    };
+  ```
+  碰撞盒子改变状态：
+  ```cpp
+    if (OtherActor) {
+	    AMain* Player = Cast<AMain>(OtherActor);
+		if (Player) {
+			if (MonsterController) {
+				bisOverlap = true;
+				SetMonsterState(EMonsterState::EMS_Attacking);
+			}
+		}
+    }
+  ```
 ## 学习与交流
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">

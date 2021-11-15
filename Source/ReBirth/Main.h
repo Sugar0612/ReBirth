@@ -8,17 +8,17 @@
 
 UENUM(BlueprintType)
 enum class EMovementStatus : uint8 {
-	EMS_RUNING UMETA(Display = "Running"),
-	EMS_WALK UMETA(Display = "Walking")
+	EMS_RUNING UMETA(DeplayName = "Running"),
+	EMS_WALK UMETA(DeplayName = "Walking")
 };
 
 UENUM(BlueprintType)
 /* *EpµÄ×´Ì¬ */
 enum class EEpStatus : uint8 {
-	EES_Normal UMETA(Display = "Normal"),
-	EES_Exhaust UMETA(Display = "Exhaust"),
-	EES_Minmum UMETA(Display = "Minmum"),
-	EES_MaxEp UMETA(Display = "Default Ep")
+	EES_Normal UMETA(DeplayName = "Normal"),
+	EES_Exhaust UMETA(DeplayName = "Exhaust"),
+	EES_Minmum UMETA(DeplayName = "Minmum"),
+	EES_MaxEp UMETA(DeplayName = "Default Ep")
 };
 
 UCLASS()
