@@ -9,7 +9,8 @@
 UENUM(BlueprintType)
 enum class EMovementStatus : uint8 {
 	EMS_RUNING UMETA(DeplayName = "Running"),
-	EMS_WALK UMETA(DeplayName = "Walking")
+	EMS_WALK UMETA(DeplayName = "Walking"),
+	EMS_LDLE UMETA(DeplayName = "LDLE")
 };
 
 UENUM(BlueprintType)
@@ -33,7 +34,7 @@ public:
 public:
 
 	/* 武器 */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Items | Weapon")
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Items | Weapon")
 	class AWeapon* equipWeapon;
 
 	/* *装备重叠 */
@@ -51,7 +52,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Ep Status")
 	EEpStatus EpStatus;
 
-
 	//AllowPrivateAccess: 允许私人访问(只能在蓝图内访问)
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraArm;
@@ -65,6 +65,13 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 	float LookupRate = 65.f;
 	
+	/* *流血粒子系统 */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Blood at Player")
+	class UParticleSystem* BloodParticles;
+
+	/* *被伤害的音频 */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound of Harm")
+	class USoundCue* HarmSound;
 public:
 	/* 添加人物的属性 */
 

@@ -6,9 +6,11 @@
 #include "Camera/CameraComponent.h"
 #include "Engine/World.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "Weapon.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Animation/AnimInstance.h"
+#include "Sound/SoundCue.h"
 
 // Sets default values
 AMain::AMain()
@@ -48,7 +50,7 @@ AMain::AMain()
 	cntCoins = 0.f;
 
 	/* Init Enums */
-	MovementStatus = EMovementStatus::EMS_WALK;
+	MovementStatus = EMovementStatus::EMS_LDLE;
 	EpStatus = EEpStatus::EES_Normal;
 
 	/*当Ep 小于ExhaustLimite 大于MinmumLimite为黄色，当Ep小于 MinmumLimite时为红色*/
@@ -88,7 +90,7 @@ void AMain::Tick(float DeltaTime)
 	}
 	else {
 		/* ...Released the Walk speed updata 230.0f */
-		this->GetCharacterMovement()->MaxWalkSpeed = 230.0f;
+		this->GetCharacterMovement()->MaxWalkSpeed = 360.0f;
 		EpRecovery(0.08);
 
 		if ((CurrentEp / MaxEp) >= 0.25f && (CurrentEp / MaxEp) < 0.6f) SetEpStatus(EEpStatus::EES_Exhaust);
@@ -102,6 +104,19 @@ void AMain::Tick(float DeltaTime)
 	*...才可以移动 
 	*/
 	if(bAttacking) AttackEnd();
+
+	if (MovementStatus == EMovementStatus::EMS_RUNING) {
+		FVector Speed = this->GetVelocity();
+		FVector flatSpeed = FVector(Speed.X, Speed.Y, 0.0f);
+		float MovementSpeed = flatSpeed.Size(); // FMath::Sqrt(X*X + Y*Y + Z*Z);
+
+		UAnimInstance* StopToRun = GetMesh()->GetAnimInstance();
+		if (StopToRun && CombatMontage && MovementSpeed <= 0.1f) {
+			MovementStatus = EMovementStatus::EMS_LDLE;
+			StopToRun->Montage_Play(CombatMontage, 1.2f);
+			StopToRun->Montage_JumpToSection(FName("stopTorun"), CombatMontage);
+		}
+	}
 }
 
 // Called to bind functionality to input
@@ -136,6 +151,7 @@ void AMain::MoveForward(float input) {
 	if (Controller && input != 0.0f && (!bAttacking)) {
 		FRotator Rotation = Controller->GetControlRotation();
 		FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
+		MovementStatus = EMovementStatus::EMS_RUNING;
 
 		//来获得相对于这个角度中x的向量
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
@@ -147,6 +163,7 @@ void AMain::MoveRight(float input) {
 	if (Controller && input != 0.0f && (!bAttacking)) {
 		FRotator Rotation = Controller->GetControlRotation();
 		FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
+		MovementStatus = EMovementStatus::EMS_RUNING;
 
 		//来获得相对于这个角度中x的向量
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);

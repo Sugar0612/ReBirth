@@ -7,17 +7,41 @@
 #include "Engine/SkeletalMeshSocket.h"
 #include "Sound/SoundCue.h"
 #include "Kismet/GameplayStatics.h"
+#include "Components/BoxComponent.h"
 #include "Particles/ParticleSystemComponent.h"
+#include "Monster.h"
+#include "Particles/ParticleSystemComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 AWeapon::AWeapon()
 {
 	SkeletalComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Skeletal Mesh"));
 	SkeletalComponent->SetupAttachment(GetRootComponent());
 
+	HarmBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Harm"));
+	HarmBox->SetupAttachment(GetRootComponent());
+
+	/* *武器可以造成的伤害 */
+	harm = 25.0f;
+
 	/* *默认武器状态: 闲置 */
 	WeaponStatus = EWeaponStatus::EWS_Ldle;
 
 	bParticles = true;
+}
+
+void AWeapon::BeginPlay() {
+	Super::BeginPlay();
+
+	HarmBox->OnComponentBeginOverlap.AddDynamic(this, &AWeapon::WeaponOnBeginOverlap);
+	HarmBox->OnComponentEndOverlap.AddDynamic(this, &AWeapon::WeaponOnEndOverlap);
+
+
+	/* *碰撞预设 */
+	HarmBox->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	HarmBox->SetCollisionObjectType(ECollisionChannel::ECC_WorldDynamic);
+	HarmBox->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+	HarmBox->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
 }
 
 void AWeapon::OnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
@@ -60,7 +84,7 @@ void AWeapon::equipWeapon(AMain* player) {
 		WeaponSocket->AttachActor(this, player->GetMesh());
 
 		/* *武器状态: 装备 */
-		//WeaponStatus = EWeaponStatus::EWS_Equip;
+		WeaponStatus = EWeaponStatus::EWS_Equip;
 
 		/* *停止旋转 */
 		is_Rotation = false;
@@ -76,4 +100,46 @@ void AWeapon::equipWeapon(AMain* player) {
 
 	/* *播放武器装备音效 */
 	if (SoundWeapon) UGameplayStatics::PlaySound2D(this, SoundWeapon);
+}
+
+void AWeapon::WeaponOnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor) {
+		AMonster* monster = Cast<AMonster>(OtherActor);
+		if (monster) {
+			if (monster->BleedParticles) {
+				/* 流血效果
+				* 最后一个参数表示是否只使用一次
+				*/
+
+				/* *受到伤害播放音效 */
+				if (monster->HarmSound) UGameplayStatics::PlaySound2D(monster, monster->HarmSound);
+
+				const USkeletalMeshSocket* WeaponSocket = SkeletalComponent->GetSocketByName("WeaponSocket");
+				if (WeaponSocket) {
+					FVector SocketLocation = WeaponSocket->GetSocketLocation(SkeletalComponent);
+					UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), monster->BleedParticles, SocketLocation, FRotator(0.f), false);
+				}
+			}
+		}
+	}
+}
+
+void AWeapon::WeaponOnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+	
+}
+
+void AWeapon::OpenCollision()
+{
+	HarmBox->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+}
+
+void AWeapon::CloseCollision()
+{
+	HarmBox->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+}
+
+void AWeapon::BeginWeaponSound() {
+	if (AttackSound) UGameplayStatics::PlaySound2D(this, AttackSound);
 }

@@ -130,5 +130,29 @@
     	}
     }
   ```
+- 粒子系统, 粒子系统() 不是 粒子控件，他们的区别在于粒子控件会一直附加存在，而粒子系统是在某种特定的机制下触发如：碰撞...。用代码播放粒子控件系统各有不同：  
+  如果是武器模型，他们大多没有 `StaticMeshComponent` 而只有 `SkeletalMeshComponent`：  
+  ```cpp
+  const USkeletalMeshSocket* WeaponSocket = SkeletalComponent->GetSocketByName("WeaponSocket");
+  if (WeaponSocket) {
+      FVector SocketLocation = WeaponSocket->GetSocketLocation(SkeletalComponent);
+      UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), monster->BleedParticles, SocketLocation, FRotator(0.f), false);
+  }
+  ```
+  如果是 Monster模型，我在他的手上创建了一个 Socket让他成为触发粒子系统的地方，因为他自带 `StaticMeshComponent`:
+  ```cpp
+  const USkeletalMeshSocket* HandSocket = GetMesh()->GetSocketByName("BloodSocket");
+	//UE_LOG(LogTemp, Warning, TEXT(" Blood Socket Begin Blood! "));
+	if (HandSocket) {
+		FVector SocketLocation = HandSocket->GetSocketLocation(GetMesh());
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), player->BloodParticles, SocketLocation, FRotator(0.f), false);
+    }
+  }
+  ```
+  前者我还需要在构造去声明以及定义：  
+  ```cpp
+  SkeletalComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Skeletal Mesh"));
+  SkeletalComponent->SetupAttachment(GetRootComponent());
+  ```
 ## 学习与交流
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">

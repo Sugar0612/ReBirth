@@ -38,6 +38,19 @@ public:
 	/* *是否开启粒子特效 */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Item | isParticles")
 	bool bParticles;
+
+	/* *伤害盒子 */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Item | harm")
+	class UBoxComponent* HarmBox;
+
+	/* *武器的伤害 */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HarmNum")
+	float harm;
+
+	/* *武器攻击的音效 */
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attack Sound")
+	class USoundCue* AttackSound;
+
 public:
 	AWeapon();
 
@@ -49,7 +62,24 @@ public:
 	/* *装备武器 */
 	void equipWeapon(class AMain* player);
 
+	UFUNCTION()
+	void WeaponOnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+	UFUNCTION()
+	void WeaponOnEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
+	UFUNCTION(BlueprintCallable)
+	void OpenCollision();
+
+	UFUNCTION(BlueprintCallable)
+	void CloseCollision();
+
+	UFUNCTION(BlueprintCallable)
+	void BeginWeaponSound();
+
 public:
 	FORCEINLINE void SetWeaponStatus(EWeaponStatus Status) { WeaponStatus = Status; }
 	FORCEINLINE EWeaponStatus GetWeaponStatus() { return WeaponStatus; }
+
+protected:
+	virtual void BeginPlay() override;
 };
