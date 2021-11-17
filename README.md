@@ -130,7 +130,7 @@
     	}
     }
   ```
-- 粒子系统, 粒子系统() 不是 粒子控件，他们的区别在于粒子控件会一直附加存在，而粒子系统是在某种特定的机制下触发如：碰撞...。用代码播放粒子控件系统各有不同：  
+- 粒子系统, 粒子系统 `ParticleSyetem` 不是 粒子控件 `ParticleSystemComponent`，他们的区别在于粒子控件会一直附加存在，而粒子系统是在某种特定的机制下触发如：碰撞...。用代码播放粒子控件系统各有不同：  
   如果是武器模型，他们大多没有 `StaticMeshComponent` 而只有 `SkeletalMeshComponent`：  
   ```cpp
   const USkeletalMeshSocket* WeaponSocket = SkeletalComponent->GetSocketByName("WeaponSocket");
