@@ -21,11 +21,11 @@ AWeapon::AWeapon()
 	HarmBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Harm"));
 	HarmBox->SetupAttachment(GetRootComponent());
 
-	/* *武器可以造成的伤害 */
-	harm = 25.0f;
-
 	/* *默认武器状态: 闲置 */
 	WeaponStatus = EWeaponStatus::EWS_Ldle;
+
+	/* *Attack Power */
+	Attack_Power = 35.0f;
 
 	bParticles = true;
 }
@@ -106,7 +106,7 @@ void AWeapon::WeaponOnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAc
 {
 	if (OtherActor) {
 		AMonster* monster = Cast<AMonster>(OtherActor);
-		if (monster) {
+		if (monster && WeaponStatus == EWeaponStatus::EWS_Equip) {
 			if (monster->BleedParticles) {
 				/* 流血效果
 				* 最后一个参数表示是否只使用一次
@@ -120,6 +120,10 @@ void AWeapon::WeaponOnBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAc
 					FVector SocketLocation = WeaponSocket->GetSocketLocation(SkeletalComponent);
 					UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), monster->BleedParticles, SocketLocation, FRotator(0.f), false);
 				}
+			}
+
+			if (DamageTypeClass) {
+				UGameplayStatics::ApplyDamage(monster, Attack_Power, nullptr, this, DamageTypeClass);
 			}
 		}
 	}

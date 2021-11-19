@@ -11,6 +11,9 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Animation/AnimInstance.h"
 #include "Sound/SoundCue.h"
+#include "Kismet/KismetMathLibrary.h"
+#include "Monster.h"
+#include "Components/CapsuleComponent.h"
 
 // Sets default values
 AMain::AMain()
@@ -60,6 +63,10 @@ AMain::AMain()
 	/* *是否装备了武器 */
 	bisEquip = false;
 
+	/* *插值速度 */
+	InsterSpeed = 0.8f;
+	bInsterToMonster = false;
+
 	//获取玩家控制器
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 }
@@ -105,7 +112,13 @@ void AMain::Tick(float DeltaTime)
 	*/
 	if(bAttacking) AttackEnd();
 
-	if (MovementStatus == EMovementStatus::EMS_RUNING) {
+	if (bInsterToMonster && targetMonster) {
+		FRotator LookAtRotator = GetYawToMonster(targetMonster->GetActorLocation());
+		FRotator InsterRotator = FMath::RInterpTo(GetActorRotation(), LookAtRotator, DeltaTime, InsterSpeed);
+		SetActorRotation(InsterRotator); 
+	}
+
+	/*if (MovementStatus == EMovementStatus::EMS_RUNING) {
 		FVector Speed = this->GetVelocity();
 		FVector flatSpeed = FVector(Speed.X, Speed.Y, 0.0f);
 		float MovementSpeed = flatSpeed.Size(); // FMath::Sqrt(X*X + Y*Y + Z*Z);
@@ -116,7 +129,7 @@ void AMain::Tick(float DeltaTime)
 			StopToRun->Montage_Play(CombatMontage, 1.2f);
 			StopToRun->Montage_JumpToSection(FName("stopTorun"), CombatMontage);
 		}
-	}
+	}*/
 }
 
 // Called to bind functionality to input
@@ -204,7 +217,12 @@ void AMain::HpReduce(float num)
 /* *死亡 */
 void AMain::died()
 {
-
+	/* *获取蒙太奇的实例 */
+	UAnimInstance* AnimInstance = this->GetMesh()->GetAnimInstance();
+	if (AnimInstance && CombatMontage) {
+		AnimInstance->Montage_Play(CombatMontage, 1.3f);
+		AnimInstance->Montage_JumpToSection("death", CombatMontage);
+	}
 }
 
 void AMain::IncreaseCoins(float Coinnum)
@@ -246,10 +264,25 @@ void AMain::AttackBegin() {
 	}
 }
 
+void AMain::AttackEnd()
+{
+	//bAttacking = false;
+	UAnimInstance* AnimInstance = this->GetMesh()->GetAnimInstance();
+
+	if (AnimInstance->Montage_GetIsStopped(CombatMontage)) {
+		UE_LOG(LogTemp, Warning, TEXT("Attacking end!"));
+		bAttacking = false;
+		SetInsterToMonster(false);
+
+		/* repair bug Destroy weapon */
+		SetItemOverlap(nullptr);
+	}
+}
+
 void AMain::Attack()
 {
-
 	bAttacking = true;
+	SetInsterToMonster(true);
 	/* *获取蒙太奇的实例 */
 	UAnimInstance* AnimInstance = this->GetMesh()->GetAnimInstance();
 	if (AnimInstance && CombatMontage) {
@@ -272,20 +305,8 @@ void AMain::Attack()
 		}
 	}
 
-
 }
 
-void AMain::AttackEnd()
-{
-	//bAttacking = false;
-	UAnimInstance* AnimInstance = this->GetMesh()->GetAnimInstance();
-	if (AnimInstance->Montage_GetIsStopped(CombatMontage)) {
-		bAttacking = false;
-
-		/* repair bug Destroy weapon */
-		SetItemOverlap(nullptr);
-	}
-}
 
 void AMain::SetWeapon(AWeapon* SetWeapon)
 {
@@ -293,4 +314,22 @@ void AMain::SetWeapon(AWeapon* SetWeapon)
 		equipWeapon->Destroy();
 	}
 	equipWeapon = SetWeapon;
+}
+
+void AMain::SetInsterToMonster(bool SetInster)
+{
+	bInsterToMonster = SetInster;
+}
+
+FRotator AMain::GetYawToMonster(FVector LocationToMonster)
+{
+	FRotator YawToMonster = UKismetMathLibrary::FindLookAtRotation(GetActorLocation(), LocationToMonster);
+	return FRotator(0.f, YawToMonster.Yaw, 0.f);
+}
+
+float AMain::TakeDamage(float DamageTaken, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	HpReduce(DamageTaken);
+
+	return DamageTaken;
 }

@@ -12,6 +12,7 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Engine/SkeletalMeshSocket.h"
 #include "Animation/AnimInstance.h"
+#include "Components/CapsuleComponent.h"
 
 // Sets default values
 AMonster::AMonster()
@@ -31,12 +32,11 @@ AMonster::AMonster()
 	AttackBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Attack Detect"));
 	AttackBox->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, FName("AttackSocket"));
 
-	/* 手指骨骼控件 */
-	HandSkeletalComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Hand Skeletal"));
-	HandSkeletalComponent->SetupAttachment(GetRootComponent());
-
 	bAttacking = false;
 
+	/* *攻击间隔时间 */
+	AttackBetweenTime_min = 0.5f;
+	AttackBetweenTime_max = 2.5f;
 
 	/* *属性 */
 	MaxHp = 100.0f;
@@ -85,9 +85,12 @@ void AMonster::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 void AMonster::CombetBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	if (OtherActor == this) return;
-	if (OtherActor) {
+
+	if (OtherActor && (MonsterState != EMonsterState::EMS_Death)) {
 		AMain* Player = Cast<AMain>(OtherActor);
 		if (Player) {
+			/* *插值传入 */
+			Player->SetInsterTarget(this);
 			bOverlap = true;
 			Attack();
 		}
@@ -97,14 +100,90 @@ void AMonster::CombetBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAct
 
 void AMonster::CombetEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	if (OtherActor) {
+	if (OtherActor && (MonsterState != EMonsterState::EMS_Death)) {
 		AMain* target = Cast<AMain>(OtherActor);
 		if (target) {
+			/* *插值切断 */
+			target->SetInsterTarget(nullptr);
 			bOverlap = false;
+			/* *当离开攻击范围初始化Timer */
+			GetWorldTimerManager().ClearTimer(AttackTimer);
 			SetMonsterState(EMonsterState::EMS_MoveToTarget);
 		}
 	}
 }
+
+void AMonster::Attack() {
+	if (bAttacking) return;
+
+	bAttacking = false;
+
+	if (MonsterController) {
+		MonsterController->StopMovement();
+		SetMonsterState(EMonsterState::EMS_Attacking);
+	}
+
+	UAnimInstance* MonsterAnim = GetMesh()->GetAnimInstance();
+	if (MonsterAnim && MonsterMontage) {
+		int SectionRandom = FMath::RandRange(1, 2);
+		switch (SectionRandom) {
+		case 1:
+			MonsterAnim->Montage_Play(MonsterMontage, 1.30f);
+			MonsterAnim->Montage_JumpToSection(FName("Attack1"), MonsterMontage);
+			break;
+		case 2:
+			MonsterAnim->Montage_Play(MonsterMontage, 1.30f);
+			MonsterAnim->Montage_JumpToSection(FName("Attack2"), MonsterMontage);
+			break;
+		default:
+			break;
+		};
+	}
+}
+
+void AMonster::EndAttack() {
+	bAttacking = false;
+	if (bOverlap) {
+		float AttackBetweenTime = FMath::RandRange(AttackBetweenTime_min, AttackBetweenTime_max);
+		GetWorldTimerManager().SetTimer(AttackTimer, this, &AMonster::Attack, AttackBetweenTime);
+	}
+}
+
+void AMonster::ReduceHp(float num)
+{
+	this->CurHp -= num;
+	if (CurHp <= 0.f) {
+		death();
+	}
+}
+
+void AMonster::death() {
+	UAnimInstance* MonsterAnim = GetMesh()->GetAnimInstance();
+	if (MonsterAnim && MonsterMontage) {
+		MonsterState = EMonsterState::EMS_Death;
+		MonsterAnim->Montage_Play(MonsterMontage, 1.3f);
+		MonsterAnim->Montage_JumpToSection("death", MonsterMontage);
+	}
+
+	/* *解除碰撞 */
+	CombetComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	AttackBox->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+}
+
+void AMonster::EndDeathMontage()
+{
+	float DeathTime = 3.0f;
+	//GetWorldTimerManager().SetTimer(DeathTimer, this, &AMonster::DestroyActor, DeathTime);
+}
+
+float AMonster::TakeDamage(float DamageTaken, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+{
+	ReduceHp(DamageTaken);
+
+	return DamageTaken;
+}
+
 
 void AMonster::AttackBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
@@ -126,6 +205,10 @@ void AMonster::AttackBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAct
 					UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), player->BloodParticles, SocketLocation, FRotator(0.f), false);
 				}
 			}
+
+			if (DamageTypeClass) {
+				UGameplayStatics::ApplyDamage(player, Attack_Power, MonsterController, this, DamageTypeClass);
+			}
 		}
 	}
 }
@@ -135,43 +218,6 @@ void AMonster::AttackEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor
 	
 }
 
-void AMonster::Attack() {
-	if (bAttacking) return;
-
-	bAttacking = false;
-
-	if (MonsterController) {
-		MonsterController->StopMovement();
-		SetMonsterState(EMonsterState::EMS_Attacking);
-	}
-
-	UAnimInstance* MonsterAnim = GetMesh()->GetAnimInstance();
-	if (MonsterAnim && MonsterMontage) {
-		int SectionRandom = FMath::RandRange(1, 2);
-		switch (SectionRandom) {
-		case 1:
-			UE_LOG(LogTemp, Warning, TEXT("1"));
-			MonsterAnim->Montage_Play(MonsterMontage, 1.30f);
-			MonsterAnim->Montage_JumpToSection(FName("Attack1"), MonsterMontage);
-			break;
-		case 2:
-			UE_LOG(LogTemp, Warning, TEXT("2"));
-			MonsterAnim->Montage_Play(MonsterMontage, 1.30f);
-			MonsterAnim->Montage_JumpToSection(FName("Attack2"), MonsterMontage);
-			break;
-		default:
-			break;
-		};
-	}
-}
-
-
-void AMonster::EndAttack() {
-	bAttacking = false;
-	if (bOverlap) {
-		Attack();
-	}
-}
 
 void AMonster::OpenCollision()
 {

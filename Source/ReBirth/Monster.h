@@ -11,6 +11,7 @@ enum class EMonsterState : uint8 {
 	EMS_Ldle UMETA(DeplayName = "Ldle"),
 	EMS_MoveToTarget UMETA(DeplayName = "MoveToPlayer"),
 	EMS_Attacking UMETA(DeplayName = "Attack"),
+	EMS_Death UMETA(DeplayName = "Death"),
 	EMS_Default UMETA(DeplayName = "Default")
 
 };
@@ -123,4 +124,37 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void EndAttack();
+	
+public:
+
+	FTimerHandle AttackTimer;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attack Between Time")
+	float AttackBetweenTime_min;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attack Between Time")
+	float AttackBetweenTime_max;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combet")
+	TSubclassOf<UDamageType> DamageTypeClass;
+
+public:
+
+	UFUNCTION(BlueprintCallable)
+	void ReduceHp(float num);
+
+	UFUNCTION(BlueprintCallable)
+	void death();
+
+	/* *ÉËº¦»úÖÆ */
+	virtual float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+
+public:
+
+	FTimerHandle DeathTimer;
+
+	UFUNCTION(BlueprintCallable)
+	void EndDeathMontage();
+
+	void DestroyActor() { this->Destroy(); }
 };

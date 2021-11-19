@@ -43,13 +43,13 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Item | harm")
 	class UBoxComponent* HarmBox;
 
-	/* *ÎäÆ÷µÄÉËº¦ */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "HarmNum")
-	float harm;
-
 	/* *ÎäÆ÷¹¥»÷µÄÒôÐ§ */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attack Sound")
 	class USoundCue* AttackSound;
+
+	/* *ÎäÆ÷¹¥»÷Á¦ */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "")
+	float Attack_Power;
 
 public:
 	AWeapon();
@@ -82,4 +82,8 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Combet")
+	TSubclassOf<UDamageType> DamageTypeClass;
 };

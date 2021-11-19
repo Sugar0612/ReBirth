@@ -159,4 +159,22 @@ public:
 	void AttackEnd();
 
 	void SetWeapon(AWeapon* SetWeapon);
+
+
+public:
+	float InsterSpeed;
+	bool bInsterToMonster;
+	void SetInsterToMonster(bool SetInster);
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Inster Target")
+	class AMonster* targetMonster;
+
+	FORCEINLINE void SetInsterTarget(class AMonster* target) { targetMonster = target; }
+
+	FRotator GetYawToMonster(FVector LocationToMonster);
+
+public:
+
+	/* *ÉËº¦»úÖÆ */
+	virtual float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
 };

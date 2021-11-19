@@ -154,5 +154,31 @@
   SkeletalComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Skeletal Mesh"));
   SkeletalComponent->SetupAttachment(GetRootComponent());
   ```
+- 攻击伤害的传递。有很多方法传递来自其他角色造成的伤害，但是 ue4 给了我们一套自己的伤害传递方式：  
+  ```cpp
+  /* *伤害机制 */
+  virtual float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+  ```
+  你需要重写 `TackDamage` 函数：  
+  ```cpp
+  float AMonster::TakeDamage(float DamageTaken, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
+  {
+	 ReduceHp(DamageTaken);
+
+	 return DamageTaken;
+  }
+  ```
+  当其他角色有对其他角色造成伤害的功能时：  
+  需要先创建一个 `TSubclassOf<class T>` 这个是ue4固有的模板：
+  ```cpp
+  TSubclassOf<UDamageType> DamageTypeClass;
+  ```
+  然后在对角色造成伤害时调用他：  
+  ```cpp
+  if (DamageTypeClass) {
+	 UGameplayStatics::ApplyDamage(monster, Attack_Power, nullptr, this, DamageTypeClass);
+  }
+  ```
+  这样就会调用收到伤害角色的 `TackDamage`。
 ## 学习与交流
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">
