@@ -14,6 +14,7 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "Monster.h"
 #include "Components/CapsuleComponent.h"
+#include "MainPlayerController.h"
 
 // Sets default values
 AMain::AMain()
@@ -51,6 +52,7 @@ AMain::AMain()
 	MaxEp = 100.f;
 	CurrentEp = 100.f;
 	cntCoins = 0.f;
+	Defense = 10.f;
 
 	/* Init Enums */
 	MovementStatus = EMovementStatus::EMS_LDLE;
@@ -67,6 +69,9 @@ AMain::AMain()
 	InsterSpeed = 0.8f;
 	bInsterToMonster = false;
 
+	/* *是否有对战角色 */
+	HasTarget = false;
+
 	//获取玩家控制器
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 }
@@ -76,6 +81,8 @@ void AMain::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	//控制器
+	PlayerController = Cast<AMainPlayerController>(GetController());
 }
 
 // Called every frame
@@ -117,19 +124,14 @@ void AMain::Tick(float DeltaTime)
 		FRotator InsterRotator = FMath::RInterpTo(GetActorRotation(), LookAtRotator, DeltaTime, InsterSpeed);
 		SetActorRotation(InsterRotator); 
 	}
-
-	/*if (MovementStatus == EMovementStatus::EMS_RUNING) {
-		FVector Speed = this->GetVelocity();
-		FVector flatSpeed = FVector(Speed.X, Speed.Y, 0.0f);
-		float MovementSpeed = flatSpeed.Size(); // FMath::Sqrt(X*X + Y*Y + Z*Z);
-
-		UAnimInstance* StopToRun = GetMesh()->GetAnimInstance();
-		if (StopToRun && CombatMontage && MovementSpeed <= 0.1f) {
-			MovementStatus = EMovementStatus::EMS_LDLE;
-			StopToRun->Montage_Play(CombatMontage, 1.2f);
-			StopToRun->Montage_JumpToSection(FName("stopTorun"), CombatMontage);
+	
+	if (targetMonster) {
+		MonsterLocation = targetMonster->GetActorLocation();
+		if (PlayerController) {
+			MonsterLocation.Z += 100.f;
+			PlayerController->showLocation = MonsterLocation;
 		}
-	}*/
+	}
 }
 
 // Called to bind functionality to input
@@ -208,8 +210,9 @@ void AMain::EndQuicken() {
 /* *碰到炸弹收到伤害 */
 void AMain::HpReduce(float num)
 {
-	this->CurrentHp -= num;
+	if(num - Defense >= 0.f) this->CurrentHp -= (num - Defense);
 	if (this->CurrentHp <= 0.f) {
+		this->AIControllerClass = NULL;
 		died();
 	}
 }
@@ -223,6 +226,7 @@ void AMain::died()
 		AnimInstance->Montage_Play(CombatMontage, 1.3f);
 		AnimInstance->Montage_JumpToSection("death", CombatMontage);
 	}
+	GetCapsuleComponent()->SetCollisionObjectType(ECollisionChannel::ECC_WorldStatic);
 }
 
 void AMain::IncreaseCoins(float Coinnum)

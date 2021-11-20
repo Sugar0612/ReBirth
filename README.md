@@ -180,5 +180,20 @@
   }
   ```
   这样就会调用收到伤害角色的 `TackDamage`。
+- 显示敌人的血条。这个比较简单首先还是先创建 HUD 然后在 `PlayerController` 中添加并显示在窗口中，问题是如何显示在敌人的正上方，并且有着合理的大小： 
+  我们可以通过获得敌人的坐标然后 在类`PlayerController` 重写的 `Tick` 中不断获取新的坐标，再将其转换为屏幕的2d坐标显示就可以了：  
+  ```cpp
+  if (MonsterHpBar) {
+	 FVector2D ScreenPosition;
+
+	 /* *将3d转换为屏幕2d坐标 */
+	 ProjectWorldLocationToScreen(showLocation, ScreenPosition);
+
+	 FVector2D ProgressBarSize(200.f, 25.f);
+
+	 MonsterHpBar->SetPositionInViewport(ScreenPosition);
+	 MonsterHpBar->SetDesiredSizeInViewport(ProgressBarSize);
+  }
+  ```
 ## 学习与交流
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">

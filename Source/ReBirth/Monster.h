@@ -38,6 +38,10 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Attack Box")
 	class UBoxComponent* AttackBox;
 
+	/* *ÊÓ½çºÐ×Ó */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "View Box")
+	class USphereComponent* ViewBox;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -77,6 +81,12 @@ public:
 public:
 
 	UFUNCTION()
+	void ViewBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	UFUNCTION()
+	void ViewEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
+	UFUNCTION()
 	void CombetBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
 	UFUNCTION(BlueprintCallable)
@@ -87,6 +97,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void AttackEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
+	/*UFUNCTION(BlueprintCallable)
+	void GoToTarget(AMain* target);*/
 
 public:
 	

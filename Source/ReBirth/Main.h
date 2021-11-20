@@ -72,6 +72,15 @@ public:
 	/* *被伤害的音频 */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Sound of Harm")
 	class USoundCue* HarmSound;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Has Target Monster")
+	bool HasTarget;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player Controller")
+	class AMainPlayerController* PlayerController;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Monster Location")
+	FVector MonsterLocation;
 public:
 	/* 添加人物的属性 */
 
@@ -90,6 +99,8 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "CoinsCounts")
 	int cntCoins;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Defense")
+	float Defense;
 
 public:
 	void HpReduce(float num);
@@ -127,7 +138,7 @@ public:
 	FORCEINLINE AWeapon* GetWeapon() { return equipWeapon; }
 	FORCEINLINE AItem* GetItemOverlap() { return Overlapitem; }
 	FORCEINLINE void SetItemOverlap(AItem* SetItem) { Overlapitem = SetItem; }
-
+	FORCEINLINE void SetHasTarget(bool target) { HasTarget = target; }
 private:
 	void MoveForward(float input);
 	void MoveRight(float input);
