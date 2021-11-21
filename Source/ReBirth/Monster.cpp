@@ -89,6 +89,12 @@ void AMonster::BeginPlay()
 void AMonster::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if (bAttacking) {
+		if (MonsterController) {
+			MonsterController->StopMovement();
+		}
+	}
 }
 
 // Called to bind functionality to input
@@ -100,26 +106,26 @@ void AMonster::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void AMonster::ViewBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	/*if(OtherActor) {
+	if(OtherActor) {
 		AMain* player = Cast<AMain>(OtherActor);
 		if (player) {
 			if (player->PlayerController) {
 				player->PlayerController->ShowHpBar();
 			}
 		}
-	}*/
+	}
 }
 
 void AMonster::ViewEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) 
 {
-	/*if (OtherActor) {
+	if (OtherActor) {
 		AMain* player = Cast<AMain>(OtherActor);
 		if (player) {
 			if (player->PlayerController) {
 				player->PlayerController->HideHpBar();
 			}
 		}
-	}*/
+	}
 }
 
 //void AMonster::GoToTarget(AMain* target)
@@ -143,6 +149,8 @@ void AMonster::CombetBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAct
 	if (OtherActor && (MonsterState != EMonsterState::EMS_Death)) {
 		AMain* Player = Cast<AMain>(OtherActor);
 		if (Player) {
+			targetPlayer = Player;
+
 			if (Player->PlayerController) {
 				Player->PlayerController->ShowHpBar();
 			}
@@ -161,8 +169,9 @@ void AMonster::CombetEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor
 	if (OtherActor && (MonsterState != EMonsterState::EMS_Death)) {
 		AMain* target = Cast<AMain>(OtherActor);
 		if (target) {
+			targetPlayer = target;
+
 			if (target->PlayerController) {
-				UE_LOG(LogTemp, Warning, TEXT("Hide BAR!"));
 				target->PlayerController->HideHpBar();
 			}
 
@@ -181,9 +190,8 @@ void AMonster::CombetEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor
 }
 
 void AMonster::Attack() {
-	if (bAttacking) return;
 
-	bAttacking = false;
+	bAttacking = true;
 
 	if (MonsterController && (MonsterState != EMonsterState::EMS_Death)) {
 		MonsterController->StopMovement();
@@ -233,6 +241,11 @@ void AMonster::death() {
 	if (MonsterAnim && MonsterMontage) {
 		MonsterAnim->Montage_Play(MonsterMontage, 1.3f);
 		MonsterAnim->Montage_JumpToSection("death", MonsterMontage);
+
+		if (targetPlayer) {
+			targetPlayer->PlayerController->HideHpBar();
+			targetPlayer = nullptr;
+		}
 	}
 
 	/* *½â³ýÅö×² */
@@ -240,6 +253,7 @@ void AMonster::death() {
 	CombetComponent->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	AttackBox->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	GetCapsuleComponent()->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Ignore);
 }
 
 void AMonster::EndDeathMontage()

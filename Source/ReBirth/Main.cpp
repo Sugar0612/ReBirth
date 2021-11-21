@@ -125,10 +125,11 @@ void AMain::Tick(float DeltaTime)
 		SetActorRotation(InsterRotator); 
 	}
 	
-	if (targetMonster) {
+	if (targetMonster && (targetMonster->MonsterState != EMonsterState::EMS_Death)) {
 		MonsterLocation = targetMonster->GetActorLocation();
 		if (PlayerController) {
-			MonsterLocation.Z += 100.f;
+			MonsterLocation.Z += 125.f;
+			MonsterLocation.X += 50.f;
 			PlayerController->showLocation = MonsterLocation;
 		}
 	}
@@ -149,7 +150,7 @@ void AMain::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis("TurnRate", this, &AMain::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookupRate", this, &AMain::LookupAtRate);
 
-	PlayerInputComponent->BindAction("Jumping", IE_Pressed, this, &ACharacter::Jump);
+	PlayerInputComponent->BindAction("Jumping", IE_Pressed, this, &AMain::Jump);
 	PlayerInputComponent->BindAction("Jumping", IE_Released, this, &ACharacter::StopJumping);
 
 	PlayerInputComponent->BindAction("Quicken", IE_Pressed, this, &AMain::BeginQuicken);
@@ -163,6 +164,8 @@ void AMain::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 }
 
 void AMain::MoveForward(float input) {
+	if (MovementStatus == EMovementStatus::EMS_Death) return;
+
 	if (Controller && input != 0.0f && (!bAttacking)) {
 		FRotator Rotation = Controller->GetControlRotation();
 		FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
@@ -175,6 +178,8 @@ void AMain::MoveForward(float input) {
 }
 
 void AMain::MoveRight(float input) {
+	if (MovementStatus == EMovementStatus::EMS_Death) return;
+
 	if (Controller && input != 0.0f && (!bAttacking)) {
 		FRotator Rotation = Controller->GetControlRotation();
 		FRotator YawRotation(0.f, Rotation.Yaw, 0.f);
@@ -183,6 +188,13 @@ void AMain::MoveRight(float input) {
 		//来获得相对于这个角度中x的向量
 		const FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
 		AddMovementInput(Direction, input);
+	}
+}
+
+void AMain::Jump()
+{
+	if (MovementStatus != EMovementStatus::EMS_Death) {
+		ACharacter::Jump();
 	}
 }
 
@@ -207,6 +219,7 @@ void AMain::EndQuicken() {
 }
 
 
+
 /* *碰到炸弹收到伤害 */
 void AMain::HpReduce(float num)
 {
@@ -220,13 +233,29 @@ void AMain::HpReduce(float num)
 /* *死亡 */
 void AMain::died()
 {
+	if (MovementStatus == EMovementStatus::EMS_Death) return;
+	MovementStatus = EMovementStatus::EMS_Death;
+
 	/* *获取蒙太奇的实例 */
 	UAnimInstance* AnimInstance = this->GetMesh()->GetAnimInstance();
+
 	if (AnimInstance && CombatMontage) {
 		AnimInstance->Montage_Play(CombatMontage, 1.3f);
 		AnimInstance->Montage_JumpToSection("death", CombatMontage);
 	}
 	GetCapsuleComponent()->SetCollisionObjectType(ECollisionChannel::ECC_WorldStatic);
+}
+
+void AMain::EndDeath() {
+	GetMesh()->bPauseAnims = true;
+	GetMesh()->bNoSkeletonUpdate = true;
+
+	float DeathTime = 3.f;
+	GetWorldTimerManager().SetTimer(DeathHandle, this, &AMain::DestroyActor, DeathTime);
+}
+
+void AMain::DestroyActor() {
+	Destroy();
 }
 
 void AMain::IncreaseCoins(float Coinnum)

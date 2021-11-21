@@ -10,6 +10,7 @@ UENUM(BlueprintType)
 enum class EMovementStatus : uint8 {
 	EMS_RUNING UMETA(DeplayName = "Running"),
 	EMS_WALK UMETA(DeplayName = "Walking"),
+	EMS_Death UMETA(DeplayName = "Death"),
 	EMS_LDLE UMETA(DeplayName = "LDLE")
 };
 
@@ -81,6 +82,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Monster Location")
 	FVector MonsterLocation;
+
+	virtual void Jump() override;
+
 public:
 	/* 添加人物的属性 */
 
@@ -183,6 +187,13 @@ public:
 	FORCEINLINE void SetInsterTarget(class AMonster* target) { targetMonster = target; }
 
 	FRotator GetYawToMonster(FVector LocationToMonster);
+
+	FTimerHandle DeathHandle;
+
+	void DestroyActor();
+
+	UFUNCTION(BlueprintCallable)
+	void EndDeath();
 
 public:
 

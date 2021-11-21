@@ -169,5 +169,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void EndDeathMontage();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "")
+	class AMain* targetPlayer;
+
 	void DestroyActor() { this->Destroy(); }
 };
