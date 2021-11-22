@@ -1,10 +1,10 @@
 # Unreal - ReBirth
-  English | [¼òÌåÖÐÎÄ](./README.md)
-  This is an independently developed game. The purpose is to get started with the virtual 4 game engine, and better compatible with BluePrint and C++ ue4 development. Let us know when to use BluePrint to develop and when to use C++ to develop Unreal 4.
-  This is a very interesting thing. Of course you can:
-  `git clone https://github.com/Sugar0612/ReBirth.git` or `git clone git@github.com:Sugar0612/ReBirth.git` to get the source code.
+ English | [ç®€ä½“ä¸­æ–‡](./README.md)  
+ This is an independently developed game. The purpose is to get started with the virtual 4 game engine, and better compatible with BluePrint and C++ ue4 development. Let us know when to use BluePrint to develop and when to use C++ to develop Unreal 4.
+ This is a very interesting thing. Of course you can:
+ `git clone https://github.com/Sugar0612/ReBirth.git` or `git clone git@github.com:Sugar0612/ReBirth.git` to get the source code.
 
-  ![image](https://img.shields.io/badge/Base-ue4-blue.svg)   ![image](https://img.shields.io/badge/Language-c++-orange.svg)
+ ![image](https://img.shields.io/badge/Base-ue4-blue.svg)   ![image](https://img.shields.io/badge/Language-c++-orange.svg)
 
 ## Current process
 
@@ -13,7 +13,7 @@ This is the most recent demo when I was learning to develop with C++/BluePrint.
 
 ## Some interesting functions currently involved
 
- Currently, C++ development is the main focus.
+Currently, C++ development is the main focus.
 - Regarding the use and declaration of various components (UStaticMeshComponent, UCameraComponent, USphereComponent, UParticleSystemComponent...), they all need
   ```cpp
   CreateDefaultSubObject<class* T>(TEXT());
@@ -83,12 +83,12 @@ This is the most recent demo when I was learning to develop with C++/BluePrint.
   }
   ```
 - Montage animation summarizes the basic steps:
-     ``
-     1. Create
-     2. Drag in the animation
-     3. Segmentation
-     4. Create slot:'combet'
-     ``
+  ``
+      1. Create
+      2. Drag in the animation
+      3. Segmentation
+      4. Create slot:'combet'
+  ``
   The next step is the setting of AnimInstance_BP. You need to set `State Machine` -> `StateMacheCached`, `Use'StateMacheCached'` -> `Slot'combet'` -> `Output Pose`,
   Then modify the state machine according to different standards. Regarding the definition and use of Montage in C++:
   Define montage:
@@ -105,7 +105,7 @@ This is the most recent demo when I was learning to develop with C++/BluePrint.
   ```
 
 - Ai follow/auto attack Use `blackboard + behavior tree + AIContorller` to realize AI's random finding point and see the player's chasing action. Create the variables you need in the blackboard. Variables are used to make `Selector` judgments in the behavior tree. You need to change
-  The variables of the blackboard are attached to different `Sequence` with the attribute `Both` to implement different `Task` (you need to go to `New Task` in the behavior tree). In AIController, you first need to set up the Ai Perception organ `Ai Perception`
+  The variables of the blackboard are attached to different `Sequence` with the attribute `Both` to implement different `Task` (you need to go to `New Task` in the behavior tree).  In AIController, you first need to set up the Ai Perception organ `Ai Perception`
   For `AI Sight Config`, then in Blueprint:
   ```cpp
   Event BeginPlay -> Run Behavior Tree
@@ -138,7 +138,7 @@ This is the most recent demo when I was learning to develop with C++/BluePrint.
   }
   ```
 - Particle system, the particle system `ParticleSyetem` is not the particle control `ParticleSystemComponent`. The difference between them is that the particle control will always be attached, while the particle system is triggered under a certain mechanism such as collision.... The code to play the particle control system is different:
-  If it¡¯s a weapon model, most of them don¡¯t have `StaticMeshComponent` but only `SkeletalMeshComponent`:
+  If itÂ¡Â¯s a weapon model, most of them donÂ¡Â¯t have `StaticMeshComponent` but only `SkeletalMeshComponent`:
   ```cpp
   const USkeletalMeshSocket* WeaponSocket = SkeletalComponent->GetSocketByName("WeaponSocket");
   if (WeaponSocket) {
@@ -265,6 +265,5 @@ This is the most recent demo when I was learning to develop with C++/BluePrint.
     }
   }
   ```
-
 ## Learning and Communication
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">
