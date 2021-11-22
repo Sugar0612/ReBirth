@@ -195,5 +195,71 @@
 	 MonsterHpBar->SetDesiredSizeInViewport(ProgressBarSize);
   }
   ```
+- 保存和载入游戏。需要去继承一个新的c++类 `USaveGame`，你可以在里面建立一个结构体，让他来保存当前人物的信息。  
+  比如像这样： 
+  ```cpp
+  USTRUCT(BlueprintType)
+  struct FCharacterState {
+	GENERATED_BODY()
+
+	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+	float CurHp;
+
+	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+	float MaxHp;
+
+	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+	float CurEp;
+
+	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+	float MaxEp;
+
+	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+	int32 CoinCnt;
+
+	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+	FVector Location;
+
+	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+	FRotator Rotation;
+  };
+  ```
+  那么现在我需要从 `MainPlayer` 中调用他并实现保存和载入信息。  
+  你需要单独为保存和载入创建新的函数体：  
+  ```cpp
+  /* *保存游戏函数 */
+  void AMain::SaveGame() {
+	USaveMyGame* SaveGame =  Cast<USaveMyGame>(UGameplayStatics::CreateSaveGameObject(USaveMyGame::StaticClass()));
+	SaveGame->CharacterState.CurHp = CurrentHp;
+	SaveGame->CharacterState.MaxHp = MaxHp;
+	SaveGame->CharacterState.CurEp = CurrentEp;
+	SaveGame->CharacterState.MaxEp = MaxEp;
+	SaveGame->CharacterState.CoinCnt = cntCoins;
+	SaveGame->CharacterState.Location = GetActorLocation();
+	SaveGame->CharacterState.Rotation = GetActorRotation();
+
+	UGameplayStatics::SaveGameToSlot(SaveGame, SaveGame->GameName, SaveGame->PlayerIndex);
+  }
+
+  /* *载入游戏函数 */
+  void AMain::LoadGame(bool bLoad) {
+	USaveMyGame* LoadGame = Cast<USaveMyGame>(UGameplayStatics::CreateSaveGameObject(USaveMyGame::StaticClass()));
+	USaveMyGame* LoadGameInstance = Cast<USaveMyGame>(UGameplayStatics::LoadGameFromSlot(LoadGame->GameName, LoadGame->PlayerIndex)); //载入实例
+	if (LoadGameInstance == nullptr) return;
+
+	CurrentHp = LoadGameInstance->CharacterState.CurHp;
+	MaxHp = LoadGameInstance->CharacterState.MaxHp;
+	CurrentEp = LoadGameInstance->CharacterState.CurEp;
+	MaxEp = LoadGameInstance->CharacterState.MaxEp;
+	cntCoins = LoadGameInstance->CharacterState.CoinCnt;
+
+    //进入新的关卡，并不需要载入在上个关卡的位置和旋转角度！
+	if (bLoad) {
+		SetActorLocation(LoadGameInstance->CharacterState.Location);
+		SetActorRotation(LoadGameInstance->CharacterState.Rotation);
+	}
+  }
+  ```
+
 ## 学习与交流
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">

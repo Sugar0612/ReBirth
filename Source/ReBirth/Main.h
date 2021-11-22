@@ -11,6 +11,7 @@ enum class EMovementStatus : uint8 {
 	EMS_RUNING UMETA(DeplayName = "Running"),
 	EMS_WALK UMETA(DeplayName = "Walking"),
 	EMS_Death UMETA(DeplayName = "Death"),
+	EMS_Repel UMETA(DeplayName = "Repel"),
 	EMS_LDLE UMETA(DeplayName = "LDLE")
 };
 
@@ -143,6 +144,7 @@ public:
 	FORCEINLINE AItem* GetItemOverlap() { return Overlapitem; }
 	FORCEINLINE void SetItemOverlap(AItem* SetItem) { Overlapitem = SetItem; }
 	FORCEINLINE void SetHasTarget(bool target) { HasTarget = target; }
+	FORCEINLINE void SetMovementState(EMovementStatus state) { MovementStatus = state; }
 private:
 	void MoveForward(float input);
 	void MoveRight(float input);
@@ -166,12 +168,18 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Anims")
 	class UAnimMontage* CombatMontage;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Anims")
+	UAnimMontage* RepelMontage;
+
 public:
 	//Other 一些不能分类比较特殊的函数
 
 	/* *需要在攻击的时候不让其跳跃，所以需要在Blurprint中调用 */
 	UFUNCTION(BlueprintCallable, Category = "Attack end")
 	void AttackEnd();
+
+	UFUNCTION(BlueprintCallable)
+	void RepelEnd();
 
 	void SetWeapon(AWeapon* SetWeapon);
 
@@ -199,4 +207,12 @@ public:
 
 	/* *伤害机制 */
 	virtual float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
+
+public:
+
+	UFUNCTION(BlueprintCallable)
+	void SaveGame();
+
+	UFUNCTION(BlueprintCallable)
+	void LoadGame(bool bLoad);
 };

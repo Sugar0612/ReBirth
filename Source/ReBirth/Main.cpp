@@ -2,19 +2,20 @@
 
 
 #include "Main.h"
+#include "Monster.h"
+#include "Weapon.h"
+#include "MainPlayerController.h"
+#include "SaveMyGame.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Engine/World.h"
 #include "GameFramework/CharacterMovementComponent.h"
-#include "Kismet/GameplayStatics.h"
-#include "Weapon.h"
-#include "Components/SkeletalMeshComponent.h"
 #include "Animation/AnimInstance.h"
 #include "Sound/SoundCue.h"
+#include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
-#include "Monster.h"
+#include "Components/SkeletalMeshComponent.h"
 #include "Components/CapsuleComponent.h"
-#include "MainPlayerController.h"
 
 // Sets default values
 AMain::AMain()
@@ -164,7 +165,7 @@ void AMain::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 }
 
 void AMain::MoveForward(float input) {
-	if (MovementStatus == EMovementStatus::EMS_Death) return;
+	if (MovementStatus == EMovementStatus::EMS_Death || MovementStatus == EMovementStatus::EMS_Repel) return;
 
 	if (Controller && input != 0.0f && (!bAttacking)) {
 		FRotator Rotation = Controller->GetControlRotation();
@@ -178,7 +179,7 @@ void AMain::MoveForward(float input) {
 }
 
 void AMain::MoveRight(float input) {
-	if (MovementStatus == EMovementStatus::EMS_Death) return;
+	if (MovementStatus == EMovementStatus::EMS_Death || MovementStatus == EMovementStatus::EMS_Repel) return;
 
 	if (Controller && input != 0.0f && (!bAttacking)) {
 		FRotator Rotation = Controller->GetControlRotation();
@@ -193,7 +194,7 @@ void AMain::MoveRight(float input) {
 
 void AMain::Jump()
 {
-	if (MovementStatus != EMovementStatus::EMS_Death) {
+	if (MovementStatus == EMovementStatus::EMS_Death || MovementStatus == EMovementStatus::EMS_Repel) {
 		ACharacter::Jump();
 	}
 }
@@ -210,6 +211,7 @@ void AMain::LookupAtRate(float input)
 
 /* *加速 */
 void AMain::BeginQuicken() {
+	if (MovementStatus == EMovementStatus::EMS_Death || MovementStatus == EMovementStatus::EMS_Repel) return;
 	is_quick = true;
 }
 
@@ -227,6 +229,12 @@ void AMain::HpReduce(float num)
 	if (this->CurrentHp <= 0.f) {
 		this->AIControllerClass = NULL;
 		died();
+	}
+}
+
+void AMain::RepelEnd() {
+	if (MovementStatus == EMovementStatus::EMS_Repel) {
+		SetMovementState(EMovementStatus::EMS_LDLE);
 	}
 }
 
@@ -299,6 +307,15 @@ void AMain::AttackBegin() {
 
 void AMain::AttackEnd()
 {
+	if (MovementStatus == EMovementStatus::EMS_Death || MovementStatus == EMovementStatus::EMS_Repel) {
+		bAttacking = false;
+		SetInsterToMonster(false);
+
+		/* repair bug Destroy weapon */
+		SetItemOverlap(nullptr);
+		return;
+	}
+
 	//bAttacking = false;
 	UAnimInstance* AnimInstance = this->GetMesh()->GetAnimInstance();
 
@@ -314,6 +331,8 @@ void AMain::AttackEnd()
 
 void AMain::Attack()
 {
+	if (MovementStatus == EMovementStatus::EMS_Death || MovementStatus == EMovementStatus::EMS_Repel) return;
+
 	bAttacking = true;
 	SetInsterToMonster(true);
 	/* *获取蒙太奇的实例 */
@@ -362,7 +381,45 @@ FRotator AMain::GetYawToMonster(FVector LocationToMonster)
 
 float AMain::TakeDamage(float DamageTaken, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
+	UAnimInstance* animInstance = GetMesh()->GetAnimInstance();
+	if (animInstance && CombatMontage) {
+		animInstance->Montage_Play(CombatMontage, 1.3f);
+		animInstance->Montage_JumpToSection(FName("repel"), CombatMontage);
+	}
+
 	HpReduce(DamageTaken);
 
 	return DamageTaken;
+}
+
+void AMain::SaveGame() {
+	USaveMyGame* SaveGame =  Cast<USaveMyGame>(UGameplayStatics::CreateSaveGameObject(USaveMyGame::StaticClass()));
+	SaveGame->CharacterState.CurHp = CurrentHp;
+	SaveGame->CharacterState.MaxHp = MaxHp;
+	SaveGame->CharacterState.CurEp = CurrentEp;
+	SaveGame->CharacterState.MaxEp = MaxEp;
+	SaveGame->CharacterState.CoinCnt = cntCoins;
+	SaveGame->CharacterState.Location = GetActorLocation();
+	SaveGame->CharacterState.Rotation = GetActorRotation();
+
+	UGameplayStatics::SaveGameToSlot(SaveGame, SaveGame->GameName, SaveGame->PlayerIndex);
+
+}
+
+void AMain::LoadGame(bool bLoad) {
+	USaveMyGame* LoadGame = Cast<USaveMyGame>(UGameplayStatics::CreateSaveGameObject(USaveMyGame::StaticClass()));
+	USaveMyGame* LoadGameInstance = Cast<USaveMyGame>(UGameplayStatics::LoadGameFromSlot(LoadGame->GameName, LoadGame->PlayerIndex));
+	if (LoadGameInstance == nullptr) return;
+
+	CurrentHp = LoadGameInstance->CharacterState.CurHp;
+	MaxHp = LoadGameInstance->CharacterState.MaxHp;
+	CurrentEp = LoadGameInstance->CharacterState.CurEp;
+	MaxEp = LoadGameInstance->CharacterState.MaxEp;
+	cntCoins = LoadGameInstance->CharacterState.CoinCnt;
+	if (bLoad) {
+		SetActorLocation(LoadGameInstance->CharacterState.Location);
+		SetActorRotation(LoadGameInstance->CharacterState.Rotation);
+	}
+
+
 }

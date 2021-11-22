@@ -295,7 +295,10 @@ void AMonster::AttackBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAct
 				}
 			}
 
+
+
 			if (DamageTypeClass) {
+				player->SetMovementState(EMovementStatus::EMS_LDLE);
 				UGameplayStatics::ApplyDamage(player, Attack_Power, MonsterController, this, DamageTypeClass);
 			}
 		}
@@ -304,7 +307,6 @@ void AMonster::AttackBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAct
 
 void AMonster::AttackEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	
 }
 
 
