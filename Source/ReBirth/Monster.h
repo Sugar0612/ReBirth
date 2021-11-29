@@ -12,8 +12,8 @@ enum class EMonsterState : uint8 {
 	EMS_MoveToTarget UMETA(DeplayName = "MoveToPlayer"),
 	EMS_Attacking UMETA(DeplayName = "Attack"),
 	EMS_Death UMETA(DeplayName = "Death"),
+	EMS_Repel UMETA(DeplayName = "Repel"),
 	EMS_Default UMETA(DeplayName = "Default")
-
 };
 
 UCLASS()
@@ -171,6 +171,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "")
 	class AMain* targetPlayer;
+
+	UFUNCTION(BlueprintCallable)
+	void EndRepel();
 
 	void DestroyActor() { this->Destroy(); }
 };

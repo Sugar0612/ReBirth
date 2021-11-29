@@ -7,4 +7,6 @@ USaveMyGame::USaveMyGame() {
 	GameName = TEXT("Default");
 
 	PlayerIndex = 0;
+
+	CharacterState.SName = TEXT("");
 }

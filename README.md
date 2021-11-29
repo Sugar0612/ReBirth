@@ -260,6 +260,25 @@
 	}
   }
   ```
+- 暂停窗口。和之前的HUD窗口一样，都在 `PlayerController` 中设置，不同的是如何更美观的显示HUD窗口至关重要，你可以在HUD的蓝图类中，设计他的动画，并在 `PlayController` 中实现在窗口窗口打开/关闭的同时，调用HUD动画。  
+  不同的是, 在蓝图中调用的是c++实现过函数(但是在蓝图中叫做事件)。我们要实现不同的功能，所以必须在`.cpp`文件中C++函数末尾加上`_Implementation`可以实现类似于父类重写的效果。当然你也需要在蓝图中实现父类的调用。  
+  ![image](https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Implementation.png)  
+  下面是关于鼠标的交互与隐藏，很简单就不过多的描述了：
+  ```cpp
+  /* *打开鼠标的交互 */
+  FInputModeGameAndUI InputModeGameAndUI;
+  SetInputMode(InputModeGameAndUI);
+
+  /* *显示鼠标 */
+  bShowMouseCursor = true;
+
+  /* *关闭鼠标的交互 */
+  FInputModeGameOnly InputModeGameOnly;
+  SetInputMode(InputModeGameOnly);
+
+  /* *关闭鼠标 */
+  bShowMouseCursor = false;
+  ```
 
 ## 学习与交流
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">

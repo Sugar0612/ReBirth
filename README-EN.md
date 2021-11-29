@@ -265,5 +265,26 @@ Currently, C++ development is the main focus.
     }
   }
   ```
+
+- Pause the window. Like the previous HUD windows, they are all set in `PlayerController`. The difference is how to display the HUD window more beautifully is very important. You can design its animation in the HUD blueprint class and implement it in `PlayController` At the same time the window is opened/closed, the HUD animation is called.  
+  The difference is that C++ implemented functions are called in the blueprint (but called events in the blueprint). We want to implement different functions, so we must add `_Implementation` at the end of the C++ function in the `.cpp` file to achieve an effect similar to the rewriting of the parent class. Of course, you also need to implement the call of the parent class in the blueprint.  
+  ![image](https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Implementation.png) 
+  The following is about the interaction and hiding of the mouse, it is very simple and not too much description:  
+
+  ```cpp
+  /* *Open mouse interaction */
+  FInputModeGameAndUI InputModeGameAndUI;
+  SetInputMode(InputModeGameAndUI);
+
+  /* *Display mouse */
+  bShowMouseCursor = true;
+
+  /* *Turn off mouse interaction */
+  FInputModeGameOnly InputModeGameOnly;
+  SetInputMode(InputModeGameOnly);
+
+  /* *Turn off the mouse */
+  bShowMouseCursor = false;
+  ```
 ## Learning and Communication
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">

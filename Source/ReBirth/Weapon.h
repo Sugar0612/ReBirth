@@ -24,6 +24,10 @@ class REBIRTH_API AWeapon : public AItem
 	GENERATED_BODY()
 
 public:
+	/* *Weapon's save Name. */
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Save Name Of Weapon")
+	FString SaveName;
+
 	/* *ÎäÆ÷×´Ì¬ */
 	EWeaponStatus WeaponStatus;
 

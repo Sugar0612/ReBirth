@@ -20,17 +20,33 @@ public:
 	TSubclassOf<class UUserWidget> OverlayWidgetAsset;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
-	class UUserWidget* HUDOverlay;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
 	TSubclassOf<UUserWidget> MonsterHpWidget;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
-	class UUserWidget* MonsterHpBar;
+	TSubclassOf<UUserWidget> PauseWidget;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
+	class UUserWidget* HUDOverlay;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
+	UUserWidget* MonsterHpBar;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
+	UUserWidget* PauseWidgetBar;
 
 	bool bshowHpBar;
 	void ShowHpBar();
 	void HideHpBar();
+
+	bool bshowPauseBar;
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "HUD")
+	void ShowPauseBar();
+
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "HUD")
+	void HidePauseBar();
+
+	void TogglePauseWidget();
 
 	FVector showLocation;
 

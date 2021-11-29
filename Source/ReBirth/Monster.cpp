@@ -44,7 +44,7 @@ AMonster::AMonster()
 
 	/* *¹¥»÷¼ä¸ôÊ±¼ä */
 	AttackBetweenTime_min = 1.0f;
-	AttackBetweenTime_max = 2.5f;
+	AttackBetweenTime_max = 2.0f;
 
 	MonsterState = EMonsterState::EMS_Ldle;
 
@@ -106,26 +106,26 @@ void AMonster::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void AMonster::ViewBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	if(OtherActor) {
+	/*if(OtherActor) {
 		AMain* player = Cast<AMain>(OtherActor);
 		if (player) {
 			if (player->PlayerController) {
 				player->PlayerController->ShowHpBar();
 			}
 		}
-	}
+	}*/
 }
 
 void AMonster::ViewEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) 
 {
-	if (OtherActor) {
+	/*if (OtherActor) {
 		AMain* player = Cast<AMain>(OtherActor);
 		if (player) {
 			if (player->PlayerController) {
 				player->PlayerController->HideHpBar();
 			}
 		}
-	}
+	}*/
 }
 
 //void AMonster::GoToTarget(AMain* target)
@@ -192,7 +192,9 @@ void AMonster::CombetEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor
 void AMonster::Attack() {
 
 	bAttacking = true;
+	if (MonsterState == EMonsterState::EMS_Death) return;
 
+	SetMonsterState(EMonsterState::EMS_Attacking);
 	if (MonsterController && (MonsterState != EMonsterState::EMS_Death)) {
 		MonsterController->StopMovement();
 		SetMonsterState(EMonsterState::EMS_Attacking);
@@ -268,11 +270,22 @@ void AMonster::EndDeathMontage()
 
 float AMonster::TakeDamage(float DamageTaken, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
 {
+	SetMonsterState(EMonsterState::EMS_Repel);
+	UAnimInstance* MonsterAnim = GetMesh()->GetAnimInstance();
+	if (MonsterAnim && MonsterMontage) {
+		MonsterAnim->Montage_Play(MonsterMontage, 1.3f);
+		MonsterAnim->Montage_JumpToSection(FName("repel"), MonsterMontage);
+	}
+	GetWorldTimerManager().ClearTimer(AttackTimer);
 	ReduceHp(DamageTaken);
 
 	return DamageTaken;
 }
 
+void AMonster::EndRepel() {
+	
+	Attack();
+}
 
 void AMonster::AttackBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {

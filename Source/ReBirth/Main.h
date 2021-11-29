@@ -39,6 +39,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Items | Weapon")
 	class AWeapon* equipWeapon;
 
+	/* *Save Weapon in Game */
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Save Weapon")
+	TSubclassOf<class AActorStorage> SaveWeapon;
+
 	/* *×°±¸ÖØµþ */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Items | Item")
 	class AItem* Overlapitem;
@@ -155,12 +159,16 @@ private:
 	void PickUpWeapon();
 	void DropWeapon();
 	void AttackBegin();
+	void ShowPauseWidget();
+	void QuitPauseWidget();
 public:
 	bool is_quick = false;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Attack")
 	bool bAttacking = false;
-
+	
+	bool bShowEsc;
+	void FilpBool(bool&);
 public:
 
 	void Attack();

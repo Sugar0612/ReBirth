@@ -30,6 +30,9 @@ struct FCharacterState {
 	int32 CoinCnt;
 
 	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+	FString SName;
+
+	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
 	FVector Location;
 
 	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")

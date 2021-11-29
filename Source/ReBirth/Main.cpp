@@ -16,6 +16,7 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "ActorStorage.h"
 
 // Sets default values
 AMain::AMain()
@@ -72,6 +73,9 @@ AMain::AMain()
 
 	/* *是否有对战角色 */
 	HasTarget = false;
+
+	/* *是否显示暂停菜单 */
+	bShowEsc = false;
 
 	//获取玩家控制器
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
@@ -162,6 +166,9 @@ void AMain::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 	PlayerInputComponent->BindAction("attack", IE_Pressed, this, &AMain::AttackBegin);
 	PlayerInputComponent->BindAction("attack", IE_Released, this, &AMain::AttackEnd);
+
+	PlayerInputComponent->BindAction("ESC", IE_Pressed, this, &AMain::ShowPauseWidget);
+	PlayerInputComponent->BindAction("ESC", IE_Released, this, &AMain::QuitPauseWidget);
 }
 
 void AMain::MoveForward(float input) {
@@ -194,7 +201,7 @@ void AMain::MoveRight(float input) {
 
 void AMain::Jump()
 {
-	if (MovementStatus == EMovementStatus::EMS_Death || MovementStatus == EMovementStatus::EMS_Repel) {
+	if (MovementStatus != EMovementStatus::EMS_Death || MovementStatus != EMovementStatus::EMS_Repel) {
 		ACharacter::Jump();
 	}
 }
@@ -399,6 +406,11 @@ void AMain::SaveGame() {
 	SaveGame->CharacterState.CurEp = CurrentEp;
 	SaveGame->CharacterState.MaxEp = MaxEp;
 	SaveGame->CharacterState.CoinCnt = cntCoins;
+
+	if (equipWeapon != nullptr) {
+		SaveGame->CharacterState.SName = equipWeapon->SaveName;
+	}
+
 	SaveGame->CharacterState.Location = GetActorLocation();
 	SaveGame->CharacterState.Rotation = GetActorRotation();
 
@@ -416,10 +428,49 @@ void AMain::LoadGame(bool bLoad) {
 	CurrentEp = LoadGameInstance->CharacterState.CurEp;
 	MaxEp = LoadGameInstance->CharacterState.MaxEp;
 	cntCoins = LoadGameInstance->CharacterState.CoinCnt;
+
+	if (SaveWeapon) {
+		/* *生成AActor 需要在世界中生成. */
+		AActorStorage* WeaponStorage = GetWorld()->SpawnActor<AActorStorage>(SaveWeapon);
+		if (WeaponStorage) {
+			FString LoadName = LoadGameInstance->CharacterState.SName;
+			if (WeaponStorage->WeaponMap.Contains(LoadName)) {
+				AWeapon* LoadWeapon = GetWorld()->SpawnActor<AWeapon>(WeaponStorage->WeaponMap[LoadName]);
+				LoadWeapon->equipWeapon(this);
+			}
+		}
+	}
+
 	if (bLoad) {
 		SetActorLocation(LoadGameInstance->CharacterState.Location);
 		SetActorRotation(LoadGameInstance->CharacterState.Rotation);
 	}
+}
 
 
+void AMain::ShowPauseWidget() {
+	FilpBool(bShowEsc);
+	if (bShowEsc) {
+		if (PlayerController) {
+			PlayerController->TogglePauseWidget();
+		}
+	}
+	else {
+		if (PlayerController) {
+			PlayerController->TogglePauseWidget();
+		}
+	}
+}
+
+void AMain::QuitPauseWidget() {
+
+}
+
+void AMain::FilpBool(bool& b) {
+	if (b == true) {
+		b = false;
+	}
+	else {
+		b = true;
+	}
 }

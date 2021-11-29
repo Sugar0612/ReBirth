@@ -24,10 +24,19 @@ void AMainPlayerController::BeginPlay() {
 		MonsterHpBar = CreateWidget<UUserWidget>(this, MonsterHpWidget);
 		if (MonsterHpBar) {
 			MonsterHpBar->AddToViewport();
-			MonsterHpBar->SetVisibility(ESlateVisibility::Visible);
+			MonsterHpBar->SetVisibility(ESlateVisibility::Hidden);
 		}
 		FVector2D Alignment(0.f, 0.f);
 		MonsterHpBar->SetAlignmentInViewport(Alignment);
+	}
+
+
+	if (PauseWidget) {
+		PauseWidgetBar = CreateWidget<UUserWidget>(this, PauseWidget);
+		if (PauseWidgetBar) {
+			PauseWidgetBar->AddToViewport();
+			PauseWidgetBar->SetVisibility(ESlateVisibility::Hidden);
+		}
 	}
 
 }
@@ -61,5 +70,46 @@ void AMainPlayerController::HideHpBar() {
 	if (MonsterHpBar) {
 		bshowHpBar = false;
 		MonsterHpBar->SetVisibility(ESlateVisibility::Hidden);
+	}
+}
+
+
+void AMainPlayerController::ShowPauseBar_Implementation() {
+	if (PauseWidgetBar) {
+		bshowPauseBar = true;
+		PauseWidgetBar->SetVisibility(ESlateVisibility::Visible);
+
+		/* *打开鼠标的交互 */
+		FInputModeGameAndUI InputModeGameAndUI;
+		SetInputMode(InputModeGameAndUI);
+
+		/* *显示鼠标 */
+		bShowMouseCursor = true;
+	}
+}
+
+void AMainPlayerController::HidePauseBar_Implementation() {
+	if (PauseWidgetBar) {
+		bshowPauseBar = false;
+		PauseWidgetBar->SetVisibility(ESlateVisibility::Hidden);
+
+		/* *关闭鼠标的交互 */
+
+		FInputModeGameOnly InputModeGameOnly;
+		SetInputMode(InputModeGameOnly);
+
+		/* *关闭鼠标 */
+		bShowMouseCursor = false;
+	}
+}
+
+
+void AMainPlayerController::TogglePauseWidget()
+{
+	if (!bshowPauseBar) {
+		ShowPauseBar();
+	}
+	else {
+		HidePauseBar();
 	}
 }
