@@ -82,7 +82,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Has Target Monster")
 	bool HasTarget;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player Controller")
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Player Controller")
 	class AMainPlayerController* PlayerController;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Monster Location")
@@ -223,4 +223,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void LoadGame(bool bLoad);
+
+	UFUNCTION()
+	bool CanMove();
+
+	void SwitchLeven(FName nextLeven);
 };

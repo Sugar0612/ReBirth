@@ -286,5 +286,19 @@ Currently, C++ development is the main focus.
   /* *Turn off the mouse */
   bShowMouseCursor = false;
   ```
+
+- Level transfer. The principle is very simple. You need to create a class `LevenSend` that inherits `AActor`, create a `UBoxComponent` in the class, let the box detect collision and call the function and switch the level.
+  ```cpp
+  void AMain::SwitchLeven(FName nextLeven)
+  {
+    UWorld* world = GetWorld();
+    FString curName = world->GetMapName();
+    FName CurrentName(curName);
+    if (CurrentName != nextLeven) {
+      UGameplayStatics::OpenLevel(world, nextLeven);
+    }
+  }
+  ```
+  Need to pass in a `FName` which is the name of the next level, then we need to create a `FName` in `LevenSend` and let him customize it in the blueprint.
 ## Learning and Communication
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">

@@ -38,7 +38,7 @@ AMonster::AMonster()
 	/* View Box */
 	ViewBox = CreateDefaultSubobject<USphereComponent>(TEXT("View  Limite"));
 	ViewBox->SetupAttachment(GetRootComponent());
-	ViewBox->InitSphereRadius(400.f);
+	ViewBox->InitSphereRadius(4000.f);
 
 	bAttacking = false;
 
@@ -95,6 +95,13 @@ void AMonster::Tick(float DeltaTime)
 			MonsterController->StopMovement();
 		}
 	}
+
+	if (targetPlayer) {
+		if (targetPlayer->PlayerController->bshowPauseBar) {
+			UE_LOG(LogTemp, Warning, TEXT("target HUD is true!"));
+			MonsterController->StopMovement();
+		}
+	}
 }
 
 // Called to bind functionality to input
@@ -106,14 +113,9 @@ void AMonster::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void AMonster::ViewBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	/*if(OtherActor) {
-		AMain* player = Cast<AMain>(OtherActor);
-		if (player) {
-			if (player->PlayerController) {
-				player->PlayerController->ShowHpBar();
-			}
-		}
-	}*/
+	if(OtherActor) {
+		targetPlayer = Cast<AMain>(OtherActor);
+	}
 }
 
 void AMonster::ViewEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) 
@@ -127,20 +129,6 @@ void AMonster::ViewEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* 
 		}
 	}*/
 }
-
-//void AMonster::GoToTarget(AMain* target)
-//{
-//
-//	if (MonsterController && (MonsterState == EMonsterState::EMS_MoveToTarget)) {
-//		FAIMoveRequest MoveRequest;
-//		MoveRequest.SetGoalActor(target);
-//		MoveRequest.SetAcceptanceRadius(10.f);
-//
-//		FNavPathSharedPtr NavPath;
-//
-//		MonsterController->MoveTo(MoveRequest, &NavPath);
-//	}
-//}
 
 void AMonster::CombetBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
@@ -240,6 +228,7 @@ void AMonster::ReduceHp(float num)
 
 void AMonster::death() {
 	UAnimInstance* MonsterAnim = GetMesh()->GetAnimInstance();
+	MonsterController->StopMovement();
 	if (MonsterAnim && MonsterMontage) {
 		MonsterAnim->Montage_Play(MonsterMontage, 1.3f);
 		MonsterAnim->Montage_JumpToSection("death", MonsterMontage);
@@ -304,6 +293,8 @@ void AMonster::AttackBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAct
 				//UE_LOG(LogTemp, Warning, TEXT(" Blood Socket Begin Blood! "));
 				if (HandSocket) {
 					FVector SocketLocation = HandSocket->GetSocketLocation(GetMesh());
+
+					/* *粒子系统生成 */
 					UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), player->BloodParticles, SocketLocation, FRotator(0.f), false);
 				}
 			}
@@ -311,7 +302,7 @@ void AMonster::AttackBeginOverlap(UPrimitiveComponent* OverlappedComponent, AAct
 
 
 			if (DamageTypeClass) {
-				player->SetMovementState(EMovementStatus::EMS_LDLE);
+				player->SetMovementState(EMovementStatus::EMS_Repel);
 				UGameplayStatics::ApplyDamage(player, Attack_Power, MonsterController, this, DamageTypeClass);
 			}
 		}

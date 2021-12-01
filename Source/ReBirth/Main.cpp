@@ -172,7 +172,8 @@ void AMain::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 }
 
 void AMain::MoveForward(float input) {
-	if (MovementStatus == EMovementStatus::EMS_Death || MovementStatus == EMovementStatus::EMS_Repel) return;
+
+	if (!CanMove()) return;
 
 	if (Controller && input != 0.0f && (!bAttacking)) {
 		FRotator Rotation = Controller->GetControlRotation();
@@ -186,7 +187,7 @@ void AMain::MoveForward(float input) {
 }
 
 void AMain::MoveRight(float input) {
-	if (MovementStatus == EMovementStatus::EMS_Death || MovementStatus == EMovementStatus::EMS_Repel) return;
+	if (!CanMove()) return;
 
 	if (Controller && input != 0.0f && (!bAttacking)) {
 		FRotator Rotation = Controller->GetControlRotation();
@@ -201,7 +202,7 @@ void AMain::MoveRight(float input) {
 
 void AMain::Jump()
 {
-	if (MovementStatus != EMovementStatus::EMS_Death || MovementStatus != EMovementStatus::EMS_Repel) {
+	if (CanMove()) {
 		ACharacter::Jump();
 	}
 }
@@ -266,7 +267,7 @@ void AMain::EndDeath() {
 	GetMesh()->bNoSkeletonUpdate = true;
 
 	float DeathTime = 3.f;
-	GetWorldTimerManager().SetTimer(DeathHandle, this, &AMain::DestroyActor, DeathTime);
+	//GetWorldTimerManager().SetTimer(DeathHandle, this, &AMain::DestroyActor, DeathTime);
 }
 
 void AMain::DestroyActor() {
@@ -307,7 +308,7 @@ void AMain::DropWeapon() {
 }
 
 void AMain::AttackBegin() {
-	if (equipWeapon && !bAttacking) {
+	if (equipWeapon && !bAttacking && CanMove()) {
 		Attack();
 	}
 }
@@ -327,7 +328,6 @@ void AMain::AttackEnd()
 	UAnimInstance* AnimInstance = this->GetMesh()->GetAnimInstance();
 
 	if (AnimInstance->Montage_GetIsStopped(CombatMontage)) {
-		UE_LOG(LogTemp, Warning, TEXT("Attacking end!"));
 		bAttacking = false;
 		SetInsterToMonster(false);
 
@@ -338,7 +338,7 @@ void AMain::AttackEnd()
 
 void AMain::Attack()
 {
-	if (MovementStatus == EMovementStatus::EMS_Death || MovementStatus == EMovementStatus::EMS_Repel) return;
+	if (!CanMove()) return;
 
 	bAttacking = true;
 	SetInsterToMonster(true);
@@ -445,6 +445,10 @@ void AMain::LoadGame(bool bLoad) {
 		SetActorLocation(LoadGameInstance->CharacterState.Location);
 		SetActorRotation(LoadGameInstance->CharacterState.Rotation);
 	}
+
+	SetMovementState(EMovementStatus::EMS_LDLE);
+	GetMesh()->bPauseAnims = false;
+	GetMesh()->bNoSkeletonUpdate = false;
 }
 
 
@@ -472,5 +476,26 @@ void AMain::FilpBool(bool& b) {
 	}
 	else {
 		b = true;
+	}
+}
+
+bool AMain::CanMove() {
+	if (PlayerController) {
+		return (MovementStatus != EMovementStatus::EMS_Death) &&
+			(MovementStatus != EMovementStatus::EMS_Repel) && (!bAttacking) &&
+			(!PlayerController->bshowPauseBar);
+	} 
+	else {
+		return false;
+	}
+}
+
+void AMain::SwitchLeven(FName nextLeven)
+{
+	UWorld* world = GetWorld();
+	FString curName = world->GetMapName();
+	FName CurrentName(curName);
+	if (CurrentName != nextLeven) {
+		UGameplayStatics::OpenLevel(world, nextLeven);
 	}
 }

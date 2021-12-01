@@ -279,6 +279,18 @@
   /* *关闭鼠标 */
   bShowMouseCursor = false;
   ```
-
+- 关卡传送。原理很简单，需要创建一个继承 `AActor`的类 `LevenSend`，在类中创建 `UBoxComponent`，让盒子检测碰撞发生碰撞调用函数，切换关卡。
+  ```cpp
+  void AMain::SwitchLeven(FName nextLeven)
+  {
+	UWorld* world = GetWorld();
+	FString curName = world->GetMapName();
+	FName CurrentName(curName);
+	if (CurrentName != nextLeven) {
+		UGameplayStatics::OpenLevel(world, nextLeven);
+	}
+  }
+  ```
+  需要传入一个 `FName` 他是下一个关卡的名字，那么我们需要在 `LevenSend`中创建一个 `FName`，让他在蓝图中自定义修改。
 ## 学习与交流
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">
