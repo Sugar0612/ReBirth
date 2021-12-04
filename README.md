@@ -100,14 +100,8 @@
   ```
 - Ai跟随/自动攻击 利用 `黑板 + 行为树 + AIContorller` 来实现AI的随机找点和看见玩家追击动作。在黑板中创建你需要的变量，变量是用来在行为树中进行 `Selector` 判断的，需要将
   黑板的变量附加在属性为 `Both` 的不同的 `Sequence` 上面来实现不同的 `Task` (你需要在行为树中自己去 `New Task`)。在AIController中首先需要设置Ai感知器官 `Ai Perception`
-  为 `AI Sight Config`，接着在Blueprint中：
-  ```cpp
-  Event BeginPlay -> Run Behavior Tree
-  Event On Target Perception Updated -> Cast To Main_BP -> Set View as Bool 
-  (Set View as Bool.Target = Get Blackboard, Set View as Bool.Keyname = Make Litera Name(is_viewPlayer)) 
-  (Event On Target Perception Updated.Stimulus = Break AIStimulus.AIStimulus)
-  (Break AIStimulus.Successfully_Sensed = Set View as Bool.Bool Value)
-  ```
+  为 `AI Sight Config`，接着在Blueprint中：  
+  ![image](https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/aiController.png)  
   最后只需要在Monster_BP中设置 `AI Controller Class => AIController`，就可以实现你想要的动作了。 
   对于攻击动作的触发，我是选择在C++中设置盒子碰撞，并且创建了敌人的emun状态：
   ```cpp
