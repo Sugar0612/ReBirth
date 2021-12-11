@@ -26,6 +26,9 @@ public:
 	TSubclassOf<UUserWidget> PauseWidget;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
+	TSubclassOf<UUserWidget> BeginPlayWidget;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
 	class UUserWidget* HUDOverlay;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
@@ -34,17 +37,27 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
 	UUserWidget* PauseWidgetBar;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widgets")
+	UUserWidget* BeginPlayBar;
+
 	bool bshowHpBar;
 	void ShowHpBar();
 	void HideHpBar();
 
 	bool bshowPauseBar;
+	bool bCanMove;
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "HUD")
 	void ShowPauseBar();
 
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "HUD")
 	void HidePauseBar();
+
+	UFUNCTION(BlueprintCallable)
+	void BeginPlayGame();
+
+	UFUNCTION(BlueprintCallable)
+	void QuitPlayGame();
 
 	void TogglePauseWidget();
 

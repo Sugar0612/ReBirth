@@ -3,10 +3,15 @@
 
 #include "MainPlayerController.h"
 #include "Blueprint/UserWidget.h"
+#include "Engine/World.h"
+#include "Kismet/GameplayStatics.h"
+#include "Engine/World.h"
 
 void AMainPlayerController::BeginPlay() {
 
 	Super::BeginPlay();
+
+	bCanMove = false;
 
 	/* 如果你调用了 HUD的模板类 那么将HUDWidget 输出到平面上 */
 	if (OverlayWidgetAsset) {
@@ -36,6 +41,14 @@ void AMainPlayerController::BeginPlay() {
 		if (PauseWidgetBar) {
 			PauseWidgetBar->AddToViewport();
 			PauseWidgetBar->SetVisibility(ESlateVisibility::Hidden);
+		}
+	}
+
+	if (BeginPlayWidget) {
+		BeginPlayBar = CreateWidget<UUserWidget>(this, BeginPlayWidget);
+		if (BeginPlayBar) {
+			BeginPlayBar->AddToViewport();
+			BeginPlayBar->SetVisibility(ESlateVisibility::Visible);
 		}
 	}
 
@@ -75,6 +88,9 @@ void AMainPlayerController::HideHpBar() {
 
 
 void AMainPlayerController::ShowPauseBar_Implementation() {
+	UWorld* World = GetWorld();
+	UGameplayStatics::SetGamePaused(World, true);
+
 	if (PauseWidgetBar) {
 		bshowPauseBar = true;
 		PauseWidgetBar->SetVisibility(ESlateVisibility::Visible);
@@ -89,6 +105,9 @@ void AMainPlayerController::ShowPauseBar_Implementation() {
 }
 
 void AMainPlayerController::HidePauseBar_Implementation() {
+	UWorld* World = GetWorld();
+	UGameplayStatics::SetGamePaused(World, false);
+
 	if (PauseWidgetBar) {
 		bshowPauseBar = false;
 		PauseWidgetBar->SetVisibility(ESlateVisibility::Hidden);
@@ -103,7 +122,6 @@ void AMainPlayerController::HidePauseBar_Implementation() {
 	}
 }
 
-
 void AMainPlayerController::TogglePauseWidget()
 {
 	if (!bshowPauseBar) {
@@ -112,4 +130,16 @@ void AMainPlayerController::TogglePauseWidget()
 	else {
 		HidePauseBar();
 	}
+}
+
+void AMainPlayerController::BeginPlayGame()
+{
+	if (BeginPlayBar) {
+		BeginPlayBar->SetVisibility(ESlateVisibility::Hidden);
+		bCanMove = true;
+	}
+}
+
+void AMainPlayerController::QuitPlayGame() {
+
 }

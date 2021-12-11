@@ -1,132 +1,139 @@
 # Unreal - ReBirth
-  简体中文 | [English](./README-EN.md)  
-  这是一款独立开发的游戏，目的是为了入门虚化4游戏引擎，更好的兼容BluePrint 与 C++的ue4开发，让我们懂得什么时候使用BluePrint进行开发，什么时候使用C++开发虚幻4。
-  这是一件非常有意思的事情。当然你可以:
-  `git clone https://github.com/Sugar0612/ReBirth.git` 或者 `git clone git@github.com:Sugar0612/ReBirth.git`来获取源码。
-  
-  ![image](https://img.shields.io/badge/Base-ue4-blue.svg)   ![image](https://img.shields.io/badge/Language-c++-orange.svg)
-  
-## 目前的进程
+ English | [简体中文](./README-CN.md)  
+ This is an independently developed game. The purpose is to get started with the virtual 4 game engine, and better compatible with BluePrint and C++ ue4 development. Let us know when to use BluePrint to develop and when to use C++ to develop Unreal 4.
+ This is a very interesting thing. Of course you can:
+ `git clone https://github.com/Sugar0612/ReBirth.git` or `git clone git@github.com:Sugar0612/ReBirth.git` to get the source code.
 
-这是我在学习使用C++/BluePrint开发的时候的最近Demo。
+ ![image](https://img.shields.io/badge/Base-ue4-blue.svg)   ![image](https://img.shields.io/badge/Language-c++-orange.svg)
+
+## Current process
+
+This is the most recent demo when I was learning to develop with C++/BluePrint.
 ![image](https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/ue4.gif)
 
-## 目前涉及的一些有意思的功能
+## Some interesting functions currently involved
 
-目前还是以C++开发为主。
-- 关于各种组件的使用与声明 (UStaticMeshComponent, UCameraComponent, USphereComponent, UParticleSystemComponent...)，他们都需要
-    ```cpp 
-    CreateDefaultSubObject<class* T>(TEXT());
-    ``` 
-    来进行创建声明，也都需要 
-    ```cpp
-    SetupAttachment(GetComponent());
-    ``` 
-    来依赖于根组件，值得注意的是碰撞组件一般都会成为根组件即:
-    ```cpp
-    RootComponent = CollisionComponent;
-    ```
-- Tick函数 与 BeginPlay函数的使用 与 重写，重写一般的模板 `virtual T function() override;`
-- 对于人物控制的一些机制: 继承APawn / ACharacter 来使用函数 
-    ```cpp 
-    SetupPlayerInputComponent(UInputComponent* PlayerInputComponent);
-    ```
-- 盒子的碰撞机制 
-    ```cpp
-    void T::BeginPlay() {
-    /* trigger Box Bind Function */
-      TriggerBox->OnComponentBeginOverlap.AddDynamic(this, &T::BeginOverlap);
-      TriggerBox->OnComponentEndOverlap.AddDynamic(this, &T::EndOverlap);
-    }
-    ```
-  当然你也需要重写 BeginOverlap 和 EndOverlap
+Currently, C++ development is the main focus.
+- Regarding the use and declaration of various components (UStaticMeshComponent, UCameraComponent, USphereComponent, UParticleSystemComponent...), they all need
   ```cpp
-    UFUNCTION()
-    void BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
-    UFUNCTION()
-    void EndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+  CreateDefaultSubObject<class* T>(TEXT());
   ```
-- HUD窗口实现他在我的`MainPlayerController`中添加到游戏窗口的，并且在游戏模式`Player Controller Class`中设置他。
-- 动画蓝图 继承与于 `UAnimInstance`, 定义一个函数
-    ```cpp
-    UFUNCTION(BlueprintCallable, Category = Animations)
-    void UpdateAnimation();
-    ```
-  在里面写一些动作的机制从而让每个动作之间切换有判断的标准，再次之前在蓝图中用 `Event Blueprint Update Animation`来调用他。
-- 武器装备 继承于 `AItem` 我让他专门为新的场景物体提供最基本的功能，如：粒子特效，MeshComponent，我们需要在人物骨架中提前添加好 `Socket` 这将成为武器插入的槽点。
-  我们将定义对应的骨骼控件，用来载入武器模型
+  To create a statement, you also need
   ```cpp
-  /* *武器骨骼控件 */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Skeletal")
-	class USkeletalMeshComponent* SkeletalComponent;
+  SetupAttachment(GetComponent());
   ```
-  创建后我们将武器插入槽中
+  To rely on the root component, it is worth noting that the collision component generally becomes the root component, namely:
+  ```cpp
+  RootComponent = CollisionComponent;
+  ```
+
+- Use and rewrite of Tick function and BeginPlay function, rewrite the general template `virtual T function() override;`
+
+- Some mechanisms for character control: inherit APawn / ACharacter to use functions
+  ```cpp
+  SetupPlayerInputComponent(UInputComponent* PlayerInputComponent);
+  ```
+- Box collision mechanism
+  ```cpp
+  void T::BeginPlay() {
+  /* trigger Box Bind Function */
+     TriggerBox->OnComponentBeginOverlap.AddDynamic(this, &T::BeginOverlap);
+     TriggerBox->OnComponentEndOverlap.AddDynamic(this, &T::EndOverlap);
+  }
+  ```
+  Of course you also need to rewrite BeginOverlap and EndOverlap
+  ```cpp
+  UFUNCTION()
+  void BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+  UFUNCTION()
+  void EndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+  ```
+- HUD window realizes what he added to the game window in my `MainPlayerController`, and set him in the game mode `Player Controller Class`.
+
+- Animation blueprint inherit from `UAnimInstance`, define a function
+  ```cpp
+  UFUNCTION(BlueprintCallable, Category = Animations)
+  void UpdateAnimation();
+  ```
+  Write some action mechanisms in it so that there are judging criteria for switching between each action. Again, use the `Event Blueprint Update Animation` to call it in the blueprint before.
+
+- Weapon equipment is inherited from `AItem`. I asked him to provide the most basic functions for new scene objects, such as particle effects and MeshComponent. We need to add `Socket` to the character skeleton in advance. This will become the slot for weapon insertion .
+  We will define the corresponding bone control to load the weapon model
+  ```cpp
+  /* *Weapon bone control */
+  UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Skeletal")
+  class USkeletalMeshComponent* SkeletalComponent;
+  ```
+
+  After creation, we insert the weapon into the slot
   ```cpp
   void AWeapon::equipWeapon(AMain* player) {
-       /* *忽略某些类型的碰撞 */
-       SkeletalComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
-       SkeletalComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Ignore);
-       SkeletalComponent->SetSimulatePhysics(false);
+      /* *Ignore certain types of collisions */
+      SkeletalComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_Camera, ECollisionResponse::ECR_Ignore);
+      SkeletalComponent->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Ignore);
+      SkeletalComponent->SetSimulatePhysics(false);
 
-       /* *获得拿武器的槽口 */
-       const USkeletalMeshSocket* WeaponSocket = player->GetMesh()->GetSocketByName("WeaponSocket");
-       if (WeaponSocket) {
+      /* *Get a weapon slot */
+      const USkeletalMeshSocket* WeaponSocket = player->GetMesh()->GetSocketByName("WeaponSocket");
+      if (WeaponSocket) {
+ 
+  /* *If the acquisition is successful, attach it to the slot */
+      WeaponSocket->AttachActor(this, player->GetMesh());
+      }
+  }
+  ```
+- Montage animation summarizes the basic steps:
+  ``
+      1. Create
+      2. Drag in the animation
+      3. Segmentation
+      4. Create slot:'combet'
+  ``
+  The next step is the setting of AnimInstance_BP. 
+  ![image](https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/montage.png)
+  Then modify the state machine according to different standards. Regarding the definition and use of Montage in C++:
+  Define montage:
+  ```cpp
+  UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Anims")
+  class UAnimMontage* CombatMontage;
+  ```
+  Call the animation of different fragments:
+  ```cpp
+  /* *Get examples of montage */
+  UAnimInstance* AnimInstance = this->GetMesh()->GetAnimInstance();
+  AnimInstance->Montage_Play(CombatMontage, 1.2f);
+  AnimInstance->Montage_JumpToSection(FName("NAME"), CombatMontage);
+  ```
 
-	       /* *如果获取成功那么附加在插槽上 */
-       		WeaponSocket->AttachActor(this, player->GetMesh());
-       }
-   }
-  ```
-- Montage动画 总结了一下基本步骤：
-    ``
-    1.创建
-    2.拖入动画
-    3.分段
-    4.创建 slot: 'combet'
-    ``
-  下来就是对 AnimInstance_BP 的设定，需要将 `State Machine` -> `StateMacheCached`, `Use 'StateMacheCached'` -> `Slot 'combet'` -> `Output Pose`,
-  再按不同的标准对状态机进行修改。关于Montage在c++中的定义与使用:
-  定义蒙太奇：
-  ```cpp
-    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Anims")
-    class UAnimMontage* CombatMontage;
-  ```
-  调用不同片段的动画：
-  ```cpp
-    /* *获取蒙太奇的实例 */
-	UAnimInstance* AnimInstance = this->GetMesh()->GetAnimInstance();
-    AnimInstance->Montage_Play(CombatMontage, 1.2f);
-	AnimInstance->Montage_JumpToSection(FName("NAME"), CombatMontage);
-  ```
-- Ai跟随/自动攻击 利用 `黑板 + 行为树 + AIContorller` 来实现AI的随机找点和看见玩家追击动作。在黑板中创建你需要的变量，变量是用来在行为树中进行 `Selector` 判断的，需要将
-  黑板的变量附加在属性为 `Both` 的不同的 `Sequence` 上面来实现不同的 `Task` (你需要在行为树中自己去 `New Task`)。在AIController中首先需要设置Ai感知器官 `Ai Perception`
-  为 `AI Sight Config`，接着在Blueprint中：  
+- Ai follow/auto attack Use `blackboard + behavior tree + AIContorller` to realize AI's random finding point and see the player's chasing action. Create the variables you need in the blackboard. Variables are used to make `Selector` judgments in the behavior tree. You need to change
+  The variables of the blackboard are attached to different `Sequence` with the attribute `Both` to implement different `Task` (you need to go to `New Task` in the behavior tree).  In AIController, you first need to set up the Ai Perception organ `Ai Perception`
+  For `AI Sight Config`, then in Blueprint:  
   ![image](https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/aiController.png)  
-  最后只需要在Monster_BP中设置 `AI Controller Class => AIController`，就可以实现你想要的动作了。 
-  对于攻击动作的触发，我是选择在C++中设置盒子碰撞，并且创建了敌人的emun状态：
+  Finally, you only need to set `AI Controller Class => AIController` in Monster_BP to achieve the action you want.
+  For the triggering of the attack action, I chose to set the box collision in C++ and created the enemy's emun state:
   ```cpp
-    UENUM(BlueprintType)
-    enum class EMonsterState : uint8 {
-         EMS_Ldle UMETA(DeplayName = "Ldle"),
-         EMS_MoveToTarget UMETA(DeplayName = "MoveToPlayer"),
-         EMS_Attacking UMETA(DeplayName = "Attack"),
-         EMS_Default UMETA(DeplayName = "Default")
-    };
+  UENUM(BlueprintType)
+  enum class EMonsterState: uint8 {
+          EMS_Ldle UMETA(DeplayName = "Ldle"),
+          EMS_MoveToTarget UMETA(DeplayName = "MoveToPlayer"),
+          EMS_Attacking UMETA(DeplayName = "Attack"),
+          EMS_Default UMETA(DeplayName = "Default")
+  };
   ```
-  碰撞盒子改变状态：
+  The collision box changes state:
   ```cpp
-    if (OtherActor) {
-    	AMain* Player = Cast<AMain>(OtherActor);
-        	if (Player) {
-			if (MonsterController) {
-				bisOverlap = true;
-				SetMonsterState(EMonsterState::EMS_Attacking);
-			}
-    	}
-    }
+  if (OtherActor) {
+      AMain* Player = Cast<AMain>(OtherActor);
+      if (Player) {
+         if (MonsterController) {
+             bisOverlap = true;
+             SetMonsterState(EMonsterState::EMS_Attacking);
+         }
+      }
+  }
   ```
-- 粒子系统, 粒子系统 `ParticleSyetem` 不是 粒子控件 `ParticleSystemComponent`，他们的区别在于粒子控件会一直附加存在，而粒子系统是在某种特定的机制下触发如：碰撞...。用代码播放粒子控件系统各有不同：  
-  如果是武器模型，他们大多没有 `StaticMeshComponent` 而只有 `SkeletalMeshComponent`：  
+- Particle system, the particle system `ParticleSyetem` is not the particle control `ParticleSystemComponent`. The difference between them is that the particle control will always be attached, while the particle system is triggered under a certain mechanism such as collision.... The code to play the particle control system is different:
+  If it¡¯s a weapon model, most of them don¡¯t have `StaticMeshComponent` but only `SkeletalMeshComponent`:
   ```cpp
   const USkeletalMeshSocket* WeaponSocket = SkeletalComponent->GetSocketByName("WeaponSocket");
   if (WeaponSocket) {
@@ -134,157 +141,161 @@
       UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), monster->BleedParticles, SocketLocation, FRotator(0.f), false);
   }
   ```
-  如果是 Monster模型，我在他的手上创建了一个 Socket让他成为触发粒子系统的地方，因为他自带 `StaticMeshComponent`:
+  If it is a Monster model, I created a Socket in his hand to make him the place to trigger the particle system, because he comes with `StaticMeshComponent`:
   ```cpp
   const USkeletalMeshSocket* HandSocket = GetMesh()->GetSocketByName("BloodSocket");
   //UE_LOG(LogTemp, Warning, TEXT(" Blood Socket Begin Blood! "));
   if (HandSocket) {
-	  FVector SocketLocation = HandSocket->GetSocketLocation(GetMesh());
-	  UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), player->BloodParticles, SocketLocation, FRotator(0.f), false);
+     FVector SocketLocation = HandSocket->GetSocketLocation(GetMesh());
+     UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), player->BloodParticles, SocketLocation, FRotator(0.f), false);
   }
   ```
-  前者我还需要在构造去声明以及定义：  
+  I also need to declare and define the former in the construction:
   ```cpp
   SkeletalComponent = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Skeletal Mesh"));
   SkeletalComponent->SetupAttachment(GetRootComponent());
   ```
-- 攻击伤害的传递。有很多方法传递来自其他角色造成的伤害，但是 ue4 给了我们一套自己的伤害传递方式：  
+- Transmission of attack damage. There are many ways to transmit damage from other characters, but ue4 gave us a set of our own ways of transmitting damage:
   ```cpp
-  /* *伤害机制 */
+  /* *Damage mechanism */
   virtual float TakeDamage(float DamageTaken, struct FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser) override;
   ```
-  你需要重写 `TackDamage` 函数：  
+  You need to rewrite the `TackDamage` function:
   ```cpp
   float AMonster::TakeDamage(float DamageTaken, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
   {
-	 ReduceHp(DamageTaken);
-
-	 return DamageTaken;
+      ReduceHp(DamageTaken);
+      return DamageTaken;
   }
   ```
-  当其他角色有对其他角色造成伤害的功能时：  
-  需要先创建一个 `TSubclassOf<class T>` 这个是ue4固有的模板：
+  When other characters have the function of causing damage to other characters:
+  You need to create a `TSubclassOf<class T>` This is the inherent template of ue4:
   ```cpp
   TSubclassOf<UDamageType> DamageTypeClass;
   ```
-  然后在对角色造成伤害时调用他：  
+  Then call him when causing damage to the character:
   ```cpp
   if (DamageTypeClass) {
-	 UGameplayStatics::ApplyDamage(monster, Attack_Power, nullptr, this, DamageTypeClass);
+    UGameplayStatics::ApplyDamage(monster, Attack_Power, nullptr, this, DamageTypeClass);
   }
   ```
-  这样就会调用收到伤害角色的 `TackDamage`。
-- 显示敌人的血条。这个比较简单首先还是先创建 HUD 然后在 `PlayerController` 中添加并显示在窗口中，问题是如何显示在敌人的正上方，并且有着合理的大小： 
-  我们可以通过获得敌人的坐标然后 在类`PlayerController` 重写的 `Tick` 中不断获取新的坐标，再将其转换为屏幕的2d坐标显示就可以了：  
+  This will call `TackDamage` of the character that received the damage.
+- Show the enemy's health bar. This is relatively simple. First, create a HUD and then add it to the `PlayerController` and display it in the window. The problem is how to display it directly above the enemy and have a reasonable size:
+  We can obtain the enemy's coordinates and then continuously obtain new coordinates in the `Tick` overridden by the class `PlayerController`, and then convert them to the 2d coordinates of the screen for display:
   ```cpp
   if (MonsterHpBar) {
-	 FVector2D ScreenPosition;
+    FVector2D ScreenPosition;
 
-	 /* *将3d转换为屏幕2d坐标 */
-	 ProjectWorldLocationToScreen(showLocation, ScreenPosition);
+    /* *Convert 3d to screen 2d coordinates */
+    ProjectWorldLocationToScreen(showLocation, ScreenPosition);
 
-	 FVector2D ProgressBarSize(200.f, 25.f);
+    FVector2D ProgressBarSize(200.f, 25.f);
 
-	 MonsterHpBar->SetPositionInViewport(ScreenPosition);
-	 MonsterHpBar->SetDesiredSizeInViewport(ProgressBarSize);
+    MonsterHpBar->SetPositionInViewport(ScreenPosition);
+    MonsterHpBar->SetDesiredSizeInViewport(ProgressBarSize);
   }
   ```
-- 保存和载入游戏。需要去继承一个新的c++类 `USaveGame`，你可以在里面建立一个结构体，让他来保存当前人物的信息。  
-  比如像这样： 
+- Save and load the game. Need to inherit a new C++ class `USaveGame`, you can create a structure in it and let it save the current character information.
+  For example like this:
   ```cpp
   USTRUCT(BlueprintType)
   struct FCharacterState {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
-	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
-	float CurHp;
+    UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+    float CurHp;
 
-	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
-	float MaxHp;
+    UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+    float MaxHp;
 
-	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
-	float CurEp;
+    UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+    float CurEp;
 
-	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
-	float MaxEp;
+    UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+    float MaxEp;
 
-	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
-	int32 CoinCnt;
+    UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+    int32 CoinCnt;
 
-	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
-	FVector Location;
+    UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+    FVector Location;
 
-	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
-	FRotator Rotation;
+    UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
+    FRotator Rotation;
   };
   ```
-  那么现在我需要从 `MainPlayer` 中调用他并实现保存和载入信息。  
-  你需要单独为保存和载入创建新的函数体：  
+  So now I need to call him from `MainPlayer` and save and load information.
+  You need to create new function bodies for saving and loading separately:
   ```cpp
-  /* *保存游戏函数 */
+  /* *Save game function */
   void AMain::SaveGame() {
-	USaveMyGame* SaveGame =  Cast<USaveMyGame>(UGameplayStatics::CreateSaveGameObject(USaveMyGame::StaticClass()));
-	SaveGame->CharacterState.CurHp = CurrentHp;
-	SaveGame->CharacterState.MaxHp = MaxHp;
-	SaveGame->CharacterState.CurEp = CurrentEp;
-	SaveGame->CharacterState.MaxEp = MaxEp;
-	SaveGame->CharacterState.CoinCnt = cntCoins;
-	SaveGame->CharacterState.Location = GetActorLocation();
-	SaveGame->CharacterState.Rotation = GetActorRotation();
+    USaveMyGame* SaveGame = Cast<USaveMyGame>(UGameplayStatics::CreateSaveGameObject(USaveMyGame::StaticClass()));
+    SaveGame->CharacterState.CurHp = CurrentHp;
+    SaveGame->CharacterState.MaxHp = MaxHp;
+    SaveGame->CharacterState.CurEp = CurrentEp;
+    SaveGame->CharacterState.MaxEp = MaxEp;
+    SaveGame->CharacterState.CoinCnt = cntCoins;
+    SaveGame->CharacterState.Location = GetActorLocation();
+    SaveGame->CharacterState.Rotation = GetActorRotation();
 
-	UGameplayStatics::SaveGameToSlot(SaveGame, SaveGame->GameName, SaveGame->PlayerIndex);
+    UGameplayStatics::SaveGameToSlot(SaveGame, SaveGame->GameName, SaveGame->PlayerIndex);
   }
 
-  /* *载入游戏函数 */
+  /* *Load game function */
   void AMain::LoadGame(bool bLoad) {
-	USaveMyGame* LoadGame = Cast<USaveMyGame>(UGameplayStatics::CreateSaveGameObject(USaveMyGame::StaticClass()));
-	USaveMyGame* LoadGameInstance = Cast<USaveMyGame>(UGameplayStatics::LoadGameFromSlot(LoadGame->GameName, LoadGame->PlayerIndex)); //载入实例
-	if (LoadGameInstance == nullptr) return;
+    USaveMyGame* LoadGame = Cast<USaveMyGame>(UGameplayStatics::CreateSaveGameObject(USaveMyGame::StaticClass()));
+    USaveMyGame* LoadGameInstance = Cast<USaveMyGame>(UGameplayStatics::LoadGameFromSlot(LoadGame->GameName, LoadGame->PlayerIndex)); //Load the instance
+    if (LoadGameInstance == nullptr) return;
 
-	CurrentHp = LoadGameInstance->CharacterState.CurHp;
-	MaxHp = LoadGameInstance->CharacterState.MaxHp;
-	CurrentEp = LoadGameInstance->CharacterState.CurEp;
-	MaxEp = LoadGameInstance->CharacterState.MaxEp;
-	cntCoins = LoadGameInstance->CharacterState.CoinCnt;
+    CurrentHp = LoadGameInstance->CharacterState.CurHp;
+    MaxHp = LoadGameInstance->CharacterState.MaxHp;
+    CurrentEp = LoadGameInstance->CharacterState.CurEp;
+    MaxEp = LoadGameInstance->CharacterState.MaxEp;
+    cntCoins = LoadGameInstance->CharacterState.CoinCnt;
 
-    //进入新的关卡，并不需要载入在上个关卡的位置和旋转角度！
-	if (bLoad) {
-		SetActorLocation(LoadGameInstance->CharacterState.Location);
-		SetActorRotation(LoadGameInstance->CharacterState.Rotation);
-	}
+    //To enter a new level, there is no need to load the position and rotation angle of the previous level!
+    if (bLoad) {
+        SetActorLocation(LoadGameInstance->CharacterState.Location);
+        SetActorRotation(LoadGameInstance->CharacterState.Rotation);
+    }
   }
   ```
-- 暂停窗口。和之前的HUD窗口一样，都在 `PlayerController` 中设置，不同的是如何更美观的显示HUD窗口至关重要，你可以在HUD的蓝图类中，设计他的动画，并在 `PlayController` 中实现在窗口窗口打开/关闭的同时，调用HUD动画。  
-  不同的是, 在蓝图中调用的是c++实现过函数(但是在蓝图中叫做事件)。我们要实现不同的功能，所以必须在`.cpp`文件中C++函数末尾加上`_Implementation`可以实现类似于父类重写的效果。当然你也需要在蓝图中实现父类的调用。  
-  ![image](https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Implementation.png)  
-  下面是关于鼠标的交互与隐藏，很简单就不过多的描述了：
+
+- Pause the window. Like the previous HUD windows, they are all set in `PlayerController`. The difference is how to display the HUD window more beautifully is very important. You can design its animation in the HUD blueprint class and implement it in `PlayController` At the same time the window is opened/closed, the HUD animation is called.  
+  The difference is that C++ implemented functions are called in the blueprint (but called events in the blueprint). We want to implement different functions, so we must add `_Implementation` at the end of the C++ function in the `.cpp` file to achieve an effect similar to the rewriting of the parent class. Of course, you also need to implement the call of the parent class in the blueprint.  
+  ![image](https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Implementation.png) 
+  The following is about the interaction and hiding of the mouse, it is very simple and not too much description:  
+
   ```cpp
-  /* *打开鼠标的交互 */
+  /* *Open mouse interaction */
   FInputModeGameAndUI InputModeGameAndUI;
   SetInputMode(InputModeGameAndUI);
 
-  /* *显示鼠标 */
+  /* *Display mouse */
   bShowMouseCursor = true;
 
-  /* *关闭鼠标的交互 */
+  /* *Turn off mouse interaction */
   FInputModeGameOnly InputModeGameOnly;
   SetInputMode(InputModeGameOnly);
 
-  /* *关闭鼠标 */
+  /* *Turn off the mouse */
   bShowMouseCursor = false;
   ```
-- 关卡传送。原理很简单，需要创建一个继承 `AActor`的类 `LevenSend`，在类中创建 `UBoxComponent`，让盒子检测碰撞发生碰撞调用函数，切换关卡。
+
+- Level transfer. The principle is very simple. You need to create a class `LevenSend` that inherits `AActor`, create a `UBoxComponent` in the class, let the box detect collision and call the function and switch the level.
   ```cpp
   void AMain::SwitchLeven(FName nextLeven)
   {
-	UWorld* world = GetWorld();
-	FString curName = world->GetMapName();
-	FName CurrentName(curName);
-	if (CurrentName != nextLeven) {
-		UGameplayStatics::OpenLevel(world, nextLeven);
-	}
+    UWorld* world = GetWorld();
+    FString curName = world->GetMapName();
+    FName CurrentName(curName);
+    if (CurrentName != nextLeven) {
+      UGameplayStatics::OpenLevel(world, nextLeven);
+    }
   }
   ```
-  需要传入一个 `FName` 他是下一个关卡的名字，那么我们需要在 `LevenSend`中创建一个 `FName`，让他在蓝图中自定义修改。
-## 学习与交流
+  Need to pass in a `FName` which is the name of the next level, then we need to create a `FName` in `LevenSend` and let him customize it in the blueprint.
+- Cutscenes. This is more troublesome to talk about, and there is no good way to express it. It is easier to learn directly by watching the video.
+  [Clipscenes](https://search.bilibili.com/all?keyword=ue4%E8%BF%87%E5%9C%BA%E5%8A%A8%E7%94%BB&from_source=webtop_search&spm_id_from=333.1007)
+## Learning and Communication
 <img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">

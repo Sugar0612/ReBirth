@@ -161,6 +161,8 @@ private:
 	void AttackBegin();
 	void ShowPauseWidget();
 	void QuitPauseWidget();
+	void GotoNextLeven();
+	void _GotoNextLeven();
 public:
 	bool is_quick = false;
 
@@ -226,6 +228,9 @@ public:
 
 	UFUNCTION()
 	bool CanMove();
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Items | Item")
+	class ALevenSend* Leven;
 
 	void SwitchLeven(FName nextLeven);
 };

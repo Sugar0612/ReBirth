@@ -17,6 +17,7 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "ActorStorage.h"
+#include "LevenSend.h"
 
 // Sets default values
 AMain::AMain()
@@ -169,6 +170,9 @@ void AMain::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 	PlayerInputComponent->BindAction("ESC", IE_Pressed, this, &AMain::ShowPauseWidget);
 	PlayerInputComponent->BindAction("ESC", IE_Released, this, &AMain::QuitPauseWidget);
+
+	PlayerInputComponent->BindAction("SendLeven", IE_Pressed, this, &AMain::GotoNextLeven);
+	PlayerInputComponent->BindAction("SendLeven", IE_Released, this, &AMain::_GotoNextLeven);
 }
 
 void AMain::MoveForward(float input) {
@@ -470,6 +474,22 @@ void AMain::QuitPauseWidget() {
 
 }
 
+void AMain::GotoNextLeven()
+{
+	if (Leven) {
+		Leven->bSwitchLeven = true;
+	}
+}
+
+void AMain::_GotoNextLeven()
+{
+	if (Leven) {
+		if (Leven->targetPlayer) {
+			Leven->targetPlayer = false;
+		}
+	}
+}
+
 void AMain::FilpBool(bool& b) {
 	if (b == true) {
 		b = false;
@@ -483,7 +503,7 @@ bool AMain::CanMove() {
 	if (PlayerController) {
 		return (MovementStatus != EMovementStatus::EMS_Death) &&
 			(MovementStatus != EMovementStatus::EMS_Repel) && (!bAttacking) &&
-			(!PlayerController->bshowPauseBar);
+			(!PlayerController->bshowPauseBar) && PlayerController->bCanMove;
 	} 
 	else {
 		return false;

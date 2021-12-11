@@ -175,5 +175,5 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void EndRepel();
 
-	void DestroyActor() { this->Destroy(); }
+	void DestroyActor();
 };

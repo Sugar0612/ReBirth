@@ -32,7 +32,8 @@ AMonster::AMonster()
 
 	/* Attack Box */
 	AttackBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Attack Detect"));
-	AttackBox->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, FName("AttackSocket"));
+	AttackBox->SetupAttachment(GetMesh(), FName("AttackSocket"));
+	//AttackBox->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, FName("AttackSocket"));
 
 
 	/* View Box */
@@ -253,8 +254,11 @@ void AMonster::EndDeathMontage()
 	GetMesh()->bNoSkeletonUpdate = true;
 
 	float DeathTime = 3.0f;
-	AIControllerClass = nullptr;
 	GetWorldTimerManager().SetTimer(DeathTimer, this, &AMonster::DestroyActor, DeathTime);
+}
+
+void AMonster::DestroyActor() {
+	GetMesh()->DestroyComponent(true);
 }
 
 float AMonster::TakeDamage(float DamageTaken, FDamageEvent const& DamageEvent, AController* EventInstigator, AActor* DamageCauser)
@@ -279,14 +283,17 @@ void AMonster::EndRepel() {
 void AMonster::AttackBeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	if (OtherActor) {
+		UE_LOG(LogTemp, Warning, TEXT("Begin Attack! "));
 		AMain* player = Cast<AMain>(OtherActor);
 		if (player) {
+			UE_LOG(LogTemp, Warning, TEXT("This is Player! "));
 			if (player->BloodParticles) {
 				/* 流血效果
 				* 最后一个参数表示是否只使用一次
 				*/
 
 				/* *受到伤害播放音效 */
+				UE_LOG(LogTemp, Warning, TEXT("Harm"));
 				if (player->HarmSound) UGameplayStatics::PlaySound2D(player, player->HarmSound);
 
 				const USkeletalMeshSocket* HandSocket = GetMesh()->GetSocketByName("BloodSocket");
