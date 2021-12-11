@@ -143,3 +143,8 @@ void AMainPlayerController::BeginPlayGame()
 void AMainPlayerController::QuitPlayGame() {
 
 }
+
+void AMainPlayerController::CloseMouseGame() {
+	FInputModeGameOnly InputModeGameOnly;
+	SetInputMode(InputModeGameOnly);
+}

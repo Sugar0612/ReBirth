@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ReBirth",
+			"Path": "F:\\win\\Github\\ReBirth\\Source\\ReBirth.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ReBirthEditor",
+			"Path": "F:\\win\\Github\\ReBirth\\Source\\ReBirthEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

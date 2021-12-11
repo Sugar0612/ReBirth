@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ReBirth.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{6065A2D5-ABE5-4A6B-AC32-E8ACB1E0BCCD}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ReBirth.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ReBirthEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\README-CN.md" />
+    <None Include="..\..\README.md" />
+    <Filter Include="Source\ReBirth">
+      <UniqueIdentifier>{09A0F0CF-05D1-4051-8BA8-8EEB82169E2A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\ReBirth\ActorStorage.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\ActorStorage.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\Boom.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\Boom.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\Item.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\Item.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\LevenSend.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\LevenSend.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\Main.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\Main.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\MainAnimInstance.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\MainAnimInstance.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\MainPlayer.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\MainPlayer.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\MainPlayerController.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\MainPlayerController.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\Monster.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\Monster.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\MonsterAnim.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\MonsterAnim.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\Pickup.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\Pickup.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\PlayerMovementComponent.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\PlayerMovementComponent.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\ReBirth\ReBirth.Build.cs">
+      <Filter>Source\ReBirth</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ReBirth\ReBirth.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\ReBirth.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\ReBirthGameModeBase.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\ReBirthGameModeBase.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\RiseDoor.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\RiseDoor.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\SaveMyGame.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\SaveMyGame.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\SpawnVolume.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\SpawnVolume.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ReBirth\Weapon.cpp">
+      <Filter>Source\ReBirth</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ReBirth\Weapon.h">
+      <Filter>Source\ReBirth</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

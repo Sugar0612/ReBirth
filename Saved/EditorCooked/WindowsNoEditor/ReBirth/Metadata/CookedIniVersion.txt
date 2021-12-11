@@ -1,0 +1,1339 @@
+[UsedSettings]
+Windows.Engine:AssetRegistry:CookedTagsBlacklist:0=(Class=Blueprint,Tag=FiB)
+Windows.Engine:AssetRegistry:CookedTagsBlacklist:1=(Class=Blueprint,Tag=FiBData)
+Windows.Engine:AssetRegistry:CookedTagsBlacklist:2=(Class=*,Tag=AssetImportData)
+Windows.Engine:AssetRegistry:bUseAssetRegistryTagsWhitelistInsteadOfBlacklist:0=false
+Windows.Engine:AssetRegistry:CookedTagsAsFName:0=PrimaryAssetType
+Windows.Engine:AssetRegistry:CookedTagsAsFName:1=PrimaryAssetName
+Windows.Engine:AssetRegistry:CookedTagsAsPathName:0=GeneratedClass
+Windows.Engine:AssetRegistry:CookedTagsAsPathName:1=ParentClass
+Windows.Engine:AssetRegistry:bSerializeAssetRegistry:0=true
+Windows.Engine:AssetRegistry:bSerializeDependencies:0=false
+Windows.Engine:AssetRegistry:bSerializeManageDependencies:0=false
+Windows.Engine:AssetRegistry:bSerializePackageData:0=false
+Windows.Engine:AssetRegistry:bFilterAssetDataWithNoTags:0=false
+Windows.Engine:AssetRegistry:bFilterDependenciesWithNoTags:0=false
+Windows.Engine:AssetRegistry:bFilterSearchableNames:0=true
+Windows.Engine:Core.System:LegacyBulkDataOffsets:0=False
+Windows.Engine:/Script/EngineSettings.GameMapsSettings:GameInstanceClass:0=/Script/Engine.GameInstance
+Windows.Engine:/Script/EngineSettings.GameMapsSettings:GameDefaultMap:0=/Game/Maps/rebirth.rebirth
+Windows.Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultGameMode:0=/Game/Blueprints/MyGame.MyGame_C
+Windows.Engine:/Script/WindowsTargetPlatform.WindowsTargetSettings:bTarget32Bit:0=false
+Windows.Input:/Script/Engine.InputSettings:DefaultTouchInterface:0=/Engine/MobileResources/HUD/DefaultVirtualJoysticks.DefaultVirtualJoysticks
+Engine:Core.System:CanStripEditorOnlyExportsAndImports:0=True
+Engine:Core.System:DetailedCallstacksInNonMonolithicBuilds:0=True
+Engine:Core.System:UseSeperateBulkDataFiles:0=False
+Engine:Core.System:HangDuration:0=0.0
+Engine:Core.System:AssetLogShowsDiskPath:0=True
+Engine:Core.System:AssetLogShowsAbsolutePath:0=True
+Engine:/Script/UdpMessaging.UdpMessagingSettings:EnabledByDefault:0=False
+Engine:/Script/UdpMessaging.UdpMessagingSettings:EnableTransport:0=True
+Engine:/Script/UdpMessaging.UdpMessagingSettings:bAutoRepair:0=True
+Engine:/Script/UdpMessaging.UdpMessagingSettings:MaxSendRate:0=1.000000
+Engine:/Script/UdpMessaging.UdpMessagingSettings:AutoRepairAttemptLimit:0=10
+Engine:/Script/UdpMessaging.UdpMessagingSettings:bStopServiceWhenAppDeactivates:0=True
+Engine:/Script/UdpMessaging.UdpMessagingSettings:UnicastEndpoint:0=0.0.0.00
+Engine:/Script/UdpMessaging.UdpMessagingSettings:MulticastEndpoint:0=230.0.0.16666
+Engine:/Script/UdpMessaging.UdpMessagingSettings:MessageFormat:0=CborPlatformEndianness
+Engine:/Script/UdpMessaging.UdpMessagingSettings:MulticastTimeToLive:0=1
+Engine:/Script/UdpMessaging.UdpMessagingSettings:EnableTunnel:0=False
+Engine:/Script/UdpMessaging.UdpMessagingSettings:TunnelUnicastEndpoint:0=
+Engine:/Script/UdpMessaging.UdpMessagingSettings:TunnelMulticastEndpoint:0=
+Engine:/Script/AndroidPlatformEditor.AndroidSDKSettings:SDKPath:0=(Path="")
+Engine:/Script/AndroidPlatformEditor.AndroidSDKSettings:NDKPath:0=(Path="")
+Engine:/Script/AndroidPlatformEditor.AndroidSDKSettings:JavaPath:0=(Path="")
+Engine:/Script/AndroidPlatformEditor.AndroidSDKSettings:SDKAPILevel:0=latest
+Engine:/Script/AndroidPlatformEditor.AndroidSDKSettings:NDKAPILevel:0=android-21
+Engine:/Script/LuminPlatformEditor.MagicLeapSDKSettings:MLSDKPath:0=(Path="")
+Engine:/Script/UnrealEd.EditorEngine:FlipNormalMapGreenChannel:0=False
+Engine:/Script/UnrealEd.EditorEngine:GameCommandLine:0=-log
+Engine:/Script/UnrealEd.EditorEngine:GodMode:0=True
+Engine:/Script/UnrealEd.EditorEngine:UseAxisIndicator:0=True
+Engine:/Script/UnrealEd.EditorEngine:HeightMapExportClassName:0=TerrainHeightMapExporterTextT3D
+Engine:/Script/UnrealEd.EditorEngine:bCustomCameraAlignEmitter:0=true
+Engine:/Script/UnrealEd.EditorEngine:CustomCameraAlignEmitterDistance:0=100.0
+Engine:/Script/UnrealEd.EditorEngine:bDrawSocketsInGMode:0=false
+Engine:/Script/UnrealEd.EditorEngine:bSmoothFrameRate:0=false
+Engine:/Script/UnrealEd.EditorEngine:SmoothedFrameRateRange:0=(LowerBound=(Type="ERangeBoundTypesInclusive",Value=5),UpperBound=(Type="ERangeBoundTypesInclusive",Value=120))
+Engine:/Script/UnrealEd.EditorEngine:InEditorGameURLOptions:0=
+Engine:/Script/EngineSettings.GameMapsSettings:GameInstanceClass:0=/Script/Engine.GameInstance
+Engine:/Script/EngineSettings.GameMapsSettings:EditorStartupMap:0=/Game/Maps/rebirth.rebirth
+Engine:/Script/EngineSettings.GameMapsSettings:GameDefaultMap:0=/Game/Maps/rebirth.rebirth
+Engine:/Script/EngineSettings.GameMapsSettings:ServerDefaultMap:0=/Engine/Maps/Entry
+Engine:/Script/EngineSettings.GameMapsSettings:GlobalDefaultGameMode:0=/Game/Blueprints/MyGame.MyGame_C
+Engine:/Script/EngineSettings.GameMapsSettings:LocalMapOptions:0=
+Engine:InstallBundleManager:EditorModuleName:0=NullInstallBundleManager
+Engine:URL:Protocol:0=unreal
+Engine:URL:Name:0=Player
+Engine:URL:SaveExt:0=usa
+Engine:URL:Port:0=7777
+Engine:HTTP:HttpTimeout:0=180
+Engine:HTTP:HttpConnectionTimeout:0=60
+Engine:HTTP:HttpReceiveTimeout:0=30
+Engine:HTTP:HttpSendTimeout:0=30
+Engine:HTTP.Curl:bAllowSeekFunction:0=false
+Engine:WebSockets.LibWebSockets:ThreadStackSize:0=131072
+Engine:WebSockets.LibWebSockets:ThreadTargetFrameTimeInSeconds:0=0.0333
+Engine:WebSockets.LibWebSockets:ThreadMinimumSleepTimeInSeconds:0=0.0
+Engine:WebSockets.LibWebSockets:MaxHttpHeaderData:0=32768
+Engine:SlateStyle:DefaultFontName:0=/Engine/EngineFonts/Roboto
+Engine:PlatformMemoryBuckets:LargestMemoryBucket_MinGB:0=32
+Engine:PlatformMemoryBuckets:LargerMemoryBucket_MinGB:0=12
+Engine:PlatformMemoryBuckets:DefaultMemoryBucket_MinGB:0=8
+Engine:PlatformMemoryBuckets:SmallerMemoryBucket_MinGB:0=6
+Engine:PlatformMemoryBuckets:SmallestMemoryBucket_MinGB:0=0
+Engine:/Script/Engine.Engine:bAllowMatureLanguage:0=false
+Engine:/Script/Engine.Engine:UnrealEdEngine:0=/Script/UnrealEd.UnrealEdEngine
+Engine:/Script/Engine.Engine:DefaultMaterialName:0=/Engine/EngineMaterials/WorldGridMaterial.WorldGridMaterial
+Engine:/Script/Engine.Engine:DefaultLightFunctionMaterialName:0=/Engine/EngineMaterials/DefaultLightFunctionMaterial.DefaultLightFunctionMaterial
+Engine:/Script/Engine.Engine:DefaultDeferredDecalMaterialName:0=/Engine/EngineMaterials/DefaultDeferredDecalMaterial.DefaultDeferredDecalMaterial
+Engine:/Script/Engine.Engine:DefaultPostProcessMaterialName:0=/Engine/EngineMaterials/DefaultPostProcessMaterial.DefaultPostProcessMaterial
+Engine:/Script/Engine.Engine:TimecodeProviderClassName:0=None
+Engine:/Script/Engine.Engine:bSubtitlesEnabled:0=True
+Engine:/Script/Engine.Engine:bSubtitlesForcedOff:0=false
+Engine:/Script/Engine.Engine:MaximumLoopIterationCount:0=1000000
+Engine:/Script/Engine.Engine:bCanBlueprintsTickByDefault:0=true
+Engine:/Script/Engine.Engine:bOptimizeAnimBlueprintMemberVariableAccess:0=true
+Engine:/Script/Engine.Engine:CameraRotationThreshold:0=45.0
+Engine:/Script/Engine.Engine:CameraTranslationThreshold:0=10000
+Engine:/Script/Engine.Engine:PrimitiveProbablyVisibleTime:0=8.0
+Engine:/Script/Engine.Engine:MaxOcclusionPixelsFraction:0=0.1
+Engine:/Script/Engine.Engine:bPauseOnLossOfFocus:0=false
+Engine:/Script/Engine.Engine:MaxParticleResize:0=0
+Engine:/Script/Engine.Engine:MaxParticleResizeWarn:0=0
+Engine:/Script/Engine.Engine:DisplayGamma:0=2.2
+Engine:/Script/Engine.Engine:MinDesiredFrameRate:0=35.000000
+Engine:/Script/Engine.Engine:bSmoothFrameRate:0=false
+Engine:/Script/Engine.Engine:SmoothedFrameRateRange:0=(LowerBound=(Type="ERangeBoundTypesInclusive",Value=22),UpperBound=(Type="ERangeBoundTypesExclusive",Value=62))
+Engine:/Script/Engine.Engine:bCheckForMultiplePawnsSpawnedInAFrame:0=false
+Engine:/Script/Engine.Engine:NumPawnsAllowedToBeSpawnedInAFrame:0=2
+Engine:/Script/Engine.Engine:DurationOfErrorsAndWarningsOnHUD:0=0
+Engine:/Script/Engine.Engine:NearClipPlane:0=10.0
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:0=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptationLowPercent",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureLowPercent")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:1=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptationHighPercent",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureHighPercent")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:2=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptationMinBrightness",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureMinBrightness")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:3=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptationMaxBrightness",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureMaxBrightness")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:4=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptionSpeedDown",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureSpeedDown")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:5=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.EyeAdaptionSpeedUp",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureSpeedUp")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:6=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.ExposureOffset",NewFieldName="CameraComponent.PostProcessSettings.AutoExposureBias")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:7=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptationLowPercent",NewFieldName="Settings.AutoExposureLowPercent")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:8=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptationHighPercent",NewFieldName="Settings.AutoExposureHighPercent")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:9=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptationMinBrightness",NewFieldName="Settings.AutoExposureMinBrightness")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:10=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptationMaxBrightness",NewFieldName="Settings.AutoExposureMaxBrightness")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:11=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptionSpeedDown",NewFieldName="Settings.AutoExposureSpeedDown")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:12=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.EyeAdaptionSpeedUp",NewFieldName="Settings.AutoExposureSpeedUp")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:13=(TargetClassName="/Script/Engine.PostprocessVolume",OldFieldName="Settings.ExposureOffset",NewFieldName="Settings.AutoExposureBias")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:14=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="FOVAngle",NewFieldName="CameraComponent.FieldOfView")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:15=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="AspectRatio",NewFieldName="CameraComponent.AspectRatio")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:16=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="bConstrainAspectRatio",NewFieldName="CameraComponent.bConstrainAspectRatio")
+Engine:/Script/Engine.Engine:MatineeTrackRedirects:17=(TargetClassName="/Script/Engine.CameraActor",OldFieldName="PostProcessSettings.",NewFieldName="CameraComponent.PostProcessSettings.")
+Engine:/Script/Engine.Engine:ActiveGameNameRedirects:0=(OldGameName="TP_Blank",NewGameName="/Script/ReBirth")
+Engine:/Script/Engine.Engine:ActiveGameNameRedirects:1=(OldGameName="/Script/TP_Blank",NewGameName="/Script/ReBirth")
+Engine:/Script/Engine.Engine:ActiveClassRedirects:0=(OldClassName="TP_BlankGameModeBase",NewClassName="ReBirthGameModeBase")
+Engine:CoreUObject.Metadata:MetadataRedirects:0=(OldKey="K2Protected", NewKey="BlueprintProtected")
+Engine:CoreUObject.Metadata:MetadataRedirects:1=(OldKey="K2UnsafeForConstructionScripts", NewKey="UnsafeDuringActorConstruction")
+Engine:CoreUObject.Metadata:MetadataRedirects:2=(OldKey="KismetType", NewKey="BlueprintType")
+Engine:CoreUObject.Metadata:MetadataRedirects:3=(OldKey="KismetInternalUseOnly", NewKey="BlueprintInternalUseOnly")
+Engine:CoreUObject.Metadata:MetadataRedirects:4=(OldKey="KismetSpawnableComponent", NewKey="BlueprintSpawnableComponent")
+Engine:CoreUObject.Metadata:MetadataRedirects:5=(OldKey="K2ExposeToSpawn", NewKey="ExposeOnSpawn")
+Engine:CoreUObject.Metadata:MetadataRedirects:6=(OldKey="K2Category", NewKey="Category")
+Engine:CoreUObject.Metadata:MetadataRedirects:7=(OldKey="KismetDeprecated", NewKey="DeprecatedFunction")
+Engine:CoreUObject.Metadata:MetadataRedirects:8=(OldKey="K2CompactNode", NewKey="CompactNodeTitle")
+Engine:CoreUObject.Metadata:MetadataRedirects:9=(OldKey="MenuCategory", NewKey="Category")
+Engine:CoreUObject.Metadata:MetadataRedirects:10=(OldKey="ArrayPointerParm", NewKey="TargetArrayParm")
+Engine:CoreUObject.Metadata:MetadataRedirects:11=(OldKey="FriendlyName", NewKey="DisplayName")
+Engine:/Script/Engine.UserInterfaceSettings:UIScaleRule:0=ShortestSide
+Engine:/Script/Engine.UserInterfaceSettings:UIScaleCurve:0=(EditorCurveData=(Keys=((Time=480,Value=0.444),(Time=720,Value=0.666),(Time=1080,Value=1.0),(Time=8640,Value=8.0))),ExternalCurve=None)
+Engine:/Script/Engine.UserInterfaceSettings:bLoadWidgetsOnDedicatedServer:0=True
+Engine:/Script/Engine.UserInterfaceSettings:bAllowHighDPIInGameMode:0=False
+Engine:/Script/Engine.GameEngine:MaxDeltaTime:0=0
+Engine:/Script/Engine.GameEngine:ServerFlushLogInterval:0=30
+Engine:/Script/Engine.StreamingSettings:s.MinBulkDataSizeForAsyncLoading:0=131072
+Engine:/Script/Engine.StreamingSettings:s.AsyncLoadingThreadEnabled:0=False
+Engine:/Script/Engine.StreamingSettings:s.EventDrivenLoaderEnabled:0=True
+Engine:/Script/Engine.StreamingSettings:s.WarnIfTimeLimitExceeded:0=False
+Engine:/Script/Engine.StreamingSettings:s.TimeLimitExceededMultiplier:0=1.5
+Engine:/Script/Engine.StreamingSettings:s.TimeLimitExceededMinTime:0=0.005
+Engine:/Script/Engine.StreamingSettings:s.UseBackgroundLevelStreaming:0=True
+Engine:/Script/Engine.StreamingSettings:s.PriorityAsyncLoadingExtraTime:0=15.0
+Engine:/Script/Engine.StreamingSettings:s.LevelStreamingActorsUpdateTimeLimit:0=5.0
+Engine:/Script/Engine.StreamingSettings:s.PriorityLevelStreamingActorsUpdateExtraTime:0=5.0
+Engine:/Script/Engine.StreamingSettings:s.LevelStreamingComponentsRegistrationGranularity:0=10
+Engine:/Script/Engine.StreamingSettings:s.UnregisterComponentsTimeLimit:0=1.0
+Engine:/Script/Engine.StreamingSettings:s.LevelStreamingComponentsUnregistrationGranularity:0=5
+Engine:/Script/Engine.StreamingSettings:s.MaxPackageSummarySize:0=16384
+Engine:/Script/Engine.StreamingSettings:s.FlushStreamingOnExit:0=True
+Engine:/Script/Engine.StreamingSettings:FixedBootOrder:0=/Script/Engine/Default__SoundBase
+Engine:/Script/Engine.StreamingSettings:FixedBootOrder:1=/Script/Engine/Default__MaterialInterface
+Engine:/Script/Engine.StreamingSettings:FixedBootOrder:2=/Script/Engine/Default__DeviceProfileManager
+Engine:/Script/Engine.GarbageCollectionSettings:gc.MaxObjectsNotConsideredByGC:0=1
+Engine:/Script/Engine.GarbageCollectionSettings:gc.SizeOfPermanentObjectPool:0=0
+Engine:/Script/Engine.GarbageCollectionSettings:gc.FlushStreamingOnGC:0=0
+Engine:/Script/Engine.GarbageCollectionSettings:gc.NumRetriesBeforeForcingGC:0=10
+Engine:/Script/Engine.GarbageCollectionSettings:gc.AllowParallelGC:0=True
+Engine:/Script/Engine.GarbageCollectionSettings:gc.TimeBetweenPurgingPendingKillObjects:0=61.1
+Engine:/Script/Engine.GarbageCollectionSettings:gc.MaxObjectsInEditor:0=25165824
+Engine:/Script/Engine.GarbageCollectionSettings:gc.IncrementalBeginDestroyEnabled:0=True
+Engine:/Script/Engine.GarbageCollectionSettings:gc.CreateGCClusters:0=True
+Engine:/Script/Engine.GarbageCollectionSettings:gc.MinGCClusterSize:0=5
+Engine:/Script/Engine.GarbageCollectionSettings:gc.ActorClusteringEnabled:0=False
+Engine:/Script/Engine.GarbageCollectionSettings:gc.BlueprintClusteringEnabled:0=False
+Engine:/Script/Engine.GarbageCollectionSettings:gc.UseDisregardForGCOnDedicatedServers:0=False
+Engine:/Script/Engine.GarbageCollectionSettings:gc.MultithreadedDestructionEnabled:0=True
+Engine:Internationalization:LocalizationPaths:0=../../../Engine/Content/Localization/Engine
+Engine:Internationalization:CultureDisplayNameSubstitutes:0=Taiwan;Chinese Taipei
+Engine:Internationalization:CultureDisplayNameSubstitutes:1=ja;台湾;チャイニーズタイペイ
+Engine:Internationalization:CultureDisplayNameSubstitutes:2=台湾;中华台北
+Engine:Internationalization:CultureDisplayNameSubstitutes:3=台灣;中華台北
+Engine:Internationalization:CultureDisplayNameSubstitutes:4=대만;중화 타이베이
+Engine:/Script/Engine.AudioSettings:DefaultSoundClassName:0=/Engine/EngineSounds/Master.Master
+Engine:/Script/Engine.AudioSettings:DefaultMediaSoundClassName:0=/Engine/EngineSounds/Master.Master
+Engine:/Script/Engine.AudioSettings:MasterSubmix:0=/Engine/EngineSounds/Submixes/MasterSubmixDefault.MasterSubmixDefault
+Engine:/Script/Engine.AudioSettings:ReverbSubmix:0=/Engine/EngineSounds/Submixes/MasterReverbSubmixDefault.MasterReverbSubmixDefault
+Engine:/Script/Engine.AudioSettings:EQSubmix:0=/Engine/EngineSounds/Submixes/MasterEQSubmixDefault.MasterEQSubmixDefault
+Engine:/Script/Engine.AudioSettings:MaximumConcurrentStreams:0=2
+Engine:/Script/Engine.AudioSettings:DialogueFilenameFormat:0="{DialogueGuid}_{ContextId}"
+Engine:/Script/Engine.Player:ConfiguredInternetSpeed:0=100000
+Engine:/Script/Engine.Player:ConfiguredLanSpeed:0=100000
+Engine:/Script/Engine.RendererSettings:VisualizeCalibrationColorMaterialPath:0=/Engine/EngineMaterials/PPM_DefaultCalibrationColor.PPM_DefaultCalibrationColor
+Engine:/Script/Engine.RendererSettings:VisualizeCalibrationGrayscaleMaterialPath:0=/Engine/EngineMaterials/PPM_DefaultCalibrationGrayscale.PPM_DefaultCalibrationGrayscale
+Engine:/Script/Engine.RendererSettings:r.GPUCrashDebugging:0=false
+Engine:/Script/Engine.RendererSettings:MaxSkinBones:0=(Default=65536,PerPlatform=(("Mobile", 256)))
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:ConnectionTimeout:0=60.0
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:InitialConnectTimeout:0=60.0
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:RecentlyDisconnectedTrackingTime:0=120
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:TimeoutMultiplierForUnoptimizedBuilds:0=1
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:KeepAliveTime:0=0.2
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:MaxClientRate:0=100000
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:MaxInternetClientRate:0=100000
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:RelevantTimeout:0=5.0
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:SpawnPrioritySeconds:0=1.0
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:ServerTravelPause:0=4.0
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:NetServerMaxTickRate:0=30
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:MaxNetTickRate:0=120
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:NetConnectionClassName:0=/Script/OnlineSubsystemUtils.IpConnection
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:MaxPortCountToTry:0=512
+Engine:/Script/OnlineSubsystemUtils.IpNetDriver:ResolutionConnectionTimeout:0=20.0
+Engine:/Script/Engine.DemoNetDriver:NetConnectionClassName:0=/Script/Engine.DemoNetConnection
+Engine:/Script/Engine.DemoNetDriver:SpawnPrioritySeconds:0=60.0
+Engine:TextureStreaming:NeverStreamOutRenderAssets:0=False
+Engine:TextureStreaming:MinTextureResidentMipCount:0=7
+Engine:TextureStreaming:PoolSize:0=160
+Engine:TextureStreaming:MemoryMargin:0=5
+Engine:TextureStreaming:LoadMapTimeLimit:0=20.0
+Engine:TextureStreaming:LightmapStreamingFactor:0=0.2
+Engine:TextureStreaming:ShadowmapStreamingFactor:0=0.2
+Engine:TextureStreaming:MaxLightmapRadius:0=10000.0
+Engine:TextureStreaming:AllowStreamingLightmaps:0=True
+Engine:TextureStreaming:UseDynamicStreaming:0=True
+Engine:TextureStreaming:BoostPlayerTextures:0=3.0
+Engine:TextureStreaming:PoolSizeVRAMPercentage:0=70
+Engine:DevOptions.Shaders:bAllowCompilingThroughWorkers:0=True
+Engine:DevOptions.Shaders:bAllowAsynchronousShaderCompiling:0=True
+Engine:DevOptions.Shaders:NumUnusedShaderCompilingThreads:0=3
+Engine:DevOptions.Shaders:NumUnusedShaderCompilingThreadsDuringGame:0=4
+Engine:DevOptions.Shaders:MaxShaderJobBatchSize:0=10
+Engine:DevOptions.Shaders:bPromptToRetryFailedShaderCompiles:0=True
+Engine:DevOptions.Shaders:bLogJobCompletionTimes:0=False
+Engine:DevOptions.Shaders:ProcessGameThreadTargetTime:0=.01
+Engine:DevOptions.Shaders:WorkerTimeToLive:0=20
+Engine:DevOptions.Shaders:BuildWorkerTimeToLive:0=1200
+Engine:DevOptions.Shaders:WorkerProcessPriority:0=-1
+Engine:DevOptions.Shaders:bForceUseSCWMemoryPressureLimits:0=False
+Engine:LogFiles:PurgeLogsDays:0=5
+Engine:LogFiles:MaxLogFilesOnDisk:0=10
+Engine:LogFiles:LogTimes:0=True
+Engine:Kismet:AllowDerivedBlueprints:0=true
+Engine:Kismet:CompileDisplaysTextBackend:0=false
+Engine:Kismet:CompileDisplaysBinaryBackend:0=false
+Engine:Kismet:bTurnOffEditorConstructionScript:0=false
+Engine:Kismet:bUseLocalGraphVariables:0=false
+Engine:Kismet:bPersistentUberGraphFrame:0=true
+Engine:Kismet:bChangeDefaultValueWithoutReinstancing:0=true
+Engine:Kismet:bDisplaysLayout:0=false
+Engine:Kismet:bOptimizeExecutionFlowStack:0=true
+Engine:Kismet:bOptimizeAdjacentStates:0=true
+Engine:Kismet:bEnableInheritableComponents:0=true
+Engine:Kismet:bDeferDependencyLoads:0=true
+Engine:Kismet:bExecutionAfterReturn:0=false
+Engine:Kismet:bCanSuppressAccessViolation:0=false
+Engine:Kismet:bIgnoreCompileOnLoadErrorsOnBuildMachine:0=false
+Engine:/Script/Engine.Blueprint:bRecompileOnLoad:0=true
+Engine:/Script/Engine.LevelScriptBlueprint:bRecompileOnLoad:0=true
+Engine:/Script/Engine.AnimBlueprint:bRecompileOnLoad:0=true
+Engine:ProcessLimits:VirtualMemoryLimitInKB:0=0
+Engine:SystemSettings:con.DebugEarlyDefault:0=True
+Engine:SystemSettings:con.DebugEarlyCheat:0=True
+Engine:SystemSettings:con.DebugLateDefault:0=True
+Engine:SystemSettings:con.DebugLateCheat:0=True
+Engine:SystemSettings:r.DetectAndWarnOfBadDrivers:0=0
+Engine:SystemSettings:r.setres:0=1280x720
+Engine:SystemSettings:framepro.ScopeMinTimeMicroseconds:0=10
+Engine:SystemSettings:fx.NiagaraAllowRuntimeScalabilityChanges:0=1
+Engine:SystemSettingsEditor:r.VSync:0=0
+Engine:SystemSettingsEditor:r.RHICmdBypass:0=0
+Engine:OnlineSubsystem:PollingIntervalInMs:0=50
+Engine:OnlineSubsystem:AdditionalModulesToLoad:0=HTTP
+Engine:OnlineSubsystem:AdditionalModulesToLoad:1=XMPP
+Engine:OnlineSubsystemNull:bEnabled:0=true
+Engine:/Script/OnlineSubsystemUtils.OnlineBeacon:BeaconConnectionInitialTimeout:0=5.0
+Engine:/Script/OnlineSubsystemUtils.OnlineBeacon:BeaconConnectionTimeout:0=45.0
+Engine:/Script/OnlineSubsystemUtils.OnlineBeaconHost:ListenPort:0=15000
+Engine:/Script/OnlineSubsystemUtils.PartyBeaconHost:bLogoutOnSessionTimeout:0=true
+Engine:/Script/OnlineSubsystemUtils.PartyBeaconHost:SessionTimeoutSecs:0=10
+Engine:/Script/OnlineSubsystemUtils.PartyBeaconHost:TravelSessionTimeoutSecs:0=45
+Engine:/Script/OnlineSubsystemUtils.SpectatorBeaconHost:bLogoutOnSessionTimeout:0=true
+Engine:/Script/OnlineSubsystemUtils.SpectatorBeaconHost:SessionTimeoutSecs:0=10
+Engine:/Script/OnlineSubsystemUtils.SpectatorBeaconHost:TravelSessionTimeoutSecs:0=45
+Engine:InstalledDerivedDataBackendGraph:Root:0=(Type=KeyLength, Length=120, Inner=AsyncPut)
+Engine:InstalledDerivedDataBackendGraph:AsyncPut:0=(Type=AsyncPut, Inner=Hierarchy)
+Engine:InstalledDerivedDataBackendGraph:Hierarchy:0=(Type=Hierarchical, Inner=Boot, Inner=Pak, Inner=CompressedPak, Inner=EnginePak, Inner=EnterprisePak, Inner=Local, Inner=Shared)
+Engine:InstalledDerivedDataBackendGraph:Boot:0=(Type=Boot, Filename="%ENGINEUSERDIR%DerivedDataCache/Boot.ddc", MaxCacheSize=512)
+Engine:InstalledDerivedDataBackendGraph:Local:0=(Type=FileSystem, ReadOnly=false, Clean=false, Flush=false, PurgeTransient=true, DeleteUnused=true, UnusedFileAge=34, FoldersToClean=-1, Path="%ENGINEVERSIONAGNOSTICUSERDIR%DerivedDataCache", EditorOverrideSetting=LocalDerivedDataCache)
+Engine:InstalledDerivedDataBackendGraph:Shared:0=(Type=FileSystem, ReadOnly=false, Clean=false, Flush=false, DeleteUnused=true, UnusedFileAge=10, FoldersToClean=10, MaxFileChecksPerSec=1, Path=?EpicDDC, EnvPathOverride=UE-SharedDataCachePath, EditorOverrideSetting=SharedDerivedDataCache)
+Engine:InstalledDerivedDataBackendGraph:Pak:0=(Type=ReadPak, Filename="%GAMEDIR%DerivedDataCache/DDC.ddp")
+Engine:InstalledDerivedDataBackendGraph:CompressedPak:0=(Type=ReadPak, Filename="%GAMEDIR%DerivedDataCache/Compressed.ddp", Compressed=true)
+Engine:InstalledDerivedDataBackendGraph:EnginePak:0=(Type=ReadPak, Filename=../../../Engine/DerivedDataCache/Compressed.ddp, Compressed=true)
+Engine:InstalledDerivedDataBackendGraph:EnterprisePak:0=(Type=ReadPak, Filename=../../../Enterprise/DerivedDataCache/Compressed.ddp, Compressed=true)
+Engine:VirtualTextureChunkDDCCache:UnusedFileAge:0=34
+Engine:VirtualTextureChunkDDCCache:MaxFileChecksPerSec:0=-1 ;no limit
+Engine:VirtualTextureChunkDDCCache:Path:0=%GAMEDIR%DerivedDataCache/VT
+Engine:DDCCleanup:TimeToWaitAfterInit:0=120
+Engine:DDCCleanup:TimeBetweenDeleteingDirectories:0=5
+Engine:DDCCleanup:TimeBetweenDeletingFiles:0=2
+Engine:/Script/Engine.LocalPlayer:AspectRatioAxisConstraint:0=AspectRatio_MaintainXFOV
+Engine:AssetRegistry:BlacklistContentSubPathScanFilters:0=__ExternalActors__
+Engine:AutomationTesting:bForceSmokeTests:0=false
+Engine:/Script/Engine.AutomationTestSettings:MaterialEditorPromotionTest:0=(DefaultMaterialAsset=(FilePath="../../Content/EditorMeshes/ColorCalibrator/M_ColorGrid.uasset"),DefaultDiffuseTexture=(FilePath="../../Content/EngineMaterials/DefaultDiffuse.uasset"),DefaultNormalTexture=(FilePath="../../Content/EngineMaterials/DefaultNormal.uasset"))
+Engine:/Script/Engine.AutomationTestSettings:ParticleEditorPromotionTest:0=(DefaultParticleAsset=(FilePath="../../Content/Tutorial/SubEditors/TutorialAssets/TutorialParticleSystem.uasset"))
+Engine:/Script/NavigationSystem.NavigationSystemV1:bAutoCreateNavigationData:0=true
+Engine:/Script/NavigationSystem.NavigationData:RuntimeGeneration:0=Static
+Engine:/Script/NavigationSystem.RecastNavMesh:TileSetUpdateInterval:0=1.0
+Engine:/Script/NavigationSystem.RecastNavMesh:DefaultDrawDistance:0=5000.0
+Engine:/Script/NavigationSystem.RecastNavMesh:TileSizeUU:0=1000.f
+Engine:/Script/NavigationSystem.RecastNavMesh:CellSize:0=19.f
+Engine:/Script/NavigationSystem.RecastNavMesh:CellHeight:0=10.f
+Engine:/Script/NavigationSystem.RecastNavMesh:AgentRadius:0=34.f
+Engine:/Script/NavigationSystem.RecastNavMesh:AgentHeight:0=144.f
+Engine:/Script/NavigationSystem.RecastNavMesh:AgentMaxStepHeight:0=35.f
+Engine:/Script/NavigationSystem.RecastNavMesh:AgentMaxSlope:0=44.f
+Engine:/Script/NavigationSystem.RecastNavMesh:MinRegionArea:0=0.f
+Engine:/Script/NavigationSystem.RecastNavMesh:MergeRegionSize:0=400.f
+Engine:/Script/NavigationSystem.RecastNavMesh:bUseBetterOffsetsFromCorners:0=true
+Engine:/Script/NavigationSystem.NavArea_Null:DrawColor:0=(R=38,G=38,B=38,A=64)
+Engine:/Script/NavigationSystem.NavArea_Default:DrawColor:0=(R=140,G=255,B=0,A=164)
+Engine:RemoteConfiguration:Enabled:0=false
+Engine:RemoteConfiguration:IniToLoad:0=EditorPerProjectUserSettings
+Engine:RemoteConfiguration:IniToLoad:1=EditorKeyBindings
+Engine:Engine.ErrorHandling:bPromptForRemoteDebugging:0=false
+Engine:Engine.ErrorHandling:bPromptForRemoteDebugOnEnsure:0=false
+Engine:/Script/Engine.Actor:DefaultUpdateOverlapsMethodDuringLevelStreaming:0=OnlyUpdateMovable
+Engine:/Script/Engine.TriggerVolume:DefaultUpdateOverlapsMethodDuringLevelStreaming:0=AlwaysUpdate
+Engine:Engine.BufferVisualizationMaterials:BaseColor:0=(Material="/Engine/BufferVisualization/BaseColor.BaseColor", Name=LOCTEXT("BaseColorMat", "Base Color"))
+Engine:Engine.BufferVisualizationMaterials:CustomDepth:0=(Material="/Engine/BufferVisualization/CustomDepth.CustomDepth", Name=LOCTEXT("BaseCustomDepthMat", "Custom Depth"))
+Engine:Engine.BufferVisualizationMaterials:CustomStencil:0=(Material="/Engine/BufferVisualization/CustomStencil.CustomStencil", Name=LOCTEXT("BaseCustomStencilMat", "Custom Stencil"))
+Engine:Engine.BufferVisualizationMaterials:FinalImage:0=(Material="/Engine/BufferVisualization/FinalImage.FinalImage", Name=LOCTEXT("BaseFinalImageMat", "Final Image"))
+Engine:Engine.BufferVisualizationMaterials:ShadingModel:0=(Material="/Engine/BufferVisualization/LightingModel.LightingModel", Name=LOCTEXT("BaseShadingModelMat", "Shading Model"))
+Engine:Engine.BufferVisualizationMaterials:MaterialAO:0=(Material="/Engine/BufferVisualization/MaterialAO.MaterialAO", Name=LOCTEXT("BaseMaterialAOMat", "Material Ambient Occlusion"))
+Engine:Engine.BufferVisualizationMaterials:Metallic:0=(Material="/Engine/BufferVisualization/Metallic.Metallic", Name=LOCTEXT("BaseMetallicMat", "Metallic"))
+Engine:Engine.BufferVisualizationMaterials:Opacity:0=(Material="/Engine/BufferVisualization/Opacity.Opacity", Name=LOCTEXT("BaseOpacityMat", "Opacity"))
+Engine:Engine.BufferVisualizationMaterials:Roughness:0=(Material="/Engine/BufferVisualization/Roughness.Roughness", Name=LOCTEXT("BaseRoughnessMat", "Roughness"))
+Engine:Engine.BufferVisualizationMaterials:Anisotropy:0=(Material="/Engine/BufferVisualization/Anisotropy.Anisotropy", Name=LOCTEXT("BaseAnisotropyMat", "Anisotropy"))
+Engine:Engine.BufferVisualizationMaterials:SceneColor:0=(Material="/Engine/BufferVisualization/SceneColor.SceneColor", Name=LOCTEXT("BaseSceneColorMat", "Scene Color"))
+Engine:Engine.BufferVisualizationMaterials:SceneDepth:0=(Material="/Engine/BufferVisualization/SceneDepth.SceneDepth", Name=LOCTEXT("BaseSceneDepthMat", "Scene Depth"))
+Engine:Engine.BufferVisualizationMaterials:SeparateTranslucencyRGB:0=(Material="/Engine/BufferVisualization/SeparateTranslucencyRGB.SeparateTranslucencyRGB", Name=LOCTEXT("BaseSeparateTranslucencyRGBMat", "Separate Translucency RGB"))
+Engine:Engine.BufferVisualizationMaterials:SeparateTranslucencyA:0=(Material="/Engine/BufferVisualization/SeparateTranslucencyA.SeparateTranslucencyA", Name=LOCTEXT("BaseSeparateTranslucencyAMat", "Separate Translucency Alpha"))
+Engine:Engine.BufferVisualizationMaterials:Specular:0=(Material="/Engine/BufferVisualization/Specular.Specular", Name=LOCTEXT("BaseSpecularMat", "Specular"))
+Engine:Engine.BufferVisualizationMaterials:SubsurfaceColor:0=(Material="/Engine/BufferVisualization/SubsurfaceColor.SubsurfaceColor", Name=LOCTEXT("BaseSubsurfaceColorMat", "Subsurface Color"))
+Engine:Engine.BufferVisualizationMaterials:WorldNormal:0=(Material="/Engine/BufferVisualization/WorldNormal.WorldNormal", Name=LOCTEXT("BaseWorldNormalMat", "World Normal"))
+Engine:Engine.BufferVisualizationMaterials:WorldTangent:0=(Material="/Engine/BufferVisualization/WorldTangent.WorldTangent", Name=LOCTEXT("BaseWorldTangentMat", "World Tangent"))
+Engine:Engine.BufferVisualizationMaterials:AmbientOcclusion:0=(Material="/Engine/BufferVisualization/AmbientOcclusion.AmbientOcclusion", Name=LOCTEXT("BaseAmbientOcclusionMat", "Ambient Occlusion"))
+Engine:Engine.BufferVisualizationMaterials:CustomDepthWorldUnits:0=(Material="/Engine/BufferVisualization/CustomDepthWorldUnits.CustomDepthWorldUnits", Name=LOCTEXT("BaseCustomDepthWorldUnitsMat", "Custom Depth World Units"))
+Engine:Engine.BufferVisualizationMaterials:SceneDepthWorldUnits:0=(Material="/Engine/BufferVisualization/SceneDepthWorldUnits.SceneDepthWorldUnits", Name=LOCTEXT("BaseSceneDepthWorldUnitsMat", "Scene Depth World Units"))
+Engine:Engine.BufferVisualizationMaterials:Velocity:0=(Material="/Engine/BufferVisualization/Velocity.Velocity", Name=LOCTEXT("Velocity", "Velocity"))
+Engine:Engine.BufferVisualizationMaterials:PreTonemapHDRColor:0=(Material="/Engine/BufferVisualization/PreTonemapHDRColor.PreTonemapHDRColor", Name=LOCTEXT("PreTonemapHDRColor", "Pre Tonemap HDR Color"))
+Engine:Engine.BufferVisualizationMaterials:PostTonemapHDRColor:0=(Material="/Engine/BufferVisualization/PostTonemapHDRColor.PostTonemapHDRColor", Name=LOCTEXT("PostTonemapHDRColor", "Post Tonemap HDR Color"))
+Engine:DeviceProfileManager:DeviceProfileSelectionModule:0=ExampleDeviceProfileSelector
+Engine:SlateRenderer:NumPreallocatedVertices:0=50000
+Engine:MobileSlateUI:bTouchFallbackToMouse:0=true
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bEnableGameCenterSupport:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bSupportsPortraitOrientation:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bSupportsITunesFileSharing:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bSupportsUpsideDownOrientation:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bSupportsLandscapeLeftOrientation:0=True
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bSupportsLandscapeRightOrientation:0=True
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:PreferredLandscapeOrientation:0=LandscapeLeft
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bSupportsMetal:0=True
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bCookPVRTCTextures:0=True
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bCookASTCTextures:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bSupportsMetalMRT:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bShipForBitcode:0=True
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bGameSupportsMultipleActiveControllers:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bAllowRemoteRotation:0=True
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bUseRemoteAsVirtualJoystick:0=True
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bAllowControllers:0=True
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bBuildAsFramework:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bGeneratedSYMFile:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bDisableHTTPS:0=false
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bUseRSync:0=True
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:BundleDisplayName:0=[PROJECT_NAME]
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:BundleName:0=[PROJECT_NAME]
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:BundleIdentifier:0=com.YourCompany.[PROJECT_NAME]
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:VersionInfo:0=1.0
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:FrameRateLock:0=PUFRL_30
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bEnableDynamicMaxFPS:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:MinimumiOSVersion:0=IOS_12
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bSupportsIPad:0=True
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bSupportsIPhone:0=True
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:AdditionalPlistData:0=
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:RemoteServerName:0=
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:RemoteServerOverrideBuildPath:0=
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:RSyncUsername:0=
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:SSHPrivateKeyOverridePath:0=
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bEnableRemoteNotificationsSupport:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bEnableCloudKitSupport:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bRunAsCurrentUser:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:IOSCloudKitSyncStrategy:0=None
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bGenerateCrashReportSymbols:0=false
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bAutomaticSigning:0=false
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:UseFastIntrinsics:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:ForceFloats:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:EnableMathOptimisations:0=True
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:MaxShaderLanguageVersion:0=3
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bDisableMotionData:0=False
+Engine:/Script/IOSRuntimeSettings.IOSRuntimeSettings:bEnableAdvertisingIdentifier:0=True
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:SDKAPILevelOverride:0=
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:NDKAPILevelOverride:0=
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bEnableGooglePlaySupport:0=false
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bSupportAdMob:0=true
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bBuildForArmV7:0=true
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bBuildForArm64:0=false
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bBuildForX8664:0=false
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bBuildForES31:0=true
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bSupportsVulkan:0=false
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bSupportsVulkanSM5:0=false
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bDetectVulkanByDefault:0=true
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bPackageDataInsideApk:0=false
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bUseExternalFilesDir:0=false
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bPublicLogFiles:0=true
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bCreateAllPlatformsInstall:0=false
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:Orientation:0=SensorLandscape
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:InstallLocation:0=InternalOnly
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:DepthBufferPreference:0=Default
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:PackageName:0=com.YourCompany.[PROJECT]
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:StoreVersion:0=1
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:StoreVersionOffsetArmV7:0=0
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:StoreVersionOffsetArm64:0=0
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:StoreVersionOffsetX8664:0=0
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:VersionDisplayName:0=1.0
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:MinSDKVersion:0=19
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:TargetSDKVersion:0=28
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bEnableGradle:0=true
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bEnableLint:0=false
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bShowLaunchImage:0=true
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bValidateTextureFormats:0=true
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bMultiTargetFormat_ETC2:0=true
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bMultiTargetFormat_DXT:0=true
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bMultiTargetFormat_ASTC:0=true
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:TextureFormatPriority_ETC2:0=0.2
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:TextureFormatPriority_DXT:0=0.6
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:TextureFormatPriority_ASTC:0=0.9
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bEnableNewKeyboard:0=True
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bAndroidVoiceEnabled:0=false
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bBuildWithHiddenSymbolVisibility:0=false
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bSaveSymbols:0=false
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bAllowControllers:0=True
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bAllowIMU:0=False
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bUseDisplayCutout:0=False
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bEnableSnapshots:0=False
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bRestoreNotificationsOnReboot:0=False
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bEnableBundle:0=False
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bEnableUniversalAPK:0=True
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bBundleABISplit:0=True
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bBundleLanguageSplit:0=True
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bBundleDensitySplit:0=True
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bFullScreen:0=True
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bForceLDLinker:0=False
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bForceSmallOBBFiles:0=False
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bAllowLargeOBBFiles:0=False
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bAllowPatchOBBFile:0=False
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bAllowOverflowOBBFiles:0=False
+Engine:/Script/AndroidRuntimeSettings.AndroidRuntimeSettings:bEnableDomStorage:0=False
+Engine:/Script/MagicLeap.MagicLeapSettings:bEnableZI:0=False
+Engine:/Script/MagicLeap.MagicLeapSettings:bUseVulkanForZI:0=True
+Engine:/Script/MagicLeap.MagicLeapSettings:bUseMLAudioForZI:0=True
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:PackageName:0=com.YourCompany.[PROJECT]
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:ApplicationDisplayName:0=
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:FrameTimingHint:0=FPS_60
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:bProtectedContent:0=False
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:bManualCallToAppReady:0=False
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:bUseMobileRendering:0=true
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:Certificate:0=(FilePath="")
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:IconModelPath:0=(Path="Build/Lumin/Resources/Model")
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:IconPortalPath:0=(Path="Build/Lumin/Resources/Portal")
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:bUseVulkan:0=true
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:VersionCode:0=1
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:MinimumAPILevel:0=7
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:bRemoveDebugInfo:0=true
+Engine:/Script/LuminRuntimeSettings.LuminRuntimeSettings:VulkanValidationLayerLibs:0=(Path="")
+Engine:/Script/UnrealEd.CookerSettings:DefaultPVRTCQuality:0=1
+Engine:/Script/UnrealEd.CookerSettings:DefaultASTCQualityBySpeed:0=1
+Engine:/Script/UnrealEd.CookerSettings:DefaultASTCQualityBySize:0=3
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:0=WidgetBlueprint
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:1=GroupActor
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:2=MetaData
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:3=ObjectRedirector
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:4=NavMeshRenderingComponent
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:5=ReflectionCaptureComponent
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:6=TextRenderComponent
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:7=Font
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:8=InterpCurveEdSetup
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:9=MaterialExpression
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:10=MatineeActorCameraAnim
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:11=NiagaraEmitter
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:12=NiagaraScript
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:13=ParticleEmitter
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:14=ParticleLODLevel
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:15=ParticleModule
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:16=SubUVAnimation
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:17=SoundNode
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedServer:18=GameplayEffectUIData
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedClient:0=WidgetBlueprint
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedClient:1=GroupActor
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedClient:2=MetaData
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedClient:3=ObjectRedirector
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedClient:4=InterpCurveEdSetup
+Engine:/Script/UnrealEd.CookerSettings:ClassesExcludedOnDedicatedClient:5=MatineeActorCameraAnim
+Engine:/Script/UnrealEd.CookerSettings:VersionedIntRValues:0=r.AllowStaticLighting
+Engine:/Script/UnrealEd.CookerSettings:VersionedIntRValues:1=r.GBuffer
+Engine:/Script/UnrealEd.CookerSettings:VersionedIntRValues:2=r.BasePassOutputsVelocity
+Engine:/Script/UnrealEd.CookerSettings:VersionedIntRValues:3=r.SelectiveBasePassOutputs
+Engine:/Script/UnrealEd.CookerSettings:VersionedIntRValues:4=r.DBuffer
+Engine:/Script/UnrealEd.CookerSettings:VersionedIntRValues:5=r.Shaders.KeepDebugInfo
+Engine:/Script/UnrealEd.CookerSettings:VersionedIntRValues:6=r.Shaders.Optimize
+Engine:/Script/UnrealEd.CookerSettings:VersionedIntRValues:7=r.CompileShadersForDevelopment
+Engine:/Script/UnrealEd.CookerSettings:VersionedIntRValues:8=r.MobileHDR
+Engine:/Script/UnrealEd.CookerSettings:VersionedIntRValues:9=r.UsePreExposure
+Engine:/Script/Engine.PhysicsSettings:DefaultGravityZ:0=-980.0
+Engine:/Script/Engine.PhysicsSettings:bEnable2DPhysics:0=false
+Engine:/Script/WindowsTargetPlatform.WindowsTargetSettings:TargetedRHIs:0=PCD3D_SM5
+Engine:/Script/WindowsTargetPlatform.WindowsTargetSettings:MinimumOSVersion:0=MSOS_Vista
+Engine:/Script/WindowsTargetPlatform.WindowsTargetSettings:bEnableRayTracing:0=true
+Engine:/Script/MacTargetPlatform.MacTargetSettings:MaxShaderLanguageVersion:0=4
+Engine:/Script/MacTargetPlatform.MacTargetSettings:TargetedRHIs:0=SF_METAL_SM5
+Engine:/Script/MacTargetPlatform.MacTargetSettings:UseFastIntrinsics:0=False
+Engine:/Script/MacTargetPlatform.MacTargetSettings:ForceFloats:0=False
+Engine:/Script/MacTargetPlatform.MacTargetSettings:EnableMathOptimisations:0=True
+Engine:HMDPluginPriority:SteamVR:0=30
+Engine:HMDPluginPriority:OpenXRHMD:0=20
+Engine:/Script/Engine.AISystemBase:AISystemModuleName:0=AIModule
+Engine:/Script/Engine.AISystemBase:AISystemClassName:0=/Script/AIModule.AISystem
+Engine:/Script/AIModule.AISystem:PerceptionSystemClassName:0=/Script/AIModule.AIPerceptionSystem
+Engine:VisualLogger:FrameCacheLenght:0=1.0f ;in seconds, to batch log data between file serializations
+Engine:VisualLogger:UseCompression:0=false ;works only with binary files
+Engine:/Script/Engine.NetworkSettings:NetworkEmulationProfiles:0=(ProfileName="Average",ToolTip="Simulates average internet conditions")
+Engine:/Script/Engine.NetworkSettings:NetworkEmulationProfiles:1=(ProfileName="Bad",ToolTip="Simulates laggy internet conditions")
+Engine:/Script/Engine.PlayerCameraManager:ServerUpdateCameraTimeout:0=2.0
+Engine:/Script/CinematicCamera.CineCameraComponent:DefaultFilmbackPresetName:0=169 DSLR
+Engine:/Script/CinematicCamera.CineCameraComponent:DefaultFilmbackPreset:0=169 Digital Film
+Engine:/Script/CinematicCamera.CineCameraComponent:DefaultLensPresetName:0=Universal Zoom
+Engine:/Script/CinematicCamera.CineCameraComponent:DefaultLensFocalLength:0=35
+Engine:/Script/CinematicCamera.CineCameraComponent:DefaultLensFStop:0=2.8
+Engine:/Script/TcpMessaging.TcpMessagingSettings:EnableTransport:0=True
+Engine:/Script/TcpMessaging.TcpMessagingSettings:ListenEndpoint:0=
+Engine:/Script/TcpMessaging.TcpMessagingSettings:ConnectionRetryDelay:0=2
+Engine:CrashReportClient:CrashConfigPurgeDays:0=2
+Engine:/Script/Engine.AnimationSettings:bStripAnimationDataOnDedicatedServer:0=False
+Engine:/Script/Engine.MeshSimplificationSettings:r.MeshReductionModule:0=QuadricMeshReduction
+Engine:/Script/LevelSequence.LevelSequence:DefaultCompletionMode:0=RestoreState
+Engine:/Script/TemplateSequence.TemplateSequence:DefaultCompletionMode:0=RestoreState
+Engine:Messaging:bAllowDelayedMessaging:0=false
+Engine:/Script/ChaosSolverEngine.ChaosSolverSettings:DefaultChaosSolverActorClass:0=/Script/ChaosSolverEngine.ChaosSolverActor
+Engine:/Script/Engine.VirtualTexturePoolConfig:DefaultSizeInMegabyte:0=64
+Engine:TextureFormatOodle:bForceAllBC23ToBC7:0=False
+Engine:TextureFormatOodle:bForceRDOOff:0=True
+Engine:TextureFormatOodle:bDebugColor:0=False
+Engine:TextureFormatOodle:GlobalLambdaMultiplier:0=1.000000
+Engine:TextureFormatOodle:DefaultRDOLambda:0=30
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:0=(PlatformName="Win64", Configuration="Development", PlatformType="Editor", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:1=(PlatformName="Win64", Configuration="DebugGame", PlatformType="Editor", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:2=(PlatformName="Win64", Configuration="DebugGame", PlatformType="Game", RequiredFile="Engine\Binaries\Win64\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:3=(PlatformName="Win64", Configuration="Development", PlatformType="Game", RequiredFile="Engine\Binaries\Win64\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:4=(PlatformName="Win64", Configuration="Shipping", PlatformType="Game", RequiredFile="Engine\Binaries\Win64\UE4Game-Win64-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:5=(PlatformName="Win32", Configuration="DebugGame", PlatformType="Game", RequiredFile="Engine\Binaries\Win32\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:6=(PlatformName="Win32", Configuration="Development", PlatformType="Game", RequiredFile="Engine\Binaries\Win32\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:7=(PlatformName="Win32", Configuration="Shipping", PlatformType="Game", RequiredFile="Engine\Binaries\Win32\UE4Game-Win32-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:8=(PlatformName="Android", Configuration="DebugGame", PlatformType="Game", Architecture="-armv7", RequiredFile="Engine\Binaries\Android\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:9=(PlatformName="Android", Configuration="DebugGame", PlatformType="Game", Architecture="-arm64", RequiredFile="Engine\Binaries\Android\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:10=(PlatformName="Android", Configuration="Development", PlatformType="Game", Architecture="-armv7", RequiredFile="Engine\Binaries\Android\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:11=(PlatformName="Android", Configuration="Development", PlatformType="Game", Architecture="-arm64", RequiredFile="Engine\Binaries\Android\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:12=(PlatformName="Android", Configuration="Shipping", PlatformType="Game", Architecture="-armv7", RequiredFile="Engine\Binaries\Android\UE4Game-Android-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:13=(PlatformName="Android", Configuration="Shipping", PlatformType="Game", Architecture="-arm64", RequiredFile="Engine\Binaries\Android\UE4Game-Android-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:14=(PlatformName="IOS", Configuration="DebugGame", PlatformType="Game", RequiredFile="Engine\Binaries\IOS\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:15=(PlatformName="IOS", Configuration="Development", PlatformType="Game", RequiredFile="Engine\Binaries\IOS\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:16=(PlatformName="IOS", Configuration="Shipping", PlatformType="Game", RequiredFile="Engine\Binaries\IOS\UE4Game-IOS-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:17=(PlatformName="TVOS", Configuration="DebugGame", PlatformType="Game", RequiredFile="Engine\Binaries\TVOS\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:18=(PlatformName="TVOS", Configuration="Development", PlatformType="Game", RequiredFile="Engine\Binaries\TVOS\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:19=(PlatformName="TVOS", Configuration="Shipping", PlatformType="Game", RequiredFile="Engine\Binaries\TVOS\UE4Game-TVOS-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:20=(PlatformName="Linux", Configuration="DebugGame", PlatformType="Game", Architecture="x86_64-unknown-linux-gnu", RequiredFile="Engine\Binaries\Linux\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:21=(PlatformName="Linux", Configuration="Development", PlatformType="Game", Architecture="x86_64-unknown-linux-gnu", RequiredFile="Engine\Binaries\Linux\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:22=(PlatformName="Linux", Configuration="Shipping", PlatformType="Game", Architecture="x86_64-unknown-linux-gnu", RequiredFile="Engine\Binaries\Linux\UE4Game-Linux-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:23=(PlatformName="LinuxAArch64", Configuration="DebugGame", PlatformType="Game", Architecture="aarch64-unknown-linux-gnueabi", RequiredFile="Engine\Binaries\LinuxAArch64\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:24=(PlatformName="LinuxAArch64", Configuration="Development", PlatformType="Game", Architecture="aarch64-unknown-linux-gnueabi", RequiredFile="Engine\Binaries\LinuxAArch64\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:25=(PlatformName="LinuxAArch64", Configuration="Shipping", PlatformType="Game", Architecture="aarch64-unknown-linux-gnueabi", RequiredFile="Engine\Binaries\LinuxAArch64\UE4Game-LinuxAArch64-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:26=(PlatformName="Lumin", Configuration="DebugGame", PlatformType="Game", RequiredFile="Engine\Binaries\Lumin\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:27=(PlatformName="Lumin", Configuration="Development", PlatformType="Game", RequiredFile="Engine\Binaries\Lumin\UE4Game.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:28=(PlatformName="Lumin", Configuration="Shipping", PlatformType="Game", RequiredFile="Engine\Binaries\Lumin\UE4Game-Lumin-Shipping.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:29=(PlatformName="HoloLens", Configuration="DebugGame", PlatformType="Game", Architecture="x64", RequiredFile="Engine\Binaries\HoloLens\UE4Game-HoloLens-Developmentx64.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:30=(PlatformName="HoloLens", Configuration="DebugGame", PlatformType="Game", Architecture="arm64", RequiredFile="Engine\Binaries\HoloLens\UE4Game-HoloLens-Developmentarm64.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:31=(PlatformName="HoloLens", Configuration="Development", PlatformType="Game", Architecture="x64", RequiredFile="Engine\Binaries\HoloLens\UE4Game-HoloLens-Developmentx64.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:32=(PlatformName="HoloLens", Configuration="Development", PlatformType="Game", Architecture="arm64", RequiredFile="Engine\Binaries\HoloLens\UE4Game-HoloLens-Developmentarm64.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:33=(PlatformName="HoloLens", Configuration="Shipping", PlatformType="Game", Architecture="x64", RequiredFile="Engine\Binaries\HoloLens\UE4Game-HoloLens-Shippingx64.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:InstalledPlatforms:InstalledPlatformConfigurations:34=(PlatformName="HoloLens", Configuration="Shipping", PlatformType="Game", Architecture="arm64", RequiredFile="Engine\Binaries\HoloLens\UE4Game-HoloLens-Shippingarm64.target", ProjectType="Any", bCanBeDisplayed=False)
+Engine:Analytics:UE4TypeOverride:0=Rocket
+Engine:/Script/HardwareTargeting.HardwareTargetingSettings:TargetedHardwareClass:0=Desktop
+Engine:/Script/HardwareTargeting.HardwareTargetingSettings:AppliedTargetedHardwareClass:0=Desktop
+Engine:/Script/HardwareTargeting.HardwareTargetingSettings:DefaultGraphicsPerformance:0=Maximum
+Engine:/Script/HardwareTargeting.HardwareTargetingSettings:AppliedDefaultGraphicsPerformance:0=Maximum
+Game:Internationalization:LocalizationPaths:0=%GAMEDIR%Content/Localization/Game
+Game:/Script/Engine.GameNetworkManager:TotalNetBandwidth:0=32000
+Game:/Script/Engine.GameNetworkManager:MaxDynamicBandwidth:0=7000
+Game:/Script/Engine.GameNetworkManager:MinDynamicBandwidth:0=4000
+Game:/Script/Engine.GameNetworkManager:MoveRepSize:0=42.0f
+Game:/Script/Engine.GameNetworkManager:MAXPOSITIONERRORSQUARED:0=3.0f
+Game:/Script/Engine.GameNetworkManager:MAXNEARZEROVELOCITYSQUARED:0=9.0f
+Game:/Script/Engine.GameNetworkManager:CLIENTADJUSTUPDATECOST:0=180.0f
+Game:/Script/Engine.GameNetworkManager:MAXCLIENTUPDATEINTERVAL:0=0.25f
+Game:/Script/Engine.GameNetworkManager:MaxClientForcedUpdateDuration:0=1.0f
+Game:/Script/Engine.GameNetworkManager:ServerForcedUpdateHitchThreshold:0=0.150f
+Game:/Script/Engine.GameNetworkManager:ServerForcedUpdateHitchCooldown:0=0.100f
+Game:/Script/Engine.GameNetworkManager:MaxMoveDeltaTime:0=0.125f
+Game:/Script/Engine.GameNetworkManager:MaxClientSmoothingDeltaTime:0=0.50f
+Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveDeltaTime:0=0.0166
+Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveDeltaTimeThrottled:0=0.0222
+Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveDeltaTimeStationary:0=0.0166
+Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveThrottleAtNetSpeed:0=10000
+Game:/Script/Engine.GameNetworkManager:ClientNetSendMoveThrottleOverPlayerCount:0=10
+Game:/Script/Engine.GameNetworkManager:ClientAuthorativePosition:0=false
+Game:/Script/Engine.GameNetworkManager:ClientErrorUpdateRateLimit:0=0.0f
+Game:/Script/Engine.GameNetworkManager:bMovementTimeDiscrepancyDetection:0=false
+Game:/Script/Engine.GameNetworkManager:bMovementTimeDiscrepancyResolution:0=false
+Game:/Script/Engine.GameNetworkManager:MovementTimeDiscrepancyMaxTimeMargin:0=0.25f
+Game:/Script/Engine.GameNetworkManager:MovementTimeDiscrepancyMinTimeMargin:0=-0.25f
+Game:/Script/Engine.GameNetworkManager:MovementTimeDiscrepancyResolutionRate:0=1.0f
+Game:/Script/Engine.GameNetworkManager:MovementTimeDiscrepancyDriftAllowance:0=0.0f
+Game:/Script/Engine.GameNetworkManager:bMovementTimeDiscrepancyForceCorrectionsDuringResolution:0=false
+Game:/Script/Engine.GameNetworkManager:bUseDistanceBasedRelevancy:0=true
+Game:/Script/Engine.GameSession:MaxPlayers:0=16
+Game:/Script/Engine.GameSession:MaxSpectators:0=2
+Game:/Script/Engine.GameSession:MaxSplitscreensPerConnection:0=4
+Game:/Script/Engine.GameSession:bRequiresPushToTalk:0=true
+Game:/Script/EngineSettings.GeneralProjectSettings:CompanyName:0=
+Game:/Script/EngineSettings.GeneralProjectSettings:CompanyDistinguishedName:0=
+Game:/Script/EngineSettings.GeneralProjectSettings:CopyrightNotice:0=Fill out your copyright notice in the Description page of Project Settings.
+Game:/Script/EngineSettings.GeneralProjectSettings:Description:0=
+Game:/Script/EngineSettings.GeneralProjectSettings:LicensingTerms:0=
+Game:/Script/EngineSettings.GeneralProjectSettings:PrivacyPolicy:0=
+Game:/Script/EngineSettings.GeneralProjectSettings:ProjectName:0=
+Game:/Script/EngineSettings.GeneralProjectSettings:ProjectVersion:0=1.0.0.0
+Game:/Script/EngineSettings.GeneralProjectSettings:Homepage:0=
+Game:/Script/EngineSettings.GeneralProjectSettings:SupportContact:0=
+Game:/Script/EngineSettings.GeneralProjectSettings:ProjectID:0=76FA5C1449FFD799FEAC809759F001CF
+Game:/Script/UnrealEd.ProjectPackagingSettings:BuildConfiguration:0=PPBC_Development
+Game:/Script/UnrealEd.ProjectPackagingSettings:FullRebuild:0=False
+Game:/Script/UnrealEd.ProjectPackagingSettings:UsePakFile:0=True
+Game:/Script/UnrealEd.ProjectPackagingSettings:bCompressed:0=True
+Game:/Script/UnrealEd.ProjectPackagingSettings:PakFileCompressionFormats:0=Oodle
+Game:/Script/UnrealEd.ProjectPackagingSettings:PakFileAdditionalCompressionOptions:0=-compressionblocksize=256KB
+Game:/Script/UnrealEd.ProjectPackagingSettings:PakFileCompressionMethod:0=Kraken
+Game:/Script/UnrealEd.ProjectPackagingSettings:PakFileCompressionLevel_Distribution:0=7
+Game:/Script/UnrealEd.ProjectPackagingSettings:PakFileCompressionLevel_TestShipping:0=5
+Game:/Script/UnrealEd.ProjectPackagingSettings:PakFileCompressionLevel_DebugDevelopment:0=3
+Game:/Script/UnrealEd.ProjectPackagingSettings:bForceUseProjectCompressionFormatIgnoreHardwareOverride:0=False
+Game:/Script/UnrealEd.ProjectPackagingSettings:bGenerateChunks:0=False
+Game:/Script/UnrealEd.ProjectPackagingSettings:bChunkHardReferencesOnly:0=False
+Game:/Script/UnrealEd.ProjectPackagingSettings:IncludePrerequisites:0=True
+Game:/Script/UnrealEd.ProjectPackagingSettings:IncludeCrashReporter:0=False
+Game:/Script/UnrealEd.ProjectPackagingSettings:InternationalizationPreset:0=English
+Game:/Script/UnrealEd.ProjectPackagingSettings:bSkipEditorContent:0=false
+Game:/Script/UnrealEd.ProjectPackagingSettings:bSharedMaterialNativeLibraries:0=True
+Game:/Script/UnrealEd.ProjectPackagingSettings:bShareMaterialShaderCode:0=True
+Game:/Script/UnrealEd.ProjectPackagingSettings:bSkipMovies:0=False
+Game:/Script/Engine.PlayerController:InputYawScale:0=2.5
+Game:/Script/Engine.PlayerController:InputPitchScale:0=-2.5
+Game:/Script/Engine.PlayerController:InputRollScale:0=1.0
+Game:/Script/Engine.PlayerController:ForceFeedbackScale:0=1.0
+Game:/Script/Engine.DebugCameraController:bShowSelectedInfo:0=true
+Game:/Script/Engine.WorldSettings:DefaultAmbientZoneSettings:0=(bIsWorldSettings=true)
+Game:/Script/Engine.WorldSettings:MinUndilatedFrameTime:0=0.0005		; 2000 fps
+Game:/Script/Engine.WorldSettings:MaxUndilatedFrameTime:0=0.4			; 2.5 fps
+Game:/Script/Engine.WorldSettings:MinGlobalTimeDilation:0=0.0001
+Game:/Script/Engine.WorldSettings:MaxGlobalTimeDilation:0=20.0
+Game:/Script/AIModule.AISense_Hearing:SpeedOfSoundSq:0=0
+Game:/Script/AIModule.AISenseConfig_Hearing:Implementation:0=Class'/Script/AIModule.AISense_Hearing'
+Game:/Script/AIModule.AISenseConfig_Hearing:DetectionByAffiliation:0=(bDetectEnemies=true)
+Game:/Script/AIModule.AISenseConfig_Sight:Implementation:0=Class'/Script/AIModule.AISense_Sight'
+Game:/Script/AIModule.AISenseConfig_Sight:SightRadius:0=3000
+Game:/Script/AIModule.AISenseConfig_Sight:LoseSightRadius:0=3500
+Game:/Script/AIModule.AISenseConfig_Sight:PeripheralVisionAngleDegrees:0=90
+Game:/Script/AIModule.AISenseConfig_Sight:DetectionByAffiliation:0=(bDetectEnemies=true)
+Game:/Script/AIModule.AISenseConfig_Sight:AutoSuccessRangeFromLastSeenLocation:0=-1.f
+Game:/Script/AIModule.AISenseConfig_Damage:Implementation:0=Class'/Script/AIModule.AISense_Damage'
+Game:/Script/AIModule.EnvQueryManager:MaxAllowedTestingTime:0=0.01
+Game:/Script/AIModule.EnvQueryManager:bTestQueriesUsingBreadth:0=true
+Game:/Script/AIModule.EnvQueryManager:QueryCountWarningThreshold:0=0
+Game:/Script/AIModule.EnvQueryManager:QueryCountWarningInterval:0=30.0
+Game:/Script/LiveLink.LiveLinkSettings:FrameInterpolationProcessor:0=Class'/Script/LiveLink.LiveLinkBasicFrameInterpolationProcessor'
+Input:/Script/Engine.InputSettings:bEnableMouseSmoothing:0=True
+Input:/Script/Engine.InputSettings:bEnableFOVScaling:0=True
+Input:/Script/Engine.InputSettings:FOVScale:0=0.011110
+Input:/Script/Engine.InputSettings:DoubleClickTime:0=0.200000
+Input:/Script/Engine.InputSettings:DefaultTouchInterface:0=/Engine/MobileResources/HUD/DefaultVirtualJoysticks.DefaultVirtualJoysticks
+Input:/Script/Engine.InputSettings:bAlwaysShowTouchInterface:0=False
+Input:/Script/Engine.InputSettings:bShowConsoleOnFourFingerTap:0=True
+Input:/Script/Engine.InputSettings:bAltEnterTogglesFullscreen:0=True
+Input:/Script/Engine.InputSettings:bF11TogglesFullscreen:0=True
+Input:/Script/Engine.InputSettings:bEnableGestureRecognizer:0=False
+Input:/Script/Engine.InputSettings:InitialButtonRepeatDelay:0=0.2
+Input:/Script/Engine.InputSettings:ButtonRepeatDelay:0=0.1
+Input:/Script/Engine.InputSettings:bUseMouseForTouch:0=False
+Input:/Script/Engine.InputSettings:bCaptureMouseOnLaunch:0=True
+Input:/Script/Engine.InputSettings:bUseAutocorrect:0=False
+Input:/Script/Engine.InputSettings:DefaultViewportMouseCaptureMode:0=CapturePermanently_IncludingInitialMouseDown
+Input:/Script/Engine.InputSettings:DefaultViewportMouseLockMode:0=LockOnCapture
+Input:/Script/Engine.InputSettings:DefaultPlayerInputClass:0=/Script/Engine.PlayerInput
+Input:/Script/Engine.InputSettings:DefaultInputComponentClass:0=/Script/Engine.InputComponent
+Input:/Script/EngineSettings.ConsoleSettings:MaxScrollbackSize:0=1024
+Input:/Script/EngineSettings.ConsoleSettings:BackgroundOpacityPercentage:0=85.000000
+Input:/Script/EngineSettings.ConsoleSettings:InputColor:0=(R=230,G=230,B=230,A=255)
+Input:/Script/EngineSettings.ConsoleSettings:HistoryColor:0=(R=180,G=180,B=180,A=255)
+Input:/Script/EngineSettings.ConsoleSettings:AutoCompleteCommandColor:0=(B=185,G=109,R=144,A=255)
+Input:/Script/EngineSettings.ConsoleSettings:AutoCompleteCVarColor:0=(B=86,G=158,R=86,A=255)
+Input:/Script/EngineSettings.ConsoleSettings:AutoCompleteFadedColor:0=(R=100,G=100,B=100,A=255)
+Editor:/Script/UnrealEd.UnrealEdOptions:bExpandClassPickerClassList:0=False
+Editor:/Script/OculusEditor.OculusEditorSettings:bEnableOculusBuildTelemetry:0=False
+Editor:Internationalization:LocalizationPaths:0=../../../Engine/Content/Localization/Editor
+Editor:Internationalization:LocalizationPaths:1=../../../Engine/Content/Localization/EditorTutorials
+Editor:Internationalization:LocalizationPaths:2=../../../Engine/Content/Localization/Keywords
+Editor:Internationalization:LocalizationPaths:3=../../../Engine/Content/Localization/Category
+Editor:Internationalization:ToolTipLocalizationPaths:0=../../../Engine/Content/Localization/ToolTips
+Editor:Internationalization:PropertyNameLocalizationPaths:0=../../../Engine/Content/Localization/PropertyNames
+Editor:SlateRenderer:GrayscaleFontAtlasSize:0=2048
+Editor:SlateRenderer:ColorFontAtlasSize:0=512
+Editor:/Script/UnrealEd.DefaultSizedThumbnailRenderer:DefaultSizeX:0=512
+Editor:/Script/UnrealEd.DefaultSizedThumbnailRenderer:DefaultSizeY:0=512
+Editor:/Script/UnrealEd.WorldThumbnailRenderer:GlobalOrbitPitchOffset:0=0
+Editor:/Script/UnrealEd.WorldThumbnailRenderer:GlobalOrbitYawOffset:0=0
+Editor:/Script/UnrealEd.WorldThumbnailRenderer:bUseUnlitScene:0=false
+Editor:/Script/UnrealEd.WorldThumbnailRenderer:bAllowWorldThumbnails:0=false
+Editor:/Script/UnrealEd.ActorFactory:MenuPriority:0=10
+Editor:/Script/UnrealEd.ActorFactoryStaticMesh:MenuPriority:0=30
+Editor:/Script/UnrealEd.ActorFactoryInteractiveFoliage:MenuPriority:0=26
+Editor:/Script/UnrealEd.ActorFactoryPlayerStart:MenuPriority:0=20
+Editor:/Script/UnrealEd.ActorFactoryDirectionalLight:MenuPriority:0=19
+Editor:/Script/UnrealEd.ActorFactoryPointLight:MenuPriority:0=19
+Editor:/Script/UnrealEd.ActorFactorySpotLight:MenuPriority:0=19
+Editor:/Script/UnrealEd.ActorFactorySkeletalMesh:MenuPriority:0=13
+Editor:/Script/UnrealEd.ActorFactoryAmbientSound:MenuPriority:0=11
+Editor:BlueprintEditor.Palette:bUseLegacyLayout:0=false
+Editor:BlueprintEditor.Favorites:DefaultProfile:0=StarterProfile
+Editor:BlueprintEditor.Favorites:StarterProfile:0=(NodeName="/Script/BlueprintGraph.K2Node_Event", FieldName="/Script/Engine.ActorReceiveBeginPlay")
+Editor:BlueprintEditor.Favorites:StarterProfile:1=(NodeName="/Script/BlueprintGraph.K2Node_Event", FieldName="/Script/Engine.ActorReceiveTick")
+Editor:BlueprintEditor.Favorites:StarterProfile:2=(NodeName="/Script/BlueprintGraph.K2Node_CallFunction", FieldName="/Script/Engine.GameplayStaticsGetPlayerPawn")
+Editor:BlueprintEditor.Favorites:StarterProfile:3=(NodeName="/Script/BlueprintGraph.K2Node_IfThenElse")
+Editor:BlueprintEditor.Favorites:StarterProfile:4=(NodeName="/Script/BlueprintGraph.K2Node_CallFunction", FieldName="/Script/Engine.ActorGetTransform")
+Editor:BlueprintEditor.Favorites:StarterProfile:5=(NodeName="/Script/BlueprintGraph.K2Node_CallFunction", FieldName="/Script/Engine.ActorK2_DestroyActor")
+Editor:BlueprintEditor.Favorites:StarterProfile:6=(NodeName="/Script/BlueprintGraph.K2Node_CallFunction", FieldName="/Script/Engine.GameplayStaticsGetAllActorsOfClass")
+Editor:BlueprintEditor.Favorites:StarterProfile:7=(NodeName="/Script/BlueprintGraph.K2Node_SpawnActorFromClass")
+Editor:BlueprintEditor.Menu:BlueprintHiddenFields:0=/Script/Engine.ActorK2_AttachRootComponentTo
+Editor:BlueprintEditor.Menu:BlueprintHiddenFields:1=/Script/Engine.ActorK2_AttachRootComponentToActor
+Editor:BlueprintEditor.Menu:BlueprintHiddenFields:2=/Script/Engine.ActorDetachRootComponentFromParent
+Editor:BlueprintEditor.Menu:BlueprintHiddenFields:3=/Script/Engine.SceneComponentK2_AttachTo
+Editor:BlueprintEditor.Menu:BlueprintHiddenFields:4=/Script/Engine.SceneComponentDetachFromParent
+Editor:UnrealEd.HitProxy:HitProxySize:0=5
+Editor:UI:ContentDirectories:0=/Game/UI
+Editor:UI:ContentDirectories:1=/Game/Widget
+Editor:UI:ContentDirectories:2=/Game/Widgets
+Editor:UI:ContentDirectories:3=/Engine/MobileResources
+Editor:UserDefinedStructure:bUseUserDefinedStructure:0=true
+Editor:CustomBlueprintFunctionLibrary:bCanCreateNew:0=true
+Editor:StructSerialization:SkipByteCodeSerialization:0=true
+Editor:StructSerialization:BreakSerializationRecursion:0=true
+Editor:ScriptErrorLog:MaxNumOfAccessViolation:0=16
+Editor:CookSettings:PackagesPerGC:0=0
+Editor:CookSettings:IdleTimeToGC:0=20
+Editor:CookSettings:MemoryMaxUsedPhysical:0=16384
+Editor:CookSettings:MemoryMinFreePhysical:0=1024
+Editor:CookSettings:MaxConcurrentShaderJobs:0=8192
+Editor:CookPlatformDataCacheSettings:MaterialInstance:0=100
+Editor:CookPlatformDataCacheSettings:Material:0=100
+Editor:CookPlatformDataCacheSettings:Texture2D:0=50
+Editor:/Script/UnrealEd.EditorProjectAppearanceSettings:bDisplayUnits:0=True
+Editor:/Script/UnrealEd.EditorProjectAppearanceSettings:AngleUnits:0=EUnitDegrees
+Editor:/Script/UnrealEd.EditorProjectAppearanceSettings:SpeedUnits:0=EUnitMetersPerSecond
+Editor:/Script/UnrealEd.EditorProjectAppearanceSettings:TemperatureUnits:0=EUnitCelsius
+Editor:/Script/UnrealEd.EditorProjectAppearanceSettings:ForceUnits:0=EUnitNewtons
+Editor:BlueprintSearchSettings:AsyncTaskBatchSize:0=2048
+Editor:BlueprintSearchSettings:bDisableDeferredIndexing:0=false
+Editor:BlueprintSearchSettings:bDisableThreadedIndexing:0=false
+Editor:BlueprintSearchSettings:bEnableCsvStatsProfiling:0=false
+Editor:BlueprintSearchSettings:bEnableDeveloperMenuTools:0=false
+Editor:BlueprintSearchSettings:bDisableSearchResultTemplates:0=false
+Editor:BlueprintNativizationSettings:bUseLocalEventGraphVariables:0=true
+Editor:/Script/UnrealEd.BlueprintEditorProjectSettings:bValidateUnloadedSoftActorReferences:0=true
+Editor:/Script/DataValidation.DataValidationManager:bValidateOnSave:0=true
+Editor:/Script/UnrealEd.DiffAssetRegistriesCommandlet:P4EngineBasePath:0=/Engine/Content/
+Editor:/Script/UnrealEd.DiffAssetRegistriesCommandlet:P4EngineAssetPath:0=/Engine/
+Lightmass:DevOptions.StaticLighting:bAllowMultiThreadedStaticLighting:0=True
+Lightmass:DevOptions.StaticLighting:ViewSingleBounceNumber:0=-1
+Lightmass:DevOptions.StaticLighting:bUseBilinearFilterLightmaps:0=True
+Lightmass:DevOptions.StaticLighting:bCompressLightmaps:0=True
+Lightmass:DevOptions.StaticLighting:bUseConservativeTexelRasterization:0=True
+Lightmass:DevOptions.StaticLighting:bAccountForTexelSize:0=True
+Lightmass:DevOptions.StaticLighting:bUseMaxWeight:0=True
+Lightmass:DevOptions.StaticLighting:MaxTriangleLightingSamples:0=8
+Lightmass:DevOptions.StaticLighting:MaxTriangleIrradiancePhotonCacheSamples:0=4
+Lightmass:DevOptions.StaticLighting:bAllow64bitProcess:0=True
+Lightmass:DevOptions.StaticLighting:bAllowCropping:0=False
+Lightmass:DevOptions.StaticLighting:bGarbageCollectAfterExport:0=True
+Lightmass:DevOptions.StaticLighting:bRebuildDirtyGeometryForLighting:0=True
+Lightmass:DevOptions.StaticLighting:bUseEmbree:0=true
+Lightmass:DevOptions.StaticLighting:bVerifyEmbree:0=false
+Lightmass:DevOptions.StaticLighting:bUseEmbreePacketTracing:0=false
+Lightmass:DevOptions.StaticLighting:bUseFastVoxelization:0=false
+Lightmass:DevOptions.StaticLighting:bUseEmbreeInstancing:0=false
+Lightmass:DevOptions.StaticLighting:MappingSurfaceCacheDownsampleFactor:0=2
+Lightmass:DevOptions.StaticLightingSceneConstants:StaticLightingLevelScale:0=1
+Lightmass:DevOptions.StaticLightingSceneConstants:VisibilityRayOffsetDistance:0=.1
+Lightmass:DevOptions.StaticLightingSceneConstants:VisibilityNormalOffsetDistance:0=3
+Lightmass:DevOptions.StaticLightingSceneConstants:VisibilityNormalOffsetSampleRadiusScale:0=.5
+Lightmass:DevOptions.StaticLightingSceneConstants:VisibilityTangentOffsetSampleRadiusScale:0=.8
+Lightmass:DevOptions.StaticLightingSceneConstants:SmallestTexelRadius:0=.1
+Lightmass:DevOptions.StaticLightingSceneConstants:LightGridSize:0=100
+Lightmass:DevOptions.StaticLightingSceneConstants:MinimumImportanceVolumeExtentWithoutWarning:0=10000.0
+Lightmass:DevOptions.StaticLightingMaterial:bUseDebugMaterial:0=False
+Lightmass:DevOptions.StaticLightingMaterial:ShowMaterialAttribute:0=None
+Lightmass:DevOptions.StaticLightingMaterial:EmissiveSampleSize:0=128
+Lightmass:DevOptions.StaticLightingMaterial:DiffuseSampleSize:0=128
+Lightmass:DevOptions.StaticLightingMaterial:TransmissionSampleSize:0=256
+Lightmass:DevOptions.StaticLightingMaterial:NormalSampleSize:0=256
+Lightmass:DevOptions.StaticLightingMaterial:DebugDiffuse:0=(R=0.500000,G=0.500000,B=0.500000)
+Lightmass:DevOptions.MeshAreaLights:bVisualizeMeshAreaLightPrimitives:0=False
+Lightmass:DevOptions.MeshAreaLights:EmissiveIntensityThreshold:0=.01
+Lightmass:DevOptions.MeshAreaLights:MeshAreaLightGridSize:0=100
+Lightmass:DevOptions.MeshAreaLights:MeshAreaLightSimplifyNormalAngleThreshold:0=25
+Lightmass:DevOptions.MeshAreaLights:MeshAreaLightSimplifyCornerDistanceThreshold:0=.5
+Lightmass:DevOptions.MeshAreaLights:MeshAreaLightSimplifyMeshBoundingRadiusFractionThreshold:0=.1
+Lightmass:DevOptions.MeshAreaLights:MeshAreaLightGeneratedDynamicLightSurfaceOffset:0=30
+Lightmass:DevOptions.PrecomputedDynamicObjectLighting:bVisualizeVolumeLightSamples:0=False
+Lightmass:DevOptions.PrecomputedDynamicObjectLighting:bVisualizeVolumeLightInterpolation:0=False
+Lightmass:DevOptions.PrecomputedDynamicObjectLighting:NumHemisphereSamplesScale:0=2
+Lightmass:DevOptions.PrecomputedDynamicObjectLighting:SurfaceLightSampleSpacing:0=300
+Lightmass:DevOptions.PrecomputedDynamicObjectLighting:FirstSurfaceSampleLayerHeight:0=50
+Lightmass:DevOptions.PrecomputedDynamicObjectLighting:SurfaceSampleLayerHeightSpacing:0=250
+Lightmass:DevOptions.PrecomputedDynamicObjectLighting:NumSurfaceSampleLayers:0=2
+Lightmass:DevOptions.PrecomputedDynamicObjectLighting:DetailVolumeSampleSpacing:0=300
+Lightmass:DevOptions.PrecomputedDynamicObjectLighting:VolumeLightSampleSpacing:0=3000
+Lightmass:DevOptions.PrecomputedDynamicObjectLighting:MaxVolumeSamples:0=250000
+Lightmass:DevOptions.PrecomputedDynamicObjectLighting:bUseMaxSurfaceSampleNum:0=True
+Lightmass:DevOptions.PrecomputedDynamicObjectLighting:MaxSurfaceLightSamples:0=500000
+Lightmass:DevOptions.VolumetricLightmaps:BrickSize:0=4
+Lightmass:DevOptions.VolumetricLightmaps:MaxRefinementLevels:0=3
+Lightmass:DevOptions.VolumetricLightmaps:VoxelizationCellExpansionForSurfaceGeometry:0=.1
+Lightmass:DevOptions.VolumetricLightmaps:VoxelizationCellExpansionForVolumeGeometry:0=.25
+Lightmass:DevOptions.VolumetricLightmaps:VoxelizationCellExpansionForLights:0=.1
+Lightmass:DevOptions.VolumetricLightmaps:TargetNumVolumetricLightmapTasks:0=800
+Lightmass:DevOptions.VolumetricLightmaps:MinBrickError:0=.01
+Lightmass:DevOptions.VolumetricLightmaps:SurfaceLightmapMinTexelsPerVoxelAxis:0=1.0
+Lightmass:DevOptions.VolumetricLightmaps:bCullBricksBelowLandscape:0=true
+Lightmass:DevOptions.VolumetricLightmaps:LightBrightnessSubdivideThreshold:0=.3
+Lightmass:DevOptions.PrecomputedVisibility:bVisualizePrecomputedVisibility:0=False
+Lightmass:DevOptions.PrecomputedVisibility:bPlaceCellsOnOpaqueOnly:0=True
+Lightmass:DevOptions.PrecomputedVisibility:NumCellDistributionBuckets:0=800
+Lightmass:DevOptions.PrecomputedVisibility:PlayAreaHeight:0=220
+Lightmass:DevOptions.PrecomputedVisibility:MeshBoundsScale:0=1.2
+Lightmass:DevOptions.PrecomputedVisibility:MinMeshSamples:0=14
+Lightmass:DevOptions.PrecomputedVisibility:MaxMeshSamples:0=40
+Lightmass:DevOptions.PrecomputedVisibility:NumCellSamples:0=24
+Lightmass:DevOptions.PrecomputedVisibility:NumImportanceSamples:0=40
+Lightmass:DevOptions.VolumeDistanceField:VoxelSize:0=75
+Lightmass:DevOptions.VolumeDistanceField:VolumeMaxDistance:0=900
+Lightmass:DevOptions.VolumeDistanceField:NumVoxelDistanceSamples:0=800
+Lightmass:DevOptions.VolumeDistanceField:MaxVoxels:0=3992160
+Lightmass:DevOptions.StaticShadows:bUseZeroAreaLightmapSpaceFilteredLights:0=False
+Lightmass:DevOptions.StaticShadows:NumShadowRays:0=8
+Lightmass:DevOptions.StaticShadows:NumPenumbraShadowRays:0=8
+Lightmass:DevOptions.StaticShadows:NumBounceShadowRays:0=1
+Lightmass:DevOptions.StaticShadows:bFilterShadowFactor:0=True
+Lightmass:DevOptions.StaticShadows:ShadowFactorGradientTolerance:0=0.5
+Lightmass:DevOptions.StaticShadows:bAllowSignedDistanceFieldShadows:0=True
+Lightmass:DevOptions.StaticShadows:MaxTransitionDistanceWorldSpace:0=50
+Lightmass:DevOptions.StaticShadows:ApproximateHighResTexelsPerMaxTransitionDistance:0=50
+Lightmass:DevOptions.StaticShadows:MinDistanceFieldUpsampleFactor:0=3
+Lightmass:DevOptions.StaticShadows:MinUnoccludedFraction:0=.0005
+Lightmass:DevOptions.StaticShadows:StaticShadowDepthMapTransitionSampleDistanceX:0=100
+Lightmass:DevOptions.StaticShadows:StaticShadowDepthMapTransitionSampleDistanceY:0=100
+Lightmass:DevOptions.StaticShadows:StaticShadowDepthMapSuperSampleFactor:0=2
+Lightmass:DevOptions.StaticShadows:StaticShadowDepthMapMaxSamples:0=4194304
+Lightmass:DevOptions.ImportanceTracing:bUseStratifiedSampling:0=True
+Lightmass:DevOptions.ImportanceTracing:NumHemisphereSamples:0=16
+Lightmass:DevOptions.ImportanceTracing:MaxHemisphereRayAngle:0=89
+Lightmass:DevOptions.ImportanceTracing:NumAdaptiveRefinementLevels:0=2
+Lightmass:DevOptions.ImportanceTracing:AdaptiveBrightnessThreshold:0=1
+Lightmass:DevOptions.ImportanceTracing:AdaptiveFirstBouncePhotonConeAngle:0=4
+Lightmass:DevOptions.ImportanceTracing:AdaptiveSkyVarianceThreshold:0=.5
+Lightmass:DevOptions.ImportanceTracing:bUseRadiositySolverForSkylightMultibounce:0=True
+Lightmass:DevOptions.ImportanceTracing:bCacheFinalGatherHitPointsForRadiosity:0=False
+Lightmass:DevOptions.ImportanceTracing:bUseRadiositySolverForLightMultibounce:0=False
+Lightmass:DevOptions.PhotonMapping:bUsePhotonMapping:0=True
+Lightmass:DevOptions.PhotonMapping:bUseFinalGathering:0=True
+Lightmass:DevOptions.PhotonMapping:bUsePhotonDirectLightingInFinalGather:0=False
+Lightmass:DevOptions.PhotonMapping:bVisualizeCachedApproximateDirectLighting:0=False
+Lightmass:DevOptions.PhotonMapping:bUseIrradiancePhotons:0=True
+Lightmass:DevOptions.PhotonMapping:bCacheIrradiancePhotonsOnSurfaces:0=True
+Lightmass:DevOptions.PhotonMapping:bVisualizePhotonPaths:0=False
+Lightmass:DevOptions.PhotonMapping:bVisualizePhotonGathers:0=True
+Lightmass:DevOptions.PhotonMapping:bVisualizePhotonImportanceSamples:0=False
+Lightmass:DevOptions.PhotonMapping:bVisualizeIrradiancePhotonCalculation:0=False
+Lightmass:DevOptions.PhotonMapping:bEmitPhotonsOutsideImportanceVolume:0=False
+Lightmass:DevOptions.PhotonMapping:ConeFilterConstant:0=1
+Lightmass:DevOptions.PhotonMapping:NumIrradianceCalculationPhotons:0=400
+Lightmass:DevOptions.PhotonMapping:FinalGatherImportanceSampleFraction:0=.6
+Lightmass:DevOptions.PhotonMapping:FinalGatherImportanceSampleConeAngle:0=10
+Lightmass:DevOptions.PhotonMapping:IndirectPhotonEmitDiskRadius:0=200
+Lightmass:DevOptions.PhotonMapping:IndirectPhotonEmitConeAngle:0=30
+Lightmass:DevOptions.PhotonMapping:MaxImportancePhotonSearchDistance:0=2000
+Lightmass:DevOptions.PhotonMapping:MinImportancePhotonSearchDistance:0=20
+Lightmass:DevOptions.PhotonMapping:NumImportanceSearchPhotons:0=10
+Lightmass:DevOptions.PhotonMapping:OutsideImportanceVolumeDensityScale:0=.0005
+Lightmass:DevOptions.PhotonMapping:DirectPhotonDensity:0=350
+Lightmass:DevOptions.PhotonMapping:DirectIrradiancePhotonDensity:0=350
+Lightmass:DevOptions.PhotonMapping:DirectPhotonSearchDistance:0=200
+Lightmass:DevOptions.PhotonMapping:IndirectPhotonPathDensity:0=5
+Lightmass:DevOptions.PhotonMapping:IndirectPhotonDensity:0=600
+Lightmass:DevOptions.PhotonMapping:IndirectIrradiancePhotonDensity:0=300
+Lightmass:DevOptions.PhotonMapping:IndirectPhotonSearchDistance:0=200
+Lightmass:DevOptions.PhotonMapping:PhotonSearchAngleThreshold:0=.5
+Lightmass:DevOptions.PhotonMapping:IrradiancePhotonSearchConeAngle:0=10
+Lightmass:DevOptions.PhotonMapping:bUsePhotonSegmentsForVolumeLighting:0=true
+Lightmass:DevOptions.PhotonMapping:PhotonSegmentMaxLength:0=1000
+Lightmass:DevOptions.PhotonMapping:GeneratePhotonSegmentChance:0=.01
+Lightmass:DevOptions.IrradianceCache:bAllowIrradianceCaching:0=True
+Lightmass:DevOptions.IrradianceCache:bUseIrradianceGradients:0=False
+Lightmass:DevOptions.IrradianceCache:bShowGradientsOnly:0=False
+Lightmass:DevOptions.IrradianceCache:bVisualizeIrradianceSamples:0=True
+Lightmass:DevOptions.IrradianceCache:RecordRadiusScale:0=.8
+Lightmass:DevOptions.IrradianceCache:InterpolationMaxAngle:0=20
+Lightmass:DevOptions.IrradianceCache:PointBehindRecordMaxAngle:0=10
+Lightmass:DevOptions.IrradianceCache:DistanceSmoothFactor:0=4
+Lightmass:DevOptions.IrradianceCache:AngleSmoothFactor:0=4
+Lightmass:DevOptions.IrradianceCache:SkyOcclusionSmoothnessReduction:0=.5
+Lightmass:DevOptions.IrradianceCache:MaxRecordRadius:0=1024
+Lightmass:DevOptions.IrradianceCache:CacheTaskSize:0=64
+Lightmass:DevOptions.IrradianceCache:InterpolateTaskSize:0=64
+Scalability:ScalabilitySettings:PerfIndexValues_ResolutionQuality:0=50 71 87 100 100
+Scalability:AntiAliasingQuality@3:r.PostProcessAAQuality:0=4
+Scalability:ViewDistanceQuality@3:r.SkeletalMeshLODBias:0=0
+Scalability:ViewDistanceQuality@3:r.ViewDistanceScale:0=1.0
+Scalability:ShadowQuality@3:r.LightFunctionQuality:0=1
+Scalability:ShadowQuality@3:r.ShadowQuality:0=5
+Scalability:ShadowQuality@3:r.Shadow.CSM.MaxCascades:0=10
+Scalability:ShadowQuality@3:r.Shadow.MaxResolution:0=2048
+Scalability:ShadowQuality@3:r.Shadow.MaxCSMResolution:0=2048
+Scalability:ShadowQuality@3:r.Shadow.RadiusThreshold:0=0.01
+Scalability:ShadowQuality@3:r.Shadow.DistanceScale:0=1.0
+Scalability:ShadowQuality@3:r.Shadow.CSM.TransitionScale:0=1.0
+Scalability:ShadowQuality@3:r.Shadow.PreShadowResolutionFactor:0=1.0
+Scalability:ShadowQuality@3:r.DistanceFieldShadowing:0=1
+Scalability:ShadowQuality@3:r.DistanceFieldAO:0=1
+Scalability:ShadowQuality@3:r.AOQuality:0=2
+Scalability:ShadowQuality@3:r.VolumetricFog:0=1
+Scalability:ShadowQuality@3:r.VolumetricFog.GridPixelSize:0=8
+Scalability:ShadowQuality@3:r.VolumetricFog.GridSizeZ:0=128
+Scalability:ShadowQuality@3:r.VolumetricFog.HistoryMissSupersampleCount:0=4
+Scalability:ShadowQuality@3:r.LightMaxDrawDistanceScale:0=1
+Scalability:ShadowQuality@3:r.CapsuleShadows:0=1
+Scalability:PostProcessQuality@3:r.MotionBlurQuality:0=4
+Scalability:PostProcessQuality@3:r.AmbientOcclusionMipLevelFactor:0=0.4
+Scalability:PostProcessQuality@3:r.AmbientOcclusionMaxQuality:0=100
+Scalability:PostProcessQuality@3:r.AmbientOcclusionLevels:0=-1
+Scalability:PostProcessQuality@3:r.AmbientOcclusionRadiusScale:0=1.0
+Scalability:PostProcessQuality@3:r.DepthOfFieldQuality:0=2
+Scalability:PostProcessQuality@3:r.RenderTargetPoolMin:0=400
+Scalability:PostProcessQuality@3:r.LensFlareQuality:0=2
+Scalability:PostProcessQuality@3:r.SceneColorFringeQuality:0=1
+Scalability:PostProcessQuality@3:r.EyeAdaptationQuality:0=2
+Scalability:PostProcessQuality@3:r.BloomQuality:0=5
+Scalability:PostProcessQuality@3:r.FastBlurThreshold:0=100
+Scalability:PostProcessQuality@3:r.Upscale.Quality:0=3
+Scalability:PostProcessQuality@3:r.Tonemapper.GrainQuantization:0=1
+Scalability:PostProcessQuality@3:r.LightShaftQuality:0=1
+Scalability:PostProcessQuality@3:r.Filter.SizeScale:0=1
+Scalability:PostProcessQuality@3:r.Tonemapper.Quality:0=5
+Scalability:PostProcessQuality@3:r.DOF.Gather.AccumulatorQuality:0=1        ; higher gathering accumulator quality
+Scalability:PostProcessQuality@3:r.DOF.Gather.PostfilterMethod:0=1          ; Median3x3 postfilering method
+Scalability:PostProcessQuality@3:r.DOF.Gather.EnableBokehSettings:0=0       ; no bokeh simulation when gathering
+Scalability:PostProcessQuality@3:r.DOF.Gather.RingCount:0=4                 ; medium number of samples when gathering
+Scalability:PostProcessQuality@3:r.DOF.Scatter.ForegroundCompositing:0=1    ; additive foreground scattering
+Scalability:PostProcessQuality@3:r.DOF.Scatter.BackgroundCompositing:0=2    ; additive background scattering
+Scalability:PostProcessQuality@3:r.DOF.Scatter.EnableBokehSettings:0=1      ; bokeh simulation when scattering
+Scalability:PostProcessQuality@3:r.DOF.Scatter.MaxSpriteRatio:0=0.1         ; only a maximum of 10% of scattered bokeh
+Scalability:PostProcessQuality@3:r.DOF.Recombine.Quality:0=1                ; cheap slight out of focus
+Scalability:PostProcessQuality@3:r.DOF.Recombine.EnableBokehSettings:0=0    ; no bokeh simulation on slight out of focus
+Scalability:PostProcessQuality@3:r.DOF.TemporalAAQuality:0=1                ; more stable temporal accumulation
+Scalability:PostProcessQuality@3:r.DOF.Kernel.MaxForegroundRadius:0=0.025
+Scalability:PostProcessQuality@3:r.DOF.Kernel.MaxBackgroundRadius:0=0.025
+Scalability:TextureQuality@3:r.Streaming.MipBias:0=0
+Scalability:TextureQuality@3:r.Streaming.AmortizeCPUToGPUCopy:0=0
+Scalability:TextureQuality@3:r.Streaming.MaxNumTexturesToStreamPerFrame:0=0
+Scalability:TextureQuality@3:r.Streaming.Boost:0=1
+Scalability:TextureQuality@3:r.MaxAnisotropy:0=8
+Scalability:TextureQuality@3:r.VT.MaxAnisotropy:0=8
+Scalability:TextureQuality@3:r.Streaming.LimitPoolSizeToVRAM:0=0
+Scalability:TextureQuality@3:r.Streaming.PoolSize:0=1000
+Scalability:TextureQuality@3:r.Streaming.MaxEffectiveScreenSize:0=0
+Scalability:EffectsQuality@3:r.TranslucencyLightingVolumeDim:0=64
+Scalability:EffectsQuality@3:r.RefractionQuality:0=2
+Scalability:EffectsQuality@3:r.SSR.Quality:0=3
+Scalability:EffectsQuality@3:r.SSR.HalfResSceneColor:0=0
+Scalability:EffectsQuality@3:r.SceneColorFormat:0=4
+Scalability:EffectsQuality@3:r.DetailMode:0=2
+Scalability:EffectsQuality@3:r.TranslucencyVolumeBlur:0=1
+Scalability:EffectsQuality@3:r.MaterialQualityLevel:0=1 ; High quality
+Scalability:EffectsQuality@3:r.AnisotropicMaterials:0=1
+Scalability:EffectsQuality@3:r.SSS.Scale:0=1
+Scalability:EffectsQuality@3:r.SSS.SampleSet:0=2
+Scalability:EffectsQuality@3:r.SSS.Quality:0=1
+Scalability:EffectsQuality@3:r.SSS.HalfRes:0=0
+Scalability:EffectsQuality@3:r.SSGI.Quality:0=3
+Scalability:EffectsQuality@3:r.EmitterSpawnRateScale:0=1.0
+Scalability:EffectsQuality@3:r.ParticleLightQuality:0=2
+Scalability:EffectsQuality@3:r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:0=1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky
+Scalability:EffectsQuality@3:r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:0=4
+Scalability:EffectsQuality@3:r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:0=16.0
+Scalability:EffectsQuality@3:r.SkyAtmosphere.FastSkyLUT:0=1
+Scalability:EffectsQuality@3:r.SkyAtmosphere.FastSkyLUT.SampleCountMin:0=4.0
+Scalability:EffectsQuality@3:r.SkyAtmosphere.FastSkyLUT.SampleCountMax:0=128.0
+Scalability:EffectsQuality@3:r.SkyAtmosphere.SampleCountMin:0=4.0
+Scalability:EffectsQuality@3:r.SkyAtmosphere.SampleCountMax:0=128.0
+Scalability:EffectsQuality@3:r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0=0
+Scalability:EffectsQuality@3:r.SkyAtmosphere.TransmittanceLUT.SampleCount:0=10.0
+Scalability:EffectsQuality@3:r.SkyAtmosphere.MultiScatteringLUT.SampleCount:0=15.0
+Scalability:EffectsQuality@3:r.SkyLight.RealTimeReflectionCapture:0=1
+Scalability:EffectsQuality@3:fx.Niagara.QualityLevel:0=3
+Scalability:FoliageQuality@3:foliage.DensityScale:0=1.0
+Scalability:FoliageQuality@3:grass.DensityScale:0=1.0
+Scalability:ShadingQuality@3:r.HairStrands.SkyLighting.IntegrationType:0=2
+Scalability:ShadingQuality@3:r.HairStrands.SkyAO.SampleCount:0=4
+Scalability:ShadingQuality@3:r.HairStrands.Visibility.MSAA.SamplePerPixel:0=4
+Scalability:ShadingQuality@3:r.HairStrands.Interpolation.UseSingleGuide:0=0
+Hardware:GPU_NVIDIA:Blacklist:0=(DriverVersion="<=347.09", Reason="Crashes with Paragon content using more recent GPU features")
+Hardware:GPU_NVIDIA:Blacklist:1=(DriverVersion="==372.70", Reason="This driver version has many known stability issues")
+Hardware:GPU_NVIDIA:Blacklist:2=(DriverVersion="==388.31", Reason="This driver version has known stability issues")
+Hardware:GPU_NVIDIA:Blacklist:3=(DriverVersion="==388.43", Reason="This driver version has known stability issues")
+Hardware:GPU_NVIDIA:Blacklist:4=(DriverVersion="==388.71", Reason="This driver version has known stability issues")
+Hardware:GPU_NVIDIA:Blacklist:5=(DriverVersion="==376.54", Reason="This driver version has many known stability issues")
+Hardware:GPU_NVIDIA:Blacklist:6=(DriverVersion="==382.05", Reason="This driver version has many known stability issues")
+Hardware:GPU_NVIDIA:Blacklist:7=(DriverVersion="==388.57", Reason="This driver version has many known stability issues")
+Hardware:GPU_NVIDIA:Blacklist:8=(DriverVersion="==461.40", Reason="This driver version has known stability issues")
+DeviceProfiles:Windows DeviceProfile:DeviceType:0=Windows
+DeviceProfiles:Windows DeviceProfile:BaseProfileName:0=
+DeviceProfiles:WindowsNoEditor DeviceProfile:DeviceType:0=Windows
+DeviceProfiles:WindowsNoEditor DeviceProfile:BaseProfileName:0=Windows
+DeviceProfiles:WindowsClient DeviceProfile:DeviceType:0=Windows
+DeviceProfiles:WindowsClient DeviceProfile:BaseProfileName:0=Windows
+DeviceProfiles:WindowsServer DeviceProfile:DeviceType:0=Windows
+DeviceProfiles:WindowsServer DeviceProfile:BaseProfileName:0=Windows
+DeviceProfiles:IOS DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:IOS DeviceProfile:BaseProfileName:0=
+DeviceProfiles:iPadAir DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadAir DeviceProfile:BaseProfileName:0=IOS
+DeviceProfiles:iPadAir2 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadAir2 DeviceProfile:BaseProfileName:0=IOS
+DeviceProfiles:iPadMini2 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadMini2 DeviceProfile:BaseProfileName:0=iPadAir
+DeviceProfiles:iPadMini3 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadMini3 DeviceProfile:BaseProfileName:0=iPadMini2
+DeviceProfiles:iPadMini4 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadMini4 DeviceProfile:BaseProfileName:0=iPadMini2
+DeviceProfiles:iPhone5S DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone5S DeviceProfile:BaseProfileName:0=IOS
+DeviceProfiles:iPodTouch6 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPodTouch6 DeviceProfile:BaseProfileName:0=iPhone6
+DeviceProfiles:iPodTouch7 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPodTouch7 DeviceProfile:BaseProfileName:0=iPhone7
+DeviceProfiles:iPhone6 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone6 DeviceProfile:BaseProfileName:0=IOS
+DeviceProfiles:iPhone6Plus DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone6Plus DeviceProfile:BaseProfileName:0=IOS
+DeviceProfiles:iPhone6S DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone6S DeviceProfile:BaseProfileName:0=iPhone6
+DeviceProfiles:iPhone6SPlus DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone6SPlus DeviceProfile:BaseProfileName:0=iPhone6Plus
+DeviceProfiles:iPhoneSE DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhoneSE DeviceProfile:BaseProfileName:0=IOS
+DeviceProfiles:iPhone7 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone7 DeviceProfile:BaseProfileName:0=iPhone6
+DeviceProfiles:iPhone7Plus DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone7Plus DeviceProfile:BaseProfileName:0=iPhone6Plus
+DeviceProfiles:iPhone8 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone8 DeviceProfile:BaseProfileName:0=iPhone7
+DeviceProfiles:iPhone8Plus DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone8Plus DeviceProfile:BaseProfileName:0=iPhone7Plus
+DeviceProfiles:iPhoneX DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhoneX DeviceProfile:BaseProfileName:0=iPhone8
+DeviceProfiles:iPhoneXS DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhoneXS DeviceProfile:BaseProfileName:0=iPhone8
+DeviceProfiles:iPhoneXSMax DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhoneXSMax DeviceProfile:BaseProfileName:0=iPhone8
+DeviceProfiles:iPhoneXR DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhoneXR DeviceProfile:BaseProfileName:0=iPhone8
+DeviceProfiles:iPhone11 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone11 DeviceProfile:BaseProfileName:0=iPhone8
+DeviceProfiles:iPhone11Pro DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone11Pro DeviceProfile:BaseProfileName:0=iPhone8
+DeviceProfiles:iPhone11ProMax DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone11ProMax DeviceProfile:BaseProfileName:0=iPhone8
+DeviceProfiles:iPhoneSE2 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhoneSE2 DeviceProfile:BaseProfileName:0=iPhone11
+DeviceProfiles:iPhone12Mini DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone12Mini DeviceProfile:BaseProfileName:0=iPhone11
+DeviceProfiles:iPhone12 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone12 DeviceProfile:BaseProfileName:0=iPhone11
+DeviceProfiles:iPhone12Pro DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone12Pro DeviceProfile:BaseProfileName:0=iPhone11Pro
+DeviceProfiles:iPhone12ProMax DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPhone12ProMax DeviceProfile:BaseProfileName:0=iPhone11ProMax
+DeviceProfiles:iPadPro DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadPro DeviceProfile:BaseProfileName:0=IOS
+DeviceProfiles:AppleTV DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:AppleTV DeviceProfile:BaseProfileName:0=IOS
+DeviceProfiles:AppleTV4K DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:AppleTV4K DeviceProfile:BaseProfileName:0=AppleTV
+DeviceProfiles:iPadPro97 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadPro97 DeviceProfile:BaseProfileName:0=IPadPro
+DeviceProfiles:iPadPro129 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadPro129 DeviceProfile:BaseProfileName:0=IPadPro
+DeviceProfiles:iPadPro105 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadPro105 DeviceProfile:BaseProfileName:0=IPadPro
+DeviceProfiles:iPadPro11 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadPro11 DeviceProfile:BaseProfileName:0=IPadPro
+DeviceProfiles:iPadPro2_11 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadPro2_11 DeviceProfile:BaseProfileName:0=IPadPro
+DeviceProfiles:iPad5 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPad5 DeviceProfile:BaseProfileName:0=IPadPro97
+DeviceProfiles:iPad6 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPad6 DeviceProfile:BaseProfileName:0=IPadPro97
+DeviceProfiles:iPad7 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPad7 DeviceProfile:BaseProfileName:0=IPadPro97
+DeviceProfiles:iPad8 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPad8 DeviceProfile:BaseProfileName:0=IPadPro97
+DeviceProfiles:iPadPro2_129 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadPro2_129 DeviceProfile:BaseProfileName:0=IPadPro
+DeviceProfiles:iPadPro3_129 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadPro3_129 DeviceProfile:BaseProfileName:0=IPadPro
+DeviceProfiles:iPadPro4_129 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadPro4_129 DeviceProfile:BaseProfileName:0=IPadPro
+DeviceProfiles:iPadAir3 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadAir3 DeviceProfile:BaseProfileName:0=IPadPro
+DeviceProfiles:iPadAir4 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadAir4 DeviceProfile:BaseProfileName:0=IPadPro
+DeviceProfiles:iPadMini5 DeviceProfile:DeviceType:0=IOS
+DeviceProfiles:iPadMini5 DeviceProfile:BaseProfileName:0=IPadPro
+DeviceProfiles:Android DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android DeviceProfile:BaseProfileName:0=
+DeviceProfiles:Android_Low DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Low DeviceProfile:BaseProfileName:0=Android
+DeviceProfiles:Android_Mid DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mid DeviceProfile:BaseProfileName:0=Android
+DeviceProfiles:Android_High DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_High DeviceProfile:BaseProfileName:0=Android
+DeviceProfiles:Android_Vulkan_SM5 DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Vulkan_SM5 DeviceProfile:BaseProfileName:0=Android
+DeviceProfiles:Android_Default DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Default DeviceProfile:BaseProfileName:0=Android_Mid
+DeviceProfiles:Android_Adreno4xx DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Adreno4xx DeviceProfile:BaseProfileName:0=Android_Low
+DeviceProfiles:Android_Adreno5xx_Low DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Adreno5xx_Low DeviceProfile:BaseProfileName:0=Android_Low
+DeviceProfiles:Android_Adreno5xx DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Adreno5xx DeviceProfile:BaseProfileName:0=Android_Mid
+DeviceProfiles:Android_Adreno6xx DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Adreno6xx DeviceProfile:BaseProfileName:0=Android_High
+DeviceProfiles:Android_Adreno6xx_Vulkan DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Adreno6xx_Vulkan DeviceProfile:BaseProfileName:0=Android_Adreno6xx
+DeviceProfiles:Android_PowerVR_G6xxx DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_PowerVR_G6xxx DeviceProfile:BaseProfileName:0=Android_Low
+DeviceProfiles:Android_PowerVR_GT7xxx DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_PowerVR_GT7xxx DeviceProfile:BaseProfileName:0=Android_Mid
+DeviceProfiles:Android_PowerVR_GE8xxx DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_PowerVR_GE8xxx DeviceProfile:BaseProfileName:0=Android_Mid
+DeviceProfiles:Android_PowerVR_GM9xxx DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_PowerVR_GM9xxx DeviceProfile:BaseProfileName:0=Android_High
+DeviceProfiles:Android_PowerVR_GM9xxx_Vulkan DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_PowerVR_GM9xxx_Vulkan DeviceProfile:BaseProfileName:0=Android_PowerVR_GM9xxx
+DeviceProfiles:Android_Mali_T6xx DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_T6xx DeviceProfile:BaseProfileName:0=Android_Low
+DeviceProfiles:Android_Mali_T7xx DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_T7xx DeviceProfile:BaseProfileName:0=Android_Low
+DeviceProfiles:Android_Mali_T8xx DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_T8xx DeviceProfile:BaseProfileName:0=Android_Mid
+DeviceProfiles:Android_Mali_G71 DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_G71 DeviceProfile:BaseProfileName:0=Android_Mid
+DeviceProfiles:Android_Mali_G72 DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_G72 DeviceProfile:BaseProfileName:0=Android_High
+DeviceProfiles:Android_Mali_G72_Vulkan DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_G72_Vulkan DeviceProfile:BaseProfileName:0=Android_Mali_G72
+DeviceProfiles:Android_Mali_G76 DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_G76 DeviceProfile:BaseProfileName:0=Android_High
+DeviceProfiles:Android_Mali_G76_Vulkan DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_G76_Vulkan DeviceProfile:BaseProfileName:0=Android_Mali_G76
+DeviceProfiles:Android_Mali_G77 DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_G77 DeviceProfile:BaseProfileName:0=Android_High
+DeviceProfiles:Android_Mali_G77_Vulkan DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_G77_Vulkan DeviceProfile:BaseProfileName:0=Android_Mali_G77
+DeviceProfiles:Android_Mali_G78 DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_G78 DeviceProfile:BaseProfileName:0=Android_High
+DeviceProfiles:Android_Mali_G78_Vulkan DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_G78_Vulkan DeviceProfile:BaseProfileName:0=Android_Mali_G78
+DeviceProfiles:Android_Mali_G710 DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_G710 DeviceProfile:BaseProfileName:0=Android_High
+DeviceProfiles:Android_Mali_G710_Vulkan DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Mali_G710_Vulkan DeviceProfile:BaseProfileName:0=Android_Mali_G710
+DeviceProfiles:Android_TegraK1 DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_TegraK1 DeviceProfile:BaseProfileName:0=Android_High
+DeviceProfiles:Android_Unknown_Vulkan DeviceProfile:DeviceType:0=Android
+DeviceProfiles:Android_Unknown_Vulkan DeviceProfile:BaseProfileName:0=Android_High
+DeviceProfiles:Lumin DeviceProfile:DeviceType:0=Lumin
+DeviceProfiles:Lumin DeviceProfile:BaseProfileName:0=
+DeviceProfiles:Lumin_Desktop DeviceProfile:DeviceType:0=Lumin
+DeviceProfiles:Lumin_Desktop DeviceProfile:BaseProfileName:0=Lumin
+DeviceProfiles:Mac DeviceProfile:DeviceType:0=Mac
+DeviceProfiles:Mac DeviceProfile:BaseProfileName:0=
+DeviceProfiles:MacClient DeviceProfile:DeviceType:0=Mac
+DeviceProfiles:MacClient DeviceProfile:BaseProfileName:0=Mac
+DeviceProfiles:MacNoEditor DeviceProfile:DeviceType:0=Mac
+DeviceProfiles:MacNoEditor DeviceProfile:BaseProfileName:0=Mac
+DeviceProfiles:MacServer DeviceProfile:DeviceType:0=Mac
+DeviceProfiles:MacServer DeviceProfile:BaseProfileName:0=Mac
+DeviceProfiles:Linux DeviceProfile:DeviceType:0=Linux
+DeviceProfiles:Linux DeviceProfile:BaseProfileName:0=
+DeviceProfiles:LinuxNoEditor DeviceProfile:DeviceType:0=Linux
+DeviceProfiles:LinuxNoEditor DeviceProfile:BaseProfileName:0=Linux
+DeviceProfiles:LinuxAArch64NoEditor DeviceProfile:DeviceType:0=Linux
+DeviceProfiles:LinuxAArch64NoEditor DeviceProfile:BaseProfileName:0=Linux
+DeviceProfiles:LinuxClient DeviceProfile:DeviceType:0=Linux
+DeviceProfiles:LinuxClient DeviceProfile:BaseProfileName:0=Linux
+DeviceProfiles:LinuxAArch64Client DeviceProfile:DeviceType:0=Linux
+DeviceProfiles:LinuxAArch64Client DeviceProfile:BaseProfileName:0=Linux
+DeviceProfiles:LinuxServer DeviceProfile:DeviceType:0=Linux
+DeviceProfiles:LinuxServer DeviceProfile:BaseProfileName:0=Linux
+DeviceProfiles:LinuxAArch64Server DeviceProfile:DeviceType:0=Linux
+DeviceProfiles:LinuxAArch64Server DeviceProfile:BaseProfileName:0=Linux
+DeviceProfiles:HoloLens DeviceProfile:DeviceType:0=HoloLens
+DeviceProfiles:HoloLens DeviceProfile:BaseProfileName:0=WindowsNoEditor
+Niagara:/Script/Niagara.NiagaraSettings:ComponentRendererWarningsPerClass:0=(("PostProcessComponent", NSLOCTEXT("[/Script/Niagara]", "022421AD4D0A1767041BEE86A524E12D", "The post process component has a separate \"Enabled\" flag in PostProcessVolume that you need to overwrite\n if you want to disable a component when a particle dies. Otherwise it will still affect the scene\n when it goes back into the component pool.")))
+Niagara:/Script/NiagaraEditor.NiagaraEditorSettings:DefaultScript:0=/Niagara/DefaultAssets/DefaultModule.DefaultModule
+Niagara:/Script/NiagaraEditor.NiagaraEditorSettings:DefaultDynamicInputScript:0=/Niagara/DefaultAssets/DefaultDynamicInputs.DefaultDynamicInputs
+Niagara:/Script/NiagaraEditor.NiagaraEditorSettings:DefaultFunctionScript:0=/Niagara/DefaultAssets/DefaultFunction.DefaultFunction
+Niagara:/Script/NiagaraEditor.NiagaraEditorSettings:DefaultModuleScript:0=/Niagara/DefaultAssets/DefaultModule.DefaultModule
+Niagara:/Script/NiagaraEditor.NiagaraEditorSettings:RequiredSystemUpdateScript:0=/Niagara/Modules/System/SystemState.SystemState
+Niagara:/Script/NiagaraEditor.NiagaraEditorSettings:ActionColors:0=(NiagaraColor=(R=0.494792,G=0.445313,B=0.445313,A=1.000000),GameColor=(R=0.510417,G=0.300158,B=0.051042,A=1.000000),PluginColor=(R=0.048438,G=0.461547,B=0.484375,A=1.000000),DeveloperColor=(R=0.070312,G=0.468750,B=0.100547,A=1.000000))
+Niagara:/Script/NiagaraEditor.NiagaraEditorSettings:HLSLKeywordReplacements:0=(("AppendStructuredBuffer", "APPENDSTRUCTUREDBUFFER_VAR"),("asm", "ASSEMBLY_VAR"),("asm_fragment", "ASSEMBLY_FRAGMENT_VAR"),("BlendState", "BLEND_STATE_VAR"),("bool", "BOOL_VAR"),("bool1", "BOOL1_VAR"),("bool2", "BOOL2_VAR"),("bool3", "BOOL3_VAR"),("bool4", "BOOL4_VAR"),("break", "BREAK_VAR"),("Buffer", "BUFFER_VAR"),("ByteAddressBuffer", "BYTE_ADDRESS_BUFFER_VAR"),("case", "CASE_VAR"),("cbuffer", "CBUFFER_VAR"),("centroid", "CENTROID_VAR"),("class", "CLASS_VAR"),("column_major", "COLUMN_MAJOR_VAR"),("compile", "COMPILE_VAR"),("compile_fragment", "COMPILE_FRAGMENT_VAR"),("CompileShader", "COMPILE_SHADER_VAR"),("const", "CONST_VAR"),("continue", "CONTINUE_VAR"),("ComputeShader", "COMPUTE_SHADER_VAR"),("ConsumeStructuredBuffer", "CONSUME_STRUCTURED_BUFFER"),("default", "DEFAULT_VAR"),("DepthStencilState", "DEPTHSTENCILSTATE_VAR"),("DepthStencilView", "DEPTHSTENCILVIEW_VAR"),("discard", "DISCARD_VAR"),("do", "DO_VAR"),("double", "DOUBLE_VAR"),("double1", "DOUBLE1_VAR"),("double2", "DOUBLE2_VAR"),("double3", "DOUBLE3_VAR"),("double4", "DOUBLE4_VAR"),("DomainShader", "DOMAINSHADER_VAR"),("dword", "DWORD_VAR"),("else", "ELSE_VAR"),("export", "EXPORT_VAR"),("extern", "EXTERN_VAR"),("false", "FALSE_VAR"),("float", "FLOAT_VAR"),("float1", "FLOAT1_VAR"),("float2", "FLOAT2_VAR"),("float3", "FLOAT3_VAR"),("float4", "FLOAT4_VAR"),("for", "FOR_VAR"),("fxgroup", "FXGROUP_VAR"),("GeometryShader", "GEOMETRYSHADER_VAR"),("groupshared", "GROUPSHARED_VAR"),("half", "HALF_VAR"),("half1", "HALF1_VAR"),("half2", "HALF2_VAR"),("half3", "HALF3_VAR"),("half4", "HALF4_VAR"),("Hullshader", "HULLSHADER_VAR"),("if", "IF_VAR"),("in", "IN_VAR"),("inline", "INLINE_VAR"),("inout", "INOUT_VAR"),("InputPatch", "INPUTPATCH_VAR"),("int", "INT_VAR"),("int1", "INT1_VAR"),("int2", "INT2_VAR"),("int3", "INT3_VAR"),("int4", "INT4_VAR"),("interface", "INTERFACE_VAR"),("line", "LINE_VAR"),("lineadj", "LINEADJ_VAR"),("linear", "LINEAR_VAR"),("LineStream", "LINESTREAM_VAR"),("matrix", "MATRIX_VAR"),("min16float", "MIN16FLOAT_VAR"),("min10float", "MIN10FLOAT_VAR"),("min16int", "MIN16INT_VAR"),("min12int", "MIN12INT_VAR"),("min16uint", "MIN16UINT_VAR"),("namespace", "NAMESPACE_VAR"),("nointerpolation", "NOINTERPOLATION_VAR"),("noperspective", "NOPERSPECTIVE_VAR"),("NULL", "NULL_VAR"),("out", "OUT_VAR"),("OutputPatch", "OUTPUTPATCH_VAR"),("packoffset", "PACKOFFSET,_VAR"),("pass", "PASS,_VAR"),("pixelfragment", "PIXELFRAGMENT_VAR"),("PixelShader", "PIXELSHADER_VAR"),("point", "POINT_VAR"),("PointStream", "POINTSTREAM_VAR"),("precise", "PRECISE_VAR"),("RasterizerState", "RASTERIZERSTATE_VAR"),("RenderTargetView", "RENDERTARGETVIEW_VAR"),("return", "RETURN_VAR"),("register", "REGISTER_VAR"),("row_major", "ROW_MAJOR_VAR"),("RWBuffer", "RWBUFFER_VAR"),("RWByteAddressBuffer", "RWBYTEADDRESSBUFFER_VAR"),("RWStructuredBuffer", "RWSTRUCTUREDBUFFER_VAR"),("RWTexture1D", "RWTEXTURE1D_VAR"),("RWTexture1DArray", "RWTEXTURE1DARRAY_VAR"),("RWTexture2D", "RWTEXTURE2D_VAR"),("RWTexture2DArray", "RWTEXTURE2DARRAY_VAR"),("RWTexture3D", "RWTEXTURE3D_VAR"),("sample", "SAMPLE_VAR"),("sampler", "SAMPLER_VAR"),("SamplerState", "SAMPLERSTATE_VAR"),("SamplerComparisonState", "SAMPLERCOMPARISONSTATE_VAR"),("shared", "SHARED_VAR"),("snorm", "SNORM_VAR"),("stateblock", "STATEBLOCK_VAR"),("stateblock_state", "STATEBLOCK_STATE_VAR"),("static", "STATIC_VAR"),("string", "STRING_VAR"),("struct", "STRUCT_VAR"),("switch", "SWITCH_VAR"),("StructuredBuffer", "STRUCTUREDBUFFER_VAR"),("tbuffer", "TBUFFER_VAR"),("technique", "TECHNIQUE_VAR"),("technique10", "TECHNIQUE10_VAR"),("technique11", "TECHNIQUE11_VAR"),("texture", "TEXTURE_VAR"),("Texture1D", "TEXTURE1D_VAR"),("Texture1DArray", "TEXTURE1DARRAY_VAR"),("Texture2D", "TEXTURE2D_VAR"),("Texture2DArray", "TEXTURE2DARRAY_VAR"),("Texture2DMS", "TEXTURE2DMS_VAR"),("Texture2DMSArray", "TEXTURE2DMSARRAY_VAR"),("Texture3D", "TEXTURE3D_VAR"),("TextureCube", "TEXTURECUBE_VAR"),("TextureCubeArray", "TEXTURECUBEARRAY_VAR"),("true", "TRUE_VAR"),("typedef", "TYPEDEF_VAR"),("triangle", "TRIANGLE_VAR"),("triangleadj", "TRIANGLEADJ_VAR"),("TriangleStream", "TRIANGLESTREAM_VAR"),("uint", "UINT_VAR"),("uint1", "UINT1_VAR"),("uint2", "UINT2_VAR"),("uint3", "UINT3_VAR"),("uint4", "UINT4_VAR"),("uniform", "UNIFORM_VAR"),("unorm", "UNORM_VAR"),("unsigned", "UNSIGNED_VAR"),("vector", "VECTOR_VAR"),("vertexfragment", "VERTEXFRAGMENT_VAR"),("VertexShader", "VERTEXSHADER_VAR"),("void", "VOID_VAR"),("volatile", "VOLATILE_VAR"),("while", "WHILE_VAR"),("attribute", "ATTRIBUTE_VAR"),("varying", "VARYING_VAR"),("layout", "LAYOUT_VAR"),("mat2", "MAT2_VAR"),("mat3", "MAT3_VAR"),("mat4", "MAT4_VAR"),("mat2x2", "MAT2X2_VAR"),("mat2x3", "MAT2X3_VAR"),("mat2x4", "MAT2X4_VAR"),("mat3x2", "MAT3X2_VAR"),("mat3x3", "MAT3X3_VAR"),("mat3x4", "MAT3X4_VAR"),("mat4x2", "MAT4X2_VAR"),("mat4x3", "MAT4X3_VAR"),("mat4x4", "MAT4X4_VAR"),("vec2", "VEC2_VAR"),("vec3", "VEC3_VAR"),("vec4", "VEC4_VAR"),("ivec2", "IVEC2_VAR"),("ivec3", "IVEC3_VAR"),("ivec4", "IVEC4_VAR"),("bvec2", "BVEC2_VAR"),("bvec3", "BVEC3_VAR"),("bvec4", "BVEC4_VAR"),("uvec2", "UVEC2_VAR"),("uvec3", "UVEC3_VAR"),("uvec4", "UVEC4_VAR"),("lowp", "LOWP_VAR"),("mediump", "MEDIUMP_VAR"),("highp", "HIGHP_VAR"),("precision", "PRECISION_VAR"),("sampler1D", "SAMPLER1D_VAR"),("sampler2D", "SAMPLER2D_VAR"),("sampler3D", "SAMPLER3D_VAR"),("samplerCube", "SAMPLERCUBE_VAR"),("sampler1DShadow", "SAMPLER1DSHADOW_VAR"),("sampler2DShadow", "SAMPLER2DSHADOW_VAR"),("samplerCubeShadow", "SAMPLERCUBESHADOW_VAR"),("sampler1DArray", "SAMPLER1DARRAY_VAR"),("sampler2DArray", "SAMPLER2DARRAY_VAR"),("sampler1DArrayShadow", "SAMPLER1DARRAYSHADOW_VAR"),("sampler2DArrayShadow", "SAMPLER2DARRAYSHADOW_VAR"),("isampler1D", "ISAMPLER1D_VAR"),("isampler2D", "ISAMPLER2D_VAR"),("isampler3D", "ISAMPLER3D_VAR"),("isamplerCube", "ISAMPLERCUBE_VAR"),("isampler1DArray", "ISAMPLER1DARRAY_VAR"),("isampler2DArray", "ISAMPLER2DARRAY_VAR"),("usampler1D", "USAMPLER1D_VAR"),("usampler2D", "USAMPLER2D_VAR"),("usampler3D", "USAMPLER3D_VAR"),("usamplerCube", "USAMPLERCUBE_VAR"),("usampler1DArray", "USAMPLER1DARRAY_VAR"),("usampler2DArray", "USAMPLER2DARRAY_VAR"),("sampler2DRect", "SAMPLER2DRECT_VAR"),("sampler2DRectShadow", "SAMPLER2DRECTSHADOW_VAR"),("isampler2DRect", "ISAMPLER2DRECT_VAR"),("usampler2DRect", "USAMPLER2DRECT_VAR"),("samplerBuffer", "SAMPLERBUFFER_VAR"),("isamplerBuffer", "ISAMPLERBUFFER_VAR"),("usamplerBuffer", "USAMPLERBUFFER_VAR"),("struct", "STRUCT_VAR"),("flat", "FLAT_VAR"),("smooth", "SMOOTH_VAR"),("invariant", "INVARIANT_VAR"),("union", "UNION_VAR"),("enum", "ENUM_VAR"),("typedef", "TYPEDEF_VAR"),("template", "TEMPLATE_VAR"),("this", "THIS_VAR"),("packed", "PACKED_VAR"),("goto", "GOTO_VAR"),("noinline", "NOINLINE_VAR"),("public", "PUBLIC_VAR"),("external", "EXTERNAL_VAR"),("long short", "LONG SHORT_VAR"),("superp", "SUPERP_VAR"),("input", "INPUT_VAR"),("output", "OUTPUT_VAR"),("hvec2", "HVEC2_VAR"),("hvec3", "HVEC3_VAR"),("hvec4", "HVEC4_VAR"),("dvec2", "DVEC2_VAR"),("dvec3", "DVEC3_VAR"),("dvec4", "DVEC4_VAR"),("fvec2", "FVEC2_VAR"),("fvec3", "FVEC3_VAR"),("fvec4", "FVEC4_VAR"),("sampler3DRect", "SAMPLER3DRECT_VAR"),("filter", "FILTER_VAR"),("image1D", "IMAGE1D_VAR"),("image2D", "IMAGE2D_VAR"),("image3D", "IMAGE3D_VAR"),("imageCube", "IMAGECUBE_VAR"),("iimage1D", "IIMAGE1D_VAR"),("iimage2D", "IIMAGE2D_VAR"),("iimage3D", "IIMAGE3D_VAR"),("iimageCub", "IIMAGECUBE_VAR"),("uimage1D", "UIMAGE1D_VAR"),("uimage2D", "UIMAGE2D_VAR"),("uimage3D", "UIMAGE3D_VAR"),("uimageCube", "UIMAGECUBE_VAR"),("image1DArray", "IMAGE1DARRAY_VAR"),("image2DArray", "IMAGE2DARRAY_VAR"),("iimage1DArray", "IIMAGE1DARRAY_VAR"),("iimage2DArray", "IIMAGE2DARRAY_VAR"),("uimage1DArray", "UIMAGE1DARRAY_VAR"),("uimage2DArray", "UIMAGE2DARRAY_VAR"),("image1DShadow", "IMAGE1DSHADOW_VAR"),("image2DShadow", "IMAGE2DSHADOW_VAR"),("image1DArrayShadow", "IMAGE1DARRAYSHADOW_VAR"),("image2DArrayShadow", "IMAGE2DARRAYSHADOW_VAR"),("imageBuffer", "IMAGEBUFFER_VAR"),("iimageBuffer", "IIMAGEBUFFER_VAR"),("uimageBuffer", "UIMAGEBUFFER_VAR"),("sizeof", "SIZEOF_VAR"),("cast", "CAST_VAR"),("using", "USING_VAR"),("row_major", "ROW_MAJOR_VAR"),("int8_t", "INT8_T_VAR"),("unsigned char", "UNSIGNED_CHAR_VAR"),("uchar", "UCHAR_VAR"),("uint8_t", "UINT8_T_VAR"),("short", "SHORT_VAR"),("int16_t", "INT16_T_VAR"),("unsigned shorT", "UNSIGNED_SHORT_VAR"),("ushort", "USHORT_VAR"),("unit16_t", "UNIT16_T_VAR"),("int32_t", "INT32_T_VAR"),("unsigned int", "UNSIGNED_INT_VAR"),("uint32_t", "UINT32_T_VAR"),("smooth", "SMOOTH_VAR"),("invariant", "INVARIANT_VAR"),("union", "UNION_VAR"),("enum", "ENUM_VAR"),("typedef", "TYPEDEF_VAR"),("template", "TEMPLATE_VAR"),("this", "THIS_VAR"),("packed", "PACKED_VAR"),("goto", "GOTO_VAR"),("noinline", "NOINLINE_VAR"),("public", "PUBLIC_VAR"),("external", "EXTERNAL_VAR"),(" long short", "LONG_SHORT_VAR"),("superp", "SUPERP_VAR"),("input", "INPUT_VAR"),("output", "OUTPUT_VAR"),("hvec2", "HVEC2_VAR"),("hvec3", "HVEC3_VAR"),("hvec4", "HVEC4_VAR"),("dvec2", "DVEC2_VAR"),("dvec3", "DVEC3_VAR"),("dvec4", "DVEC4_VAR"),("fvec2", "FVEC2_VAR"),("fvec3", "FVEC3_VAR"),("fvec4", "FVEC4_VAR"),("sampler3DRect", "SAMPLER3DRECT_VAR"),("filter", "FILTER_VAR"),("image2D", "IMAGE2D_VAR"),("image3D", "IMAGE3D_VAR"),("imageCube", "IMAGECUBE_VAR"),("iimage1D", "IIMAGE1D_VAR"),("iimage2D", "IIMAGE2D_VAR"),("iimage3D", "IIMAGE3D_VAR"),("iimageCube", "IIMAGECUBE_VAR"),("uimage1D", "UIMAGE1D_VAR"),("uimage2D", "UIMAGE2D_VAR"),("uimage3D", "UIMAGE3D_VAR"),("uimageCube", "UIMAGECUBE_VAR"),("image1DArray", "IMAGE1DARRAY_VAR"),("image2DArray", "IMAGE2DARRAY_VAR"),("iimage1DArray", "IIMAGE1DARRAY_VAR"),("iimage2DArray", "IIMAGE2DARRAY_VAR"),("uimage1DArray", "UIMAGE1DARRAY_VAR"),("uimage2DArray", "UIMAGE2DARRAY_VAR"),("image1DShadow", "IMAGE1DSHADOW_VAR"),("image2DShadow", "IMAGE2DSHADOW_VAR"),("image1DArrayShadow", "IMAGE1DARRAYSHADOW_VAR"),("image2DArrayShadow", "IMAGE2DARRAYSHADOW_VAR"),("imageBuffer", "IMAGEBUFFER_VAR"),("iimageBuffer", "IIMAGEBUFFER_VAR"),("uimageBuffer", "UIMAGEBUFFER_VAR"),("sizeof", "SIZEOF_VAR"),("cast", "CAST_VAR"),("using", "USING_VAR"),("row_major", "ROW_MAJOR_VAR"),("int8_t", "INT8_T_VAR"),("unsigned char", "UNSIGNED_CHAR_VAR"),("uchar", "UCHAR_VAR"),("uint8_t", "UINT8_T_VAR"),("short", "SHORT_VAR"),("int16_t", "INT16_T_VAR"),("unsigned short", "UNSIGNED_SHORT_VAR"),("ushort", "USHORT_VAR"),("unit16_t", "UNIT16_T_VAR"),("int32_t", "INT32_T_VAR"),("unsigned int", "UNSIGNED_INT_VAR"),("uint32_t", "UINT32_T_VAR"))
+UnrealInsightsSettings:Insights.TimingProfiler:bShowEmptyTracksByDefault:0=False
+
+[AdditionalSettings]
+r.AllowStaticLighting=1
+r.GBuffer=1
+r.BasePassOutputsVelocity=1
+r.SelectiveBasePassOutputs=1
+r.DBuffer=1
+r.Shaders.KeepDebugInfo=1
+r.Shaders.Optimize=1
+r.CompileShadersForDevelopment=1
+r.MobileHDR=1
+r.UsePreExposure=1
+AudioFormat:ADPCM:VersionNumber=1
+AudioFormat:OGG:VersionNumber=4
+AudioFormat:OPUS:VersionNumber=6
+TextureFormat:DXT1:VersionNumber=0
+TextureFormat:DXT3:VersionNumber=0
+TextureFormat:DXT5:VersionNumber=0
+TextureFormat:AutoDXT:VersionNumber=0
+TextureFormat:DXT5n:VersionNumber=0
+TextureFormat:BC4:VersionNumber=0
+TextureFormat:BC5:VersionNumber=0
+TextureFormat:BGRA8:VersionNumber=0
+TextureFormat:G8:VersionNumber=0
+TextureFormat:G16:VersionNumber=0
+TextureFormat:VU8:VersionNumber=0
+TextureFormat:RGBA16F:VersionNumber=0
+TextureFormat:XGXR8:VersionNumber=0
+TextureFormat:RGBA8:VersionNumber=0
+TextureFormat:POTERROR:VersionNumber=0
+TextureFormat:R16F:VersionNumber=0
+TextureFormat:BC6H:VersionNumber=4
+TextureFormat:BC7:VersionNumber=4
+ShaderFormat:PCD3D_SM5:VersionNumber=8
+ShaderFormat:PCD3D_ES31:VersionNumber=8
+Release:9C54D522A8264FBE9421074661B482D0=43
+Dev-Blueprints:B0D832E41F894F0DACCF7EB736FD4AA2=10
+Dev-Build:E1C64328A22C4D53A36C8E866417BD8C=0
+Dev-Core:375EC13C06E448FBB50084F0262A717E=4
+Dev-Editor:E4B068EDF49442E9A231DA0B2E46BB41=40
+Dev-Framework:CFFC743F43B04480939114DF171D2073=37
+Dev-Mobile:B02B49B5BB2044E9A30432B752E40360=3
+Dev-Networking:A4E4105C59A149B5A7C540C4547EDFEE=0
+Dev-Online:39C831C95AE647DC9A449C173E1C8E7C=0
+Dev-Physics:78F01B33EBEA4F98B9B484EACCB95AA2=14
+Dev-Platform:6631380F2D4D43E08009CF276956A95A=0
+Dev-Rendering:12F88B9F88754AFCA67CD90C383ABD29=45
+Dev-Sequencer:7B5AE74CD2704C10A95857980B212A5A=13
+Dev-VR:D72969181DD64BDD9DE264A83CC13884=3
+Dev-LoadTimes:C2A15278BFE74AFE6C1790FF531DF755=1
+Private-Geometry:6EACA3D440EC4CC1B7868BED09428FC5=3
+Dev-AnimPhys:29E575DDE0A346279D10D276232CDCEA=17
+Dev-Anim:AF43A65D7FD3494798733E8ED9C1BB05=15
+Dev-ReflectionCapture:6B266CEC1EC74B8FA30BE4D90942FC07=1
+Dev-Automation:0DF73D61A23F47EAB72789E90C41499A=1
+FortniteMain:601D1886AC644F84AA16D3DE0DEAC7D6=47
+FortniteRelease:E70863686B234C5884391B7016265E91=1
+Dev-Enterprise:9DFFBCD6494F0158E22112823C92A888=10
+Dev-Niagara:F2AED0AC9AFE416F8664AA7FFA26D6FC=1
+Dev-Destruction:174F1F0BB4C645A5B13F2EE8D0FB917D=10
+Dev-Physics-Ext:35F94A83E258406CA31809F59610247C=41
+Dev-PhysicsMaterial-Chaos:B68FC16E8B1B42E2B453215C058844FE=1
+Dev-CineCamera:B2E185064273CFC2A54EF4BB758BBA07=1
+Dev-VirtualProduction:64F58936FD1B42BABA967289D5D0FA4E=1
+Dev-MediaFramework:6F0ED827A60948959C91998D90180EA4=2
+AssetRegistry:717F9EE7E9B0493A88B391321B388107=8
+BulkDataManifestVersion:54683250809948AF8BC89896FBADF9B7=0
+FileCacheVersion:8E7DDCB380DA47BB9FD346A293984DF6=1
+LiveLinkCustomVersion:CB8AB0CDE78C4BDEA862139314E9EF62=0
+LiveLinkVer:AB96519645D808FCB7D7228D78AD569E=1
+ClothConfigNvVer:9950B70EB41A4E17BBCCFA0D57817FD6=1
+ClothingAssetVer:FB680AF259EF4BA3BAA819B573C8443D=2
+PoseDriverVer:AFE086913A0D4952B673673B7CF22D1E=2
+AnimGraphVer:2EB5FDBD01AC4D108136F38F3393A5DA=5
+EventParameter:509D354FF6E6492FA74985B2073C631C=0
+MovieSceneEvaluation:A462B7EAF4994E3A99C1EC1F8224E1B2=4
+FoliageVer:430C4D197154497087699B69DF90B0E5=15
+ProceduralFoliageVer:AAFE32BD53954C14B66A5E251032D1DD=1
+Landscape:23AFE18E4CE14E588D61C252B953BEB7=11
+ParticleSystemVer:4A56EB4010F511DC92D3347EB2C96AE7=2
+SkeletalMeshVer:D78A4A00E8584697BAA819B5487D46B4=18
+RecomputeTangentCustomVer:5579F886933A4C1F83BA087B6361B92F=2
+OverlappingVerticeDetectionVer:612FBE52DA53400B910D4F919FB1857C=1
+VisualLogger:A4237A36CAEA41C98FA218F858681BF3=4
+VirtualTextureBuiltDataVersion:804E3F7570884B49A4D68C063C7EB6DC=5
+VariantManagerObjectVer:24BB7AF356464F831F2F2DC249AD96FF=5
+ChaosClothConfigVer:76A52329092345B598AED841CF2F6AD8=5
+ChaosClothSharedConfigVer:5FBC690755C840AE8E67F1845EFFF13F=1
+NiagaraVer:FCF57AFA50764283B9A9E658FFA02D32=68
+Paper2DVer:11310AED2E554D61AF679AA3C5A1082C=17
+AudioSynesthesiaVer:82E77C4E332343A5B46B13C597310DF3=0
+EditableMeshVer:FB26E4121F154B4D9372550A961D2F70=3
+PackageFileVersions:522=0
+MaterialShaderMapDDCVersion=0BA69734E4FD45E082FA4560DBE25454
+GlobalDDCVersion=FA8C9A216A2C4639A783EB2DF8CE267E
+

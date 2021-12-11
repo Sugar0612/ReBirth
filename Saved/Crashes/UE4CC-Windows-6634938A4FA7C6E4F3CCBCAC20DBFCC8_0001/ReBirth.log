@@ -1,0 +1,1292 @@
+﻿Log file open, 12/01/21 15:30:08
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogInit: Display: Running engine for game: ReBirth
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.371571
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +8:00, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin XGEController
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin LiveLink
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PixWinPlugin
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessNode
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin TextureFormatOodle
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin OpenImageDenoise
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin LuminPlatformFeatures
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OpenXREyeTracker
+LogPluginManager: Mounting plugin OpenXR
+LogPluginManager: Mounting plugin OpenXRHandTracking
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin Takes
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ContentBrowserAssetDataSource
+LogPluginManager: Mounting plugin ContentBrowserClassDataSource
+LogPluginManager: Mounting plugin ContentBrowserFileDataSource
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin SteamVR
+PixWinPlugin: PIX capture plugin failed to initialize! Check that the process is launched from PIX.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogOculusPluginWrapper: OculusPlugin initialized successfully
+LogHMD: Failed initializing OVRPlugin 1.59.0
+LogInit: Build: ++UE4+Release-4.27-CL-17155196
+LogInit: Engine Version: 4.27.0-17155196+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-17155196+++UE4+Release-4.27
+LogInit: Net CL: 17155196
+LogInit: OS: Windows 10 (Release 2009) (), CPU: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz, GPU: Intel(R) UHD Graphics 630
+LogInit: Compiled (64-bit): Aug 13 2021 06:13:13
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line: 
+LogInit: Base Directory: E:/unreal/package/ue4/UE_4.27/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 29
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 40
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 3
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 14
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 45
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 13
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 15
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 47
+LogDevObjectVersion:   FortniteRelease (E7086368-6B23-4C58-8439-1B7016265E91): 1
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 41
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogDevObjectVersion:   Dev-VirtualProduction (64F58936-FD1B-42BA-BA96-7289D5D0FA4E): 1
+LogDevObjectVersion:   Dev-MediaFramework (6F0ED827-A609-4895-9C91-998D90180EA4): 2
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [H:/Project/ReBirth/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [H:/Project/ReBirth/Saved/Config/Windows/Engine.ini]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [H:/Project/ReBirth/Saved/Config/Windows/Engine.ini]
+[2021.12.01-07.30.09:907][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [H:/Project/ReBirth/Saved/Config/Windows/Engine.ini]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [H:/Project/ReBirth/Saved/Config/Windows/Engine.ini]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2021.12.01-07.30.09:907][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [H:/Project/ReBirth/Saved/Config/Windows/Engine.ini]
+[2021.12.01-07.30.09:907][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [H:/Project/ReBirth/Saved/Config/Windows/Engine.ini]
+[2021.12.01-07.30.09:924][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.12.01-07.30.09:924][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.12.01-07.30.09:925][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2021.12.01-07.30.09:926][  0]LogInit: Selected Device Profile: [Windows]
+[2021.12.01-07.30.09:926][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.12.01-07.30.09:926][  0]LogHAL: Display: Platform has ~ 8 GB [8454918144 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.12.01-07.30.09:926][  0]LogInit: Going up to parent DeviceProfile []
+[2021.12.01-07.30.09:926][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.12.01-07.30.09:926][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [H:/Project/ReBirth/Saved/Config/Windows/Scalability.ini]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2021.12.01-07.30.09:927][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2021.12.01-07.30.09:928][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.12.01-07.30.09:928][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.12.01-07.30.09:928][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.12.01-07.30.09:928][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.12.01-07.30.09:928][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [H:/Project/ReBirth/Saved/Config/Windows/Engine.ini]
+[2021.12.01-07.30.09:928][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [H:/Project/ReBirth/Saved/Config/Windows/Editor.ini]
+[2021.12.01-07.30.09:928][  0]LogInit: Computer: LAPTOP-10OTS8EA
+[2021.12.01-07.30.09:928][  0]LogInit: User: lenovo
+[2021.12.01-07.30.09:928][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.12.01-07.30.09:928][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.12.01-07.30.09:928][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2021.12.01-07.30.09:928][  0]LogMemory: Platform Memory Stats for Windows
+[2021.12.01-07.30.09:928][  0]LogMemory: Process Physical Memory: 147.44 MB used, 147.44 MB peak
+[2021.12.01-07.30.09:928][  0]LogMemory: Process Virtual Memory: 128.50 MB used, 128.50 MB peak
+[2021.12.01-07.30.09:928][  0]LogMemory: Physical Memory: 4685.29 MB used,  3377.95 MB free, 8063.24 MB total
+[2021.12.01-07.30.09:928][  0]LogMemory: Virtual Memory: 134207376.00 MB used,  10349.00 MB free, 134217728.00 MB total
+[2021.12.01-07.30.09:954][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.12.01-07.30.10:152][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.12.01-07.30.10:157][  0]LogInit: Overriding language with editor language configuration option (en).
+[2021.12.01-07.30.10:157][  0]LogInit: Overriding language with editor locale configuration option (en).
+[2021.12.01-07.30.10:468][  0]LogInit: Setting process to per monitor DPI aware
+[2021.12.01-07.30.10:559][  0]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2021.12.01-07.30.10:583][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.12.01-07.30.10:583][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.12.01-07.30.10:978][  0]LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+[2021.12.01-07.30.11:040][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.12.01-07.30.11:040][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.12.01-07.30.11:040][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.12.01-07.30.11:040][  0]LogD3D11RHI: D3D11 adapters:
+[2021.12.01-07.30.11:148][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
+[2021.12.01-07.30.11:148][  0]LogD3D11RHI:       2996/0/4031 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.12.01-07.30.11:265][  0]LogD3D11RHI:    1. 'Intel(R) UHD Graphics 630' (Feature Level 11_0)
+[2021.12.01-07.30.11:265][  0]LogD3D11RHI:       128/0/4031 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2021.12.01-07.30.11:268][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.12.01-07.30.11:268][  0]LogD3D11RHI:       0/0/4031 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.12.01-07.30.11:268][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.12.01-07.30.11:276][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.12.01-07.30.11:276][  0]LogD3D11RHI:     GPU DeviceId: 0x1c91 (for the marketing name, search the web for "GPU Device Id")
+[2021.12.01-07.30.11:276][  0]LogWindows: EnumDisplayDevices:
+[2021.12.01-07.30.11:276][  0]LogWindows:    0. 'Intel(R) UHD Graphics 630' (P:1 D:1)
+[2021.12.01-07.30.11:277][  0]LogWindows:    1. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2021.12.01-07.30.11:278][  0]LogWindows:    2. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2021.12.01-07.30.11:279][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050' (P:0 D:0)
+[2021.12.01-07.30.11:280][  0]LogWindows:    4. 'NVIDIA GeForce GTX 1050' (P:0 D:0)
+[2021.12.01-07.30.11:281][  0]LogWindows:    5. 'NVIDIA GeForce GTX 1050' (P:0 D:0)
+[2021.12.01-07.30.11:282][  0]LogWindows:    6. 'NVIDIA GeForce GTX 1050' (P:0 D:0)
+[2021.12.01-07.30.11:283][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2021.12.01-07.30.11:283][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
+[2021.12.01-07.30.11:283][  0]LogD3D11RHI:   Driver Version: 457.49 (internal:27.21.14.5749, unified:457.49)
+[2021.12.01-07.30.11:283][  0]LogD3D11RHI:      Driver Date: 11-20-2020
+[2021.12.01-07.30.11:283][  0]LogRHI: Texture pool is 2097 MB (70% of 2996 MB)
+[2021.12.01-07.30.11:363][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.12.01-07.30.11:363][  0]LogD3D11RHI: Async texture creation enabled
+[2021.12.01-07.30.11:364][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.12.01-07.30.11:384][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.12.01-07.30.11:493][  0]LogRHI: GeForceNow SDK initialized: 1
+[2021.12.01-07.30.12:042][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.12.01-07.30.12:071][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.12.01-07.30.12:071][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.12.01-07.30.12:071][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.12.01-07.30.12:071][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.12.01-07.30.12:071][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.12.01-07.30.12:071][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.12.01-07.30.12:071][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.12.01-07.30.12:071][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.12.01-07.30.12:071][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.12.01-07.30.12:071][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.12.01-07.30.12:103][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.12.01-07.30.12:103][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.12.01-07.30.12:119][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.12.01-07.30.12:129][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.12.01-07.30.12:140][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.12.01-07.30.12:147][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.12.01-07.30.12:164][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.12.01-07.30.12:175][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.12.01-07.30.12:186][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.12.01-07.30.12:217][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.12.01-07.30.12:217][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.12.01-07.30.12:230][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacNoEditor'
+[2021.12.01-07.30.12:239][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Mac'
+[2021.12.01-07.30.12:249][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacClient'
+[2021.12.01-07.30.12:257][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'MacServer'
+[2021.12.01-07.30.12:272][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.12.01-07.30.12:272][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.12.01-07.30.12:287][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.12.01-07.30.12:296][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.12.01-07.30.12:305][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.12.01-07.30.12:313][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.12.01-07.30.12:314][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.12.01-07.30.12:331][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.12.01-07.30.12:397][  0]LogTextureFormatOodle: Display: Oodle Texture 2.9.0 init RDO Off
+[2021.12.01-07.30.12:491][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2021.12.01-07.30.12:491][  0]LogShaderCompilers: Guid format shader working directory is 6 characters bigger than the processId version (H:/Project/ReBirth/Intermediate/Shaders/WorkingDirectory/19412/).
+[2021.12.01-07.30.12:491][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'G:/sysbuffer/UnrealShaderWorkingDir/3948AF794ECAB4CFDC80099019378677/'.
+[2021.12.01-07.30.12:492][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.12.01-07.30.12:492][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.12.01-07.30.12:492][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.12.01-07.30.13:475][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.12.01-07.30.13:555][  0]LogDerivedDataCache: Loaded boot cache 0.08s 95MB C:/Users/lenovo/AppData/Local/UnrealEngine/4.27/DerivedDataCache/Boot.ddc.
+[2021.12.01-07.30.13:555][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/lenovo/AppData/Local/UnrealEngine/4.27/DerivedDataCache/Boot.ddc
+[2021.12.01-07.30.13:555][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file H:/Project/ReBirth/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.12.01-07.30.13:555][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.12.01-07.30.13:555][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file H:/Project/ReBirth/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.12.01-07.30.13:555][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.12.01-07.30.13:577][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.12.01-07.30.13:577][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.12.01-07.30.13:577][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.12.01-07.30.13:600][  0]LogDerivedDataCache: Speed tests for C:/Users/lenovo/AppData/Local/UnrealEngine/Common/DerivedDataCache took 0.02 seconds
+[2021.12.01-07.30.13:601][  0]LogDerivedDataCache: Display: Performance to C:/Users/lenovo/AppData/Local/UnrealEngine/Common/DerivedDataCache: Latency=0.20ms. RandomReadSpeed=99.81MBs, RandomWriteSpeed=80.47MBs. Assigned SpeedClass 'Local'
+[2021.12.01-07.30.13:601][  0]LogDerivedDataCache: Using Local data cache path C:/Users/lenovo/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.12.01-07.30.13:601][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.12.01-07.30.13:601][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.12.01-07.30.13:654][  0]LogSlate: Using FreeType 2.10.0
+[2021.12.01-07.30.13:656][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.12.01-07.30.13:695][  0]LogAssetRegistry: FAssetRegistry took 0.0033 seconds to start up
+[2021.12.01-07.30.13:957][  0]LogInit: Selected Device Profile: [Windows]
+[2021.12.01-07.30.13:957][  0]LogInit: Active device profile: [000001B5BFC5AC00][000001B5BB436A40 49] Windows
+[2021.12.01-07.30.13:957][  0]LogInit: Profiles: [000001B5BFC5AC00][000001B5BB436A40 49] Windows, [000001B5BFBECA00][000001B5B8C52BC0 49] WindowsNoEditor, [000001B5BFC5AB00][000001B5B8C56D40 49] WindowsServer, [000001B5BFBEC400][000001B5B8C5AEC0 49] WindowsClient, [000001B5BFBDBF00][000001B5B8C5F040 49] IOS, [000001B5BFBEC100][000001B5B8C631C0 49] iPadAir, [000001B5BFBD8400][000001B5B8C67340 49] iPadAir2, [000001B5BFBA1300][000001B5B8C6F600 49] IPadPro, [000001B5BFBA1400][000001B5B8C6B640 49] iPadAir3, [000001B5BFBD8300][000001B5B8C737C0 49] iPadAir4, [000001B5BFBA0400][000001B5B8C77940 49] iPadMini2, [000001B5BFBD8200][000001B5B8C7BAC0 49] iPadMini3, [000001B5BFBA0300][000001B5B8C7E0C0 49] iPadMini4, [000001B5BFBD8100][000001B5B8C82240 49] iPadMini5, [000001B5BFBED800][000001B5BEBCC500 49] iPhone6, [000001B5BFBED900][000001B5B8C86540 49] iPodTouch6, [000001B5BFBA3D00][000001B5BEBD0780 49] iPhone7, [000001B5BFBA3C00][000001B5B8C4E7C0 49] iPodTouch7, [000001B5BFBEC300][000001B5BEBD4900 49] iPhone5S, [000001B5BFBA0700][000001B5BEBDCA80 49] iPhone6Plus, [000001B5BFBEDC00][000001B5BEBE0C00 49] iPhone6S, [000001B5BFBA3A00][000001B5BEBE4D80 49] iPhone6SPlus, [000001B5BFBECD00][000001B5BEBE8F00 49] iPhone7Plus, [000001B5BFBA0A00][000001B5BEBED080 49] iPhoneSE, [000001B5BFBEDE00][000001B5BEBF1200 49] iPhone8, [000001B5BFBA1F00][000001B5BEBF5380 49] iPhone8Plus, [000001B5BFBED000][000001B5BEBF9500 49] iPhoneX, [000001B5BFBA1200][000001B5BEBFD680 49] iPhoneXS, [000001B5BFBEE100][000001B5BEC01800 49] iPhoneXSMax, [000001B5BFBA3300][000001B5BEC05980 49] iPhoneXR, [000001B5BFBEC700][000001B5BEC09B00 49] iPhone11, [000001B5BFBA1900][000001B5BEC0C100 49] iPhone11Pro, [000001B5BFBEE500][000001B5BEC10280 49] iPhone11ProMax, [000001B5BFBA2F00][000001B5BEC14400 49] iPhoneSE2, [000001B5BFBEC500][000001B5BEC18580 49] iPhone12Mini, [000001B5BFBA1700][000001B5BEC1C700 49] iPhone12, [000001B5BFBEE900][000001B5BEBD8840 49] iPhone12Pro, [000001B5BFBA2B00][000001B5BEC20980 49] iPhone12ProMax, [000001B5BFBEFB00][000001B5BEC24AC0 49] iPadPro105, [000001B5BFBA3600][000001B5BEC2CC40 49] iPadPro129, [000001B5BFBEEB00][000001B5BEC30DC0 49] iPadPro97, [000001B5BFBA0E00][000001B5BEC34F40 49] iPadPro2_129, [000001B5BFBEF900][000001B5BEC390C0 49] iPad5, [000001B5BFBA2100][000001B5BEC3D240 49] iPad6, [000001B5BFBED100][000001B5BEC413C0 49] iPad7, [000001B5BFBA0F00][000001B5BEC45540 49] iPad8, [000001B5BFBEDA00][000001B5BEC496C0 49] iPadPro11, [000001B5BFBA3F00][000001B5BEC4D840 49] iPadPro2_11, [000001B5BFBED400][000001B5BEC519C0 49] iPadPro3_129, [000001B5BFBA1600][000001B5BEC55B40 49] iPadPro4_129, [000001B5BFBEF200][000001B5BEC58140 49] AppleTV, [000001B5BFBA2500][000001B5BEC5C2C0 49] AppleTV4K, [000001B5BFBEF300][000001B5BEC60440 49] TVOS, [000001B5BFBA2200][000001B5BEC645C0 49] Mac, [000001B5BFBECC00][000001B5BEC68740 49] MacClient, [000001B5BFBA2A00][000001B5BEC6C8C0 49] MacNoEditor, [000001B5BFBEFE00][000001B5BEC28A00 49] MacServer, [000001B5BFBA1A00][000001B5BEC70B40 49] Linux, [000001B5BFBEE000][000001B5BEC74C80 49] LinuxAArch64, [000001B5BFBA3E00][000001B5BEC78DC0 49] LinuxNoEditor, [000001B5BFBECB00][000001B5BEC80F40 49] LinuxAArch64NoEditor, [000001B5BFBA0B00][000001B5BEC850C0 49] LinuxClient, [000001B5BFBEED00][000001B5BEC89240 49] LinuxAArch64Client, [000001B5BFBA2000][000001B5BEC8D3C0 49] LinuxServer, [000001B5BFBED300][000001B5BEC91540 49] LinuxAArch64Server, [000001B5BFBA3200][000001B5BEC956C0 49] Android, [000001B5BFBEC200][000001B5BEC99840 49] Android_Low, [000001B5BFBA2300][000001B5BEC9D9C0 49] Android_Mid, [000001B5BFBEF500][000001B5BECA1B40 49] Android_High, [000001B5BFBA1500][000001B5BECA4140 49] Android_Default, [000001B5BFBED500][000001B5BECA82C0 49] Android_Adreno4xx, [000001B5BFBA0C00][000001B5BECAC440 49] Android_Adreno5xx_Low, [000001B5BFBD8500][000001B5BECB05C0 49] Android_Adreno5xx, [000001B5BFC58200][000001B5BECB4740 49] Android_Adreno6xx, [000001B5BFBDA500][000001B5BECB88C0 49] Android_Adreno6xx_Vulkan, [000001B5BFC5A400][000001B5BECBCA40 49] Android_Mali_T6xx, [000001B5BFBD8D00][000001B5BEC7CB80 49] Android_Mali_T7xx, [000001B5BFC58500][000001B5BECC0CC0 49] Android_Mali_T8xx, [000001B5BFBD9D00][000001B5BECC4E00 49] Android_Mali_G71, [000001B5BFC59600][000001B5BECC8F40 49] Android_Mali_G72, [000001B5BFBD9A00][000001B5BECD10C0 49] Android_Mali_G72_Vulkan, [000001B5BFC5A300][000001B5BECD5240 49] Android_Mali_G76, [000001B5BFBDAB00][000001B5BECD93C0 49] Android_Mali_G76_Vulkan, [000001B5BFC58400][000001B5BECDD540 49] Android_Mali_G77, [000001B5BFBD8C00][000001B5BECE16C0 49] Android_Mali_G77_Vulkan, [000001B5BFC59B00][000001B5BECE5840 49] Android_Mali_G78, [000001B5BFBDBA00][000001B5BECE99C0 49] Android_Mali_G78_Vulkan, [000001B5BFC58C00][000001B5BECEDB40 49] Android_Mali_G710, [000001B5BFBDA300][000001B5BECF0140 49] Android_Mali_G710_Vulkan, [000001B5BFC59C00][000001B5BECF42C0 49] Android_Vulkan_SM5, [000001B5BFBD9700][000001B5BECF8440 49] Android_PowerVR_G6xxx, [000001B5BFC5A900][000001B5BECFC5C0 49] Android_PowerVR_GT7xxx, [000001B5BFBD8800][000001B5BED00740 49] Android_PowerVR_GE8xxx, [000001B5BFC58F00][000001B5BED048C0 49] Android_PowerVR_GM9xxx, [000001B5BFBDA700][000001B5BED08A40 49] Android_PowerVR_GM9xxx_Vulkan, [000001B5BFC59A00][000001B5BED0CBC0 49] Android_TegraK1, [000001B5BFBDA800][000001B5BED10D40 49] Android_Unknown_Vulkan, [000001B5BFC59700][000001B5BECCCE80 49] Lumin, [000001B5BFBA3700][000001B5BED14FC0 49] Lumin_Desktop, [000001B5BFC59000][000001B5BED19100 49] HoloLens, 
+[2021.12.01-07.30.14:166][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.12.01-07.30.14:166][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.12.01-07.30.14:166][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.12.01-07.30.14:166][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.12.01-07.30.14:166][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.12.01-07.30.14:197][  0]LogNetVersion: ReBirth 1.0.0, NetCL: 17155196, EngineNetVer: 17, GameNetVer: 0 (Checksum: 3498354362)
+[2021.12.01-07.30.14:846][  0]LogTexture: Default maximum texture size for cubemaps generated from long-lat sources has been changed from 512 to unlimited. In order to preserve old behaiour for '/Engine/MapTemplates/Sky/DaylightAmbientCubemap.DaylightAmbientCubemap', its maximum texture size has been explicitly set to 512.
+[2021.12.01-07.30.14:926][  0]LogHMD: PokeAHoleMaterial loaded successfully
+[2021.12.01-07.30.14:933][  0]LogUObjectArray: 17178 objects as part of root set at end of initial load.
+[2021.12.01-07.30.14:933][  0]LogUObjectAllocator: 4301856 out of 0 bytes used by permanent object pool.
+[2021.12.01-07.30.14:933][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.12.01-07.30.15:584][  0]LogPython: Using Python 3.7.7
+[2021.12.01-07.30.16:232][  0]LogNiagaraDebuggerClient: Niagara Debugger Client Initialized | Session: 1330E2C143490C5F679C09B712C2BFEA | Instance: 33A482014175425B6F76108CE615F5F9 (LAPTOP-10OTS8EA-19412).
+[2021.12.01-07.30.16:514][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png' error.
+[2021.12.01-07.30.16:514][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png
+[2021.12.01-07.30.16:514][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png' error.
+[2021.12.01-07.30.16:514][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png
+[2021.12.01-07.30.16:514][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png' error.
+[2021.12.01-07.30.16:514][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png
+[2021.12.01-07.30.16:514][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png' error.
+[2021.12.01-07.30.16:514][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png
+[2021.12.01-07.30.16:514][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png' error.
+[2021.12.01-07.30.16:514][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png
+[2021.12.01-07.30.16:514][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png' error.
+[2021.12.01-07.30.16:514][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png
+[2021.12.01-07.30.16:514][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png' error.
+[2021.12.01-07.30.16:514][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png
+[2021.12.01-07.30.16:514][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png' error.
+[2021.12.01-07.30.16:514][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png
+[2021.12.01-07.30.16:514][  0]LogImageWrapper: Warning: PNG Warning: Duplicate iCCP chunk
+[2021.12.01-07.30.16:514][  0]LogImageWrapper: Warning: PNG Warning: Duplicate iCCP chunk
+[2021.12.01-07.30.16:514][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.12.01-07.30.16:522][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.12.01-07.30.16:618][  0]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.12.01-07.30.16:789][  0]LogStats: FPlatformStackWalk::StackWalkAndDump -  0.172 s
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: === Handled ensure: ===
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: 
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: Ensure condition failed: AttachmentRules.LocationRule == EAttachmentRule::KeepRelative && AttachmentRules.RotationRule == EAttachmentRule::KeepRelative && AttachmentRules.ScaleRule == EAttachmentRule::KeepRelative [File:D:/Build/++UE4/Sync/Engine/Source/Runtime/Engine/Private/Components/SceneComponent.cpp] [Line: 1826]
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: AttachToComponent when called from a constructor is only setting up attachment and will always be treated as KeepRelative. Consider calling SetupAttachment directly instead.
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: Stack: 
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff8561227a9 UE4Editor-Engine.dll!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff854b66b0f UE4Editor-Engine.dll!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff83c71c31c UE4Editor-ReBirth-0025.dll!AMonster::AMonster() [H:\Project\ReBirth\Source\ReBirth\Monster.cpp:39]
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff8692d61d3 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff8695f8e5f UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff8695d52c1 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff86949dc85 UE4Editor-CoreUObject.dll!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff869cb1d9a UE4Editor-Core.dll!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff869cd1753 UE4Editor-Core.dll!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff8ac6e6433 UE4Editor-Projects.dll!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff8ac6e674f UE4Editor-Projects.dll!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff704745632 UE4Editor.exe!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff704748ff0 UE4Editor.exe!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff704740d1c UE4Editor.exe!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff7047410aa UE4Editor.exe!UnknownFunction []
+[2021.12.01-07.30.16:789][  0]LogOutputDevice: Error: [Callstack] 0x00007ff7047440cd UE4Editor.exe!UnknownFunction []
+[2021.12.01-07.30.16:790][  0]LogOutputDevice: Error: [Callstack] 0x00007ff704755984 UE4Editor.exe!UnknownFunction []
+[2021.12.01-07.30.16:790][  0]LogOutputDevice: Error: [Callstack] 0x00007ff70475853a UE4Editor.exe!UnknownFunction []
+[2021.12.01-07.30.16:790][  0]LogOutputDevice: Error: [Callstack] 0x00007ff8bbad7034 KERNEL32.DLL!UnknownFunction []
+[2021.12.01-07.30.16:790][  0]LogOutputDevice: Error: [Callstack] 0x00007ff8bca42651 ntdll.dll!UnknownFunction []
+[2021.12.01-07.30.16:790][  0]LogOutputDevice: Error: 
+[2021.12.01-07.30.16:801][  0]LogStats:                SubmitErrorReport -  0.000 s
+[2021.12.01-07.30.18:817][  0]LogStats:                    SendNewReport -  2.017 s
+[2021.12.01-07.30.18:817][  0]LogStats:             FDebug::EnsureFailed -  2.200 s
+[2021.12.01-07.30.19:069][  0]SourceControl: Source control is disabled
+[2021.12.01-07.30.19:069][  0]SourceControl: Source control is disabled
+[2021.12.01-07.30.19:077][  0]SourceControl: Source control is disabled
+[2021.12.01-07.30.19:085][  0]SourceControl: Source control is disabled
+[2021.12.01-07.30.19:135][  0]SourceControl: Source control is disabled
+[2021.12.01-07.30.19:149][  0]LogUProjectInfo: Found projects:
+[2021.12.01-07.30.19:536][  0]LogOpenImageDenoise: OIDN starting up
+[2021.12.01-07.30.19:641][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.12.01-07.30.19:692][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.12.01-07.30.19:692][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.12.01-07.30.19:925][  0]LogCollectionManager: Loaded 0 collections in 0.001010 seconds
+[2021.12.01-07.30.19:970][  0]LogFileCache: Scanning file cache for directory 'H:/Project/ReBirth/Saved/Collections/' took 0.00s
+[2021.12.01-07.30.19:970][  0]LogFileCache: Scanning file cache for directory 'H:/Project/ReBirth/Content/Developers/lenovo/Collections/' took 0.00s
+[2021.12.01-07.30.19:970][  0]LogFileCache: Scanning file cache for directory 'H:/Project/ReBirth/Content/Collections/' took 0.00s
+[2021.12.01-07.30.19:970][  0]LogOcInput: OculusInput pre-init called
+[2021.12.01-07.30.20:362][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png' error.
+[2021.12.01-07.30.20:362][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png
+[2021.12.01-07.30.20:362][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png' error.
+[2021.12.01-07.30.20:362][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png
+[2021.12.01-07.30.20:362][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png' error.
+[2021.12.01-07.30.20:362][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png
+[2021.12.01-07.30.20:362][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png' error.
+[2021.12.01-07.30.20:362][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png
+[2021.12.01-07.30.20:362][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png' error.
+[2021.12.01-07.30.20:362][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png
+[2021.12.01-07.30.20:362][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png' error.
+[2021.12.01-07.30.20:362][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png
+[2021.12.01-07.30.20:362][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png' error.
+[2021.12.01-07.30.20:362][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png
+[2021.12.01-07.30.20:362][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png' error.
+[2021.12.01-07.30.20:362][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png
+[2021.12.01-07.30.20:362][  0]LogImageWrapper: Warning: PNG Warning: Duplicate iCCP chunk
+[2021.12.01-07.30.20:362][  0]LogImageWrapper: Warning: PNG Warning: Duplicate iCCP chunk
+[2021.12.01-07.30.20:362][  0]LogClass: Display: FloatProperty FCharacterState::CurHp is not initialized properly. Module:ReBirth File:SaveMyGame.h
+[2021.12.01-07.30.20:362][  0]LogClass: Display: FloatProperty FCharacterState::MaxHp is not initialized properly. Module:ReBirth File:SaveMyGame.h
+[2021.12.01-07.30.20:362][  0]LogClass: Display: FloatProperty FCharacterState::CurEp is not initialized properly. Module:ReBirth File:SaveMyGame.h
+[2021.12.01-07.30.20:362][  0]LogClass: Display: FloatProperty FCharacterState::MaxEp is not initialized properly. Module:ReBirth File:SaveMyGame.h
+[2021.12.01-07.30.20:362][  0]LogClass: Display: IntProperty FCharacterState::CoinCnt is not initialized properly. Module:ReBirth File:SaveMyGame.h
+[2021.12.01-07.30.20:362][  0]LogClass: Display: StructProperty FCharacterState::Location is not initialized properly. Module:ReBirth File:SaveMyGame.h
+[2021.12.01-07.30.20:362][  0]LogClass: Display: StructProperty FCharacterState::Rotation is not initialized properly. Module:ReBirth File:SaveMyGame.h
+[2021.12.01-07.30.20:363][  0]LogClass: Display: 7 Uninitialized script struct members found including 0 object properties
+[2021.12.01-07.30.20:363][  0]LogAutomationTest: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png' error.
+[2021.12.01-07.30.20:363][  0]LogAutomationTest: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png' error.
+[2021.12.01-07.30.20:363][  0]LogAutomationTest: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png' error.
+[2021.12.01-07.30.20:363][  0]LogAutomationTest: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png' error.
+[2021.12.01-07.30.20:363][  0]LogAutomationTest: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png' error.
+[2021.12.01-07.30.20:363][  0]LogAutomationTest: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png' error.
+[2021.12.01-07.30.20:363][  0]LogAutomationTest: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png' error.
+[2021.12.01-07.30.20:363][  0]LogAutomationTest: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png' error.
+[2021.12.01-07.30.20:363][  0]LogAutomationTest: Warning: PNG Warning: Duplicate iCCP chunk
+[2021.12.01-07.30.20:363][  0]LogAutomationTest: Warning: PNG Warning: Duplicate iCCP chunk
+[2021.12.01-07.30.20:366][  0]LogEngine: Initializing Engine...
+[2021.12.01-07.30.20:370][  0]LogHMD: Failed to enumerate extensions. Please check that you have a valid OpenXR runtime installed.
+[2021.12.01-07.30.20:372][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.12.01-07.30.20:372][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.12.01-07.30.20:373][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.12.01-07.30.20:570][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.12.01-07.30.20:586][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.12.01-07.30.20:587][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2021.12.01-07.30.20:595][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2021.12.01-07.30.20:597][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2021.12.01-07.30.20:597][  0]LogAudio: Display: Audio Device Manager Initialized
+[2021.12.01-07.30.20:597][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2021.12.01-07.30.20:597][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.12.01-07.30.20:597][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.12.01-07.30.20:597][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.12.01-07.30.20:597][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.12.01-07.30.20:597][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.12.01-07.30.20:597][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.12.01-07.30.20:597][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.12.01-07.30.20:597][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.12.01-07.30.20:598][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2021.12.01-07.30.20:598][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2021.12.01-07.30.20:598][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2021.12.01-07.30.20:598][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.12.01-07.30.20:658][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.12.01-07.30.20:658][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.12.01-07.30.21:618][  0]LogAudioMixer: Display: Using Audio Device 扬声器 (Realtek(R) Audio)
+[2021.12.01-07.30.21:621][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.12.01-07.30.21:626][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.12.01-07.30.21:626][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.12.01-07.30.21:628][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.12.01-07.30.21:628][  0]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.12.01-07.30.21:628][  0]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.12.01-07.30.21:629][  0]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.12.01-07.30.21:629][  0]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.12.01-07.30.21:629][  0]LogInit: FAudioDevice initialized.
+[2021.12.01-07.30.21:630][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Untitled'.
+[2021.12.01-07.30.21:630][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.12.01-07.30.21:713][  0]LogDerivedDataCache: Saved boot cache 0.08s 95MB C:/Users/lenovo/AppData/Local/UnrealEngine/4.27/DerivedDataCache/Boot.ddc.
+[2021.12.01-07.30.21:714][  0]LogInit: Texture streaming: Enabled
+[2021.12.01-07.30.21:744][  0]LogAnalytics: Display: [UEEditor.Rocket.Release] APIServer = https://datarouter.ol.epicgames.com/. AppVersion = 4.27.0-17155196+++UE4+Release-4.27
+[2021.12.01-07.30.21:756][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.12.01-07.30.21:756][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.12.01-07.30.21:766][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.12.01-07.30.21:820][  0]LogInit: Transaction tracking system initialized
+[2021.12.01-07.30.21:874][  0]BlueprintLog: New page: Editor Load
+[2021.12.01-07.30.22:005][  0]LocalizationService: Localization service is disabled
+[2021.12.01-07.30.22:055][  0]TimingProfiler: Initialize
+[2021.12.01-07.30.22:055][  0]TimingProfiler: OnSessionChanged
+[2021.12.01-07.30.22:055][  0]LoadingProfiler: Initialize
+[2021.12.01-07.30.22:056][  0]LoadingProfiler: OnSessionChanged
+[2021.12.01-07.30.22:056][  0]NetworkingProfiler: Initialize
+[2021.12.01-07.30.22:056][  0]NetworkingProfiler: OnSessionChanged
+[2021.12.01-07.30.22:056][  0]MemoryProfiler: Initialize
+[2021.12.01-07.30.22:056][  0]MemoryProfiler: OnSessionChanged
+[2021.12.01-07.30.22:265][  0]LogCook: Display: CookSettings for Memory: MemoryMaxUsedVirtual 0MiB, MemoryMaxUsedPhysical 16384MiB, MemoryMinFreeVirtual 0MiB, MemoryMinFreePhysical 1024MiB
+[2021.12.01-07.30.22:265][  0]LogCook: Display: Mobile HDR setting 1
+[2021.12.01-07.30.22:277][  0]LogUObjectGlobals: Warning: Failed to find object 'StaticMesh /Engine/BasicShapes/Sphere.Sphere'
+[2021.12.01-07.30.22:597][  0]LogFileCache: Scanning file cache for directory 'H:/Project/ReBirth/Content/' took 0.05s
+[2021.12.01-07.30.22:883][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png' error.
+[2021.12.01-07.30.22:883][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/MenuSeparator.png
+[2021.12.01-07.30.22:883][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png' error.
+[2021.12.01-07.30.22:883][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/Selector.png
+[2021.12.01-07.30.22:884][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png' error.
+[2021.12.01-07.30.22:884][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/Selection.png
+[2021.12.01-07.30.22:884][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png' error.
+[2021.12.01-07.30.22:884][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Above.png
+[2021.12.01-07.30.22:884][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png' error.
+[2021.12.01-07.30.22:884][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Onto.png
+[2021.12.01-07.30.22:884][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png' error.
+[2021.12.01-07.30.22:884][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/DropZoneIndicator_Below.png
+[2021.12.01-07.30.22:884][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png' error.
+[2021.12.01-07.30.22:884][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/FlatButton.png
+[2021.12.01-07.30.22:884][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png' error.
+[2021.12.01-07.30.22:884][  0]LogSlate: Could not find file for Slate resource: ../../../Engine/Content/Editor/Slate/Niagara/Common/RoundedSelection_16x.png
+[2021.12.01-07.30.22:884][  0]LogImageWrapper: Warning: PNG Warning: Duplicate iCCP chunk
+[2021.12.01-07.30.22:884][  0]LogImageWrapper: Warning: PNG Warning: Duplicate iCCP chunk
+[2021.12.01-07.30.22:898][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2021.12.01-07.30.22:905][  0]SourceControl: Source control is disabled
+[2021.12.01-07.30.22:905][  0]LogUnrealEdMisc: Loading editor; pre map load, took 15.184
+[2021.12.01-07.30.22:905][  0]Cmd: MAP LOAD FILE="H:/Project/ReBirth/Content/Maps/rebirth.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.12.01-07.30.22:906][  0]LightingResults: New page: Lighting Build
+[2021.12.01-07.30.22:907][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.12.01-07.30.22:907][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.12.01-07.30.22:908][  0]MapCheck: New page: Map Check
+[2021.12.01-07.30.22:908][  0]LightingResults: New page: Lighting Build
+[2021.12.01-07.30.22:913][  0]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.12.01-07.30.22:916][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.03ms
+[2021.12.01-07.30.23:424][  0]LogLinker: Warning: [AssetLog] H:\Project\ReBirth\Content\PickUpActor\ExampleContent\Blueprints\Meshes\SM_Pickup_Coin.uasset: Failed to load '/Game/ExampleContent/Blueprints/Materials/M_Pickup_Coin': Can't find file.
+[2021.12.01-07.30.23:424][  0]LogLinker: Warning: [AssetLog] H:\Project\ReBirth\Content\PickUpActor\ExampleContent\Blueprints\Meshes\SM_Pickup_Coin.uasset: Failed to load '/Game/ExampleContent/Blueprints/Materials/M_Pickup_Coin': Can't find file.
+[2021.12.01-07.30.23:425][  0]LogLinker: Warning: [AssetLog] H:\Project\ReBirth\Content\PickUpActor\ExampleContent\Blueprints\Meshes\SM_Pickup_Coin.uasset: Failed to load '/Game/ExampleContent/Blueprints/Materials/M_Pickup_Coin': Can't find file.
+[2021.12.01-07.30.23:773][  0]LogTexture: Default maximum texture size for cubemaps generated from long-lat sources has been changed from 512 to unlimited. In order to preserve old behaiour for '/Game/Assets/Textures/Sky54a2048.Sky54a2048', its maximum texture size has been explicitly set to 512.
+[2021.12.01-07.30.23:853][  0]LogLinker: Warning: [AssetLog] H:\Project\ReBirth\Content\PickUpActor\ExampleContent\Blueprints\Meshes\SM_Pickup_Coin.uasset: Failed to load '/Game/ExampleContent/Blueprints/Materials/M_Pickup_Coin': Can't find file.
+[2021.12.01-07.30.23:853][  0]LoadErrors: Failed to load /Game/ExampleContent/Blueprints/Materials/M_Pickup_Coin.M_Pickup_Coin Referenced by SM_Pickup_Coin
+[2021.12.01-07.30.24:726][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'rebirth'.
+[2021.12.01-07.30.24:727][  0]LogAIModule: Creating AISystem for world rebirth
+[2021.12.01-07.30.24:801][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.12.01-07.30.24:838][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.34ms
+[2021.12.01-07.30.24:839][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.12.01-07.30.24:839][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.185ms to complete.
+[2021.12.01-07.30.24:839][  0]LogFileHelpers: Loading map 'rebirth' took 1.934
+[2021.12.01-07.30.24:843][  0]LogUnrealEdMisc: Total Editor Startup Time, took 17.122
+[2021.12.01-07.30.25:003][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.12.01-07.30.25:011][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.12.01-07.30.25:019][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.12.01-07.30.25:026][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.12.01-07.30.25:193][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0113 seconds. Added 3838 classes and 930 folders.
+[2021.12.01-07.30.25:198][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2021.12.01-07.30.25:201][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2021.12.01-07.30.25:201][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:201][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2021.12.01-07.30.25:201][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/FP_FirstPerson.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:201][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/FP_FirstPerson.upack)
+[2021.12.01-07.30.25:201][  0]LogPakFile: OnPakFileMounted2Time == 0.000068
+[2021.12.01-07.30.25:203][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2021.12.01-07.30.25:203][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:203][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2021.12.01-07.30.25:203][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/FP_FirstPersonBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:203][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/FP_FirstPersonBP.upack)
+[2021.12.01-07.30.25:203][  0]LogPakFile: OnPakFileMounted2Time == 0.000059
+[2021.12.01-07.30.25:205][  0]LogPakFile: PakFile PrimaryIndexSize=191
+[2021.12.01-07.30.25:205][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:205][  0]LogPakFile: PakFile FullDirectoryIndexSize=160
+[2021.12.01-07.30.25:205][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/MobileStarterContent.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:206][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/MobileStarterContent.upack)
+[2021.12.01-07.30.25:206][  0]LogPakFile: OnPakFileMounted2Time == 0.000064
+[2021.12.01-07.30.25:208][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2021.12.01-07.30.25:208][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:208][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2021.12.01-07.30.25:208][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/StarterContent.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:208][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/StarterContent.upack)
+[2021.12.01-07.30.25:208][  0]LogPakFile: OnPakFileMounted2Time == 0.000060
+[2021.12.01-07.30.25:210][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2021.12.01-07.30.25:210][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:210][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2021.12.01-07.30.25:210][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_2DSideScroller.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:210][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_2DSideScroller.upack)
+[2021.12.01-07.30.25:210][  0]LogPakFile: OnPakFileMounted2Time == 0.000053
+[2021.12.01-07.30.25:216][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2021.12.01-07.30.25:216][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:216][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2021.12.01-07.30.25:216][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_2DSideScrollerBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:216][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_2DSideScrollerBP.upack)
+[2021.12.01-07.30.25:216][  0]LogPakFile: OnPakFileMounted2Time == 0.000121
+[2021.12.01-07.30.25:220][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2021.12.01-07.30.25:220][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:220][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2021.12.01-07.30.25:220][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_Flying.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:220][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_Flying.upack)
+[2021.12.01-07.30.25:220][  0]LogPakFile: OnPakFileMounted2Time == 0.000092
+[2021.12.01-07.30.25:223][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2021.12.01-07.30.25:223][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:223][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2021.12.01-07.30.25:223][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_FlyingBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:223][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_FlyingBP.upack)
+[2021.12.01-07.30.25:223][  0]LogPakFile: OnPakFileMounted2Time == 0.000091
+[2021.12.01-07.30.25:226][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2021.12.01-07.30.25:226][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:226][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2021.12.01-07.30.25:226][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_HandheldARBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:227][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_HandheldARBP.upack)
+[2021.12.01-07.30.25:227][  0]LogPakFile: OnPakFileMounted2Time == 0.000079
+[2021.12.01-07.30.25:230][  0]LogPakFile: PakFile PrimaryIndexSize=182
+[2021.12.01-07.30.25:230][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:231][  0]LogPakFile: PakFile FullDirectoryIndexSize=138
+[2021.12.01-07.30.25:231][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_Puzzle.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:231][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_Puzzle.upack)
+[2021.12.01-07.30.25:231][  0]LogPakFile: OnPakFileMounted2Time == 0.000073
+[2021.12.01-07.30.25:233][  0]LogPakFile: PakFile PrimaryIndexSize=184
+[2021.12.01-07.30.25:233][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:233][  0]LogPakFile: PakFile FullDirectoryIndexSize=142
+[2021.12.01-07.30.25:233][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_PuzzleBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:233][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_PuzzleBP.upack)
+[2021.12.01-07.30.25:233][  0]LogPakFile: OnPakFileMounted2Time == 0.000068
+[2021.12.01-07.30.25:235][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2021.12.01-07.30.25:235][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:235][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2021.12.01-07.30.25:235][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_Rolling.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:235][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_Rolling.upack)
+[2021.12.01-07.30.25:236][  0]LogPakFile: OnPakFileMounted2Time == 0.000064
+[2021.12.01-07.30.25:238][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2021.12.01-07.30.25:238][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:238][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2021.12.01-07.30.25:238][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_RollingBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:238][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_RollingBP.upack)
+[2021.12.01-07.30.25:238][  0]LogPakFile: OnPakFileMounted2Time == 0.000062
+[2021.12.01-07.30.25:240][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2021.12.01-07.30.25:240][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:240][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2021.12.01-07.30.25:240][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_SideScroller.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:240][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_SideScroller.upack)
+[2021.12.01-07.30.25:240][  0]LogPakFile: OnPakFileMounted2Time == 0.000062
+[2021.12.01-07.30.25:242][  0]LogPakFile: PakFile PrimaryIndexSize=190
+[2021.12.01-07.30.25:242][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:242][  0]LogPakFile: PakFile FullDirectoryIndexSize=154
+[2021.12.01-07.30.25:242][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_SideScrollerBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:242][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_SideScrollerBP.upack)
+[2021.12.01-07.30.25:242][  0]LogPakFile: OnPakFileMounted2Time == 0.000064
+[2021.12.01-07.30.25:244][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2021.12.01-07.30.25:244][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:244][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2021.12.01-07.30.25:244][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_ThirdPerson.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:244][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_ThirdPerson.upack)
+[2021.12.01-07.30.25:244][  0]LogPakFile: OnPakFileMounted2Time == 0.000061
+[2021.12.01-07.30.25:246][  0]LogPakFile: PakFile PrimaryIndexSize=189
+[2021.12.01-07.30.25:246][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:246][  0]LogPakFile: PakFile FullDirectoryIndexSize=152
+[2021.12.01-07.30.25:246][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_ThirdPersonBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:246][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_ThirdPersonBP.upack)
+[2021.12.01-07.30.25:246][  0]LogPakFile: OnPakFileMounted2Time == 0.000066
+[2021.12.01-07.30.25:249][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2021.12.01-07.30.25:249][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:249][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2021.12.01-07.30.25:249][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_TopDown.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:249][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_TopDown.upack)
+[2021.12.01-07.30.25:249][  0]LogPakFile: OnPakFileMounted2Time == 0.000071
+[2021.12.01-07.30.25:251][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2021.12.01-07.30.25:251][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:251][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2021.12.01-07.30.25:251][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_TopDownBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:251][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_TopDownBP.upack)
+[2021.12.01-07.30.25:251][  0]LogPakFile: OnPakFileMounted2Time == 0.000061
+[2021.12.01-07.30.25:253][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2021.12.01-07.30.25:253][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:253][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2021.12.01-07.30.25:253][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_TwinStick.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:253][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_TwinStick.upack)
+[2021.12.01-07.30.25:253][  0]LogPakFile: OnPakFileMounted2Time == 0.000061
+[2021.12.01-07.30.25:255][  0]LogPakFile: PakFile PrimaryIndexSize=187
+[2021.12.01-07.30.25:255][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:255][  0]LogPakFile: PakFile FullDirectoryIndexSize=148
+[2021.12.01-07.30.25:255][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_TwinStickBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:255][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_TwinStickBP.upack)
+[2021.12.01-07.30.25:255][  0]LogPakFile: OnPakFileMounted2Time == 0.000060
+[2021.12.01-07.30.25:257][  0]LogPakFile: PakFile PrimaryIndexSize=183
+[2021.12.01-07.30.25:257][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:257][  0]LogPakFile: PakFile FullDirectoryIndexSize=140
+[2021.12.01-07.30.25:257][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_Vehicle.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:257][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_Vehicle.upack)
+[2021.12.01-07.30.25:258][  0]LogPakFile: OnPakFileMounted2Time == 0.000063
+[2021.12.01-07.30.25:260][  0]LogPakFile: PakFile PrimaryIndexSize=186
+[2021.12.01-07.30.25:260][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:260][  0]LogPakFile: PakFile FullDirectoryIndexSize=146
+[2021.12.01-07.30.25:260][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_VehicleAdv.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:260][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_VehicleAdv.upack)
+[2021.12.01-07.30.25:260][  0]LogPakFile: OnPakFileMounted2Time == 0.000057
+[2021.12.01-07.30.25:262][  0]LogPakFile: PakFile PrimaryIndexSize=188
+[2021.12.01-07.30.25:262][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:262][  0]LogPakFile: PakFile FullDirectoryIndexSize=150
+[2021.12.01-07.30.25:262][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_VehicleAdvBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:262][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_VehicleAdvBP.upack)
+[2021.12.01-07.30.25:262][  0]LogPakFile: OnPakFileMounted2Time == 0.000062
+[2021.12.01-07.30.25:264][  0]LogPakFile: PakFile PrimaryIndexSize=185
+[2021.12.01-07.30.25:264][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:264][  0]LogPakFile: PakFile FullDirectoryIndexSize=144
+[2021.12.01-07.30.25:264][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_VehicleBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:264][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_VehicleBP.upack)
+[2021.12.01-07.30.25:264][  0]LogPakFile: OnPakFileMounted2Time == 0.000066
+[2021.12.01-07.30.25:267][  0]LogPakFile: PakFile PrimaryIndexSize=192
+[2021.12.01-07.30.25:267][  0]LogPakFile: PakFile PathHashIndexSize=101
+[2021.12.01-07.30.25:267][  0]LogPakFile: PakFile FullDirectoryIndexSize=158
+[2021.12.01-07.30.25:267][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile 'E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_VirtualRealityBP.upack' (chunk index -1, root 'root:/') mounted
+[2021.12.01-07.30.25:267][  0]LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:root:/ File:E:/unreal/package/ue4/UE_4.27/FeaturePacks/TP_VirtualRealityBP.upack)
+[2021.12.01-07.30.25:267][  0]LogPakFile: OnPakFileMounted2Time == 0.000065
+[2021.12.01-07.30.25:411][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'AddContentDialog' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2021.12.01-07.30.25:604][  0]LogSlate: Took 0.005646 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.12.01-07.30.25:606][  0]LogSlate: Took 0.000835 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.12.01-07.30.25:609][  0]LogSlate: Took 0.000815 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.12.01-07.30.25:740][  0]LogRenderer: Reallocating scene render targets to support 876x388 Format 10 NumSamples 1 (Frame:1).
+[2021.12.01-07.30.26:370][  0]LogSlate: Took 0.000245 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.12.01-07.30.26:454][  0]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.12.01-07.30.26:455][  0]LogLoad: (Engine Initialization) Total time: 18.73 seconds
+[2021.12.01-07.30.26:455][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.12.01-07.30.26:529][  0]LogUObjectGlobals: Warning: Failed to find object 'StaticMesh /Engine/BasicShapes/Sphere.Sphere'
+[2021.12.01-07.30.26:575][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.12.01-07.30.26:637][  0]LogSlate: Took 0.000937 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.12.01-07.30.26:689][  1]LogAssetRegistry: Asset discovery search completed in 12.9959 seconds
+[2021.12.01-07.30.26:701][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000009 seconds (updated 0 objects)
+[2021.12.01-07.30.30:029][ 11]LogSlate: Window 'Message Log' being destroyed
+[2021.12.01-07.30.30:036][ 11]LogSlate: Window 'Message Log' being destroyed
+[2021.12.01-07.31.28:845][967]LogSlate: Took 0.000252 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.12.01-07.31.28:878][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Alarm10.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:882][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_BeamAlarmLarge_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:886][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_BeamAlarmSmall_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:891][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_BeamScanner_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:898][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Buterrest.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:902][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Buterrest_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:908][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Butterfly02.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:912][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Butterfly_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:917][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_ButtonLayer01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:922][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_ButtonPush01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:928][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_ButtonPush01_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:934][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_ComputerBeep01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:939][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_ComputerStatic01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:944][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_ComputerStatic01_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:949][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_ComputerStatic06.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:955][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_ComputerStatic07_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:961][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Computer_Stereo03.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:965][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Computer_Stereo03_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:972][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_DoorClose01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:978][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_DoorClose01_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:984][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_DoorOpen01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:991][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_DoorOpen01_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.28:996][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Footstep01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.29:002][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Footstep02.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.29:008][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Footstep03.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.29:015][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Footstep04.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.29:021][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Footstep05.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.29:027][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Footstep06.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.29:033][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Footstep07.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.29:038][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Footstep_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.29:044][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Interior_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.29:049][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Interior_Stereo03.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.29:055][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Interior_Stereo04.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.29:062][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Scanner03.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.29:069][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Scanner10.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.31:904][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Scanner12.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:057][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Scanner16.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:067][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Scanner17.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:073][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_ScannerPivot01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:082][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_ScannerPivot04.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:090][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_ScannerPivot05.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:099][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_ScannerSwitch01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:105][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Scanner_Change01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:712][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Scanner_Change04.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:788][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_Scanner_Change05.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:795][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_SwitchAlarm01_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:799][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_SwitchScanner01_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:804][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_TextPop01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:809][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprints_TextPop03.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:813][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprint_Music_Alarm01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:818][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprint_Music_Alarm02_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:823][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprint_Music_Stealth01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:829][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprint_Music_Stealth01_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:836][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprint_Music_Stealth02.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:841][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Blueprint_Music_Stealth02_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:846][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Insect_WingsLoop05.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:853][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Text_Pop.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:860][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Audio/Text_Pop_Cue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:867][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BPI_Security_Alarm_Interface.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:872][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BP_BlueprintExamples_GameMode.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:880][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BP_Butterfly.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:887][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BP_Commentary_Box.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:891][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BP_FogSheet.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:899][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BP_FPS_CharacterPawn.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:905][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BP_LightBeam.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:912][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BP_Random_Foliage.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.32:917][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BP_Security_Camera_Tracking.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.34:918][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BP_Security_Flashing_Alarm.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:047][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BP_Security_Monitor.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:053][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BP_Security_Screen_Button.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:059][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Blueprints/BP_Security_Sliding_Door_Default_Open.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:065][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Effects/P_Butterfly_Trail.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:068][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Effects/P_Pulse_Ring.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:075][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_BlueMetal_Painted.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:080][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_COG_Concrete_Wall01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:086][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_COG_Dull_Grey_1.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:090][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_COG_Generic_Concrete_Base02.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:095][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_COG_Marble01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:101][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_COG_Metal_Base_Light.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:106][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_COG_Shiny_Grey_1.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:112][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_HOLO_Noise.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:116][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_Metal_Dark.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.35:119][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_Metal_Rust.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:316][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_NormalMaskedVectors.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:419][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_Raycast.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:425][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_TexCoordIndexParameter.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:430][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/ML_YellowMetal_Painted.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:435][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Background_Mat.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:440][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Boulder_MASTER.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:445][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Building_01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:448][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Butterfly_Body.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:453][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Butterfly_wing.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:459][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_BuidingSetA_Door.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:463][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_City_Deco_Bench.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:469][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_City_Justice_Plinths_2.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:473][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_City_Justice_Trims.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:479][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_City_Roof_Trim_Var1.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:483][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Courthouse_MarbleFloor_2.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:488][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Courthouse_MarbleFloor_2_Fresnel.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:495][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Underground_Base_Pipe.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:501][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Underground_Ceiling_Pipes.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:507][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Underground_Console_Panel.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:512][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Underground_Console_Panel_Bits.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.36:518][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Underground_Pipecap_Yellow.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:296][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Underground_Pipe_Clamps_04.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:401][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Underground_Pipe_Painted_Blue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:406][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Underground_Pipe_Tjunction_Painted.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:416][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Underground_Pipe_Tjunction_Painted_Blue.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:424][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Underground_Pipe_Valves_01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:430][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_COG_Underground_Pipe_Valves_02.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:436][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Concrete_Plain.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:440][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Door_Hinged_Metal.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:445][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Environment_Glass_Master.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:450][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Floor_Tech_1.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:455][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Floor_Tech_1_Edge.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:459][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_FogSheet_Master.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:464][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_FogSheet_Master_INST.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:468][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_GodRay_Animated.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:474][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_GodRay_MASTER.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:481][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_GrassMaster.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:487][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Grass_Blades.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:492][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Grass_Blades_INST.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.38:498][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Grass_Darker_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.39:881][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_HR_Grass_01_B_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.39:980][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_HR_Grass_01_Flower_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.39:988][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_HR_Grass_01_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.39:993][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_HR_Grass_MASTER.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.39:999][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Keyhole_Deco_Signs.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:003][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Particle_Effect_Ring.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:008][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Particle_Glow.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:015][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Plain_Metal.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:019][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_PlantBark_Mat.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:025][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_PlantBark_Mat_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:031][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_PlantLeaf_Mat.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:035][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_PlantLeaf_Mat_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:040][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_PlantPot_Mat.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:046][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Railing.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:052][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_SecurityCamera_Screen.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:057][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_SecurityCamera_Screen_Transition_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:064][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Security_Camera_Alarm_FlashingOff_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:069][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Security_Camera_Alarm_Flashing_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:075][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Security_Camera_Master.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:080][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Security_Camera_Viewcone.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.40:084][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Sky_Clouds.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:755][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Sky_Clouds_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:865][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Tech_Stair_1.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:872][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_TextBox_Background_Color.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:877][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_TextBox_Background_Color_Edge_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:882][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_TextBox_Color.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:887][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_TextBox_Icon_Info.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:893][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_TextMaterial_Opaque_Emissive.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:899][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_TreeTrunk01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:906][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Tree_Branches.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:911][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Underground_Monitor_Blank.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:917][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_WallArch_Mat.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:921][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_WallArch_Mat_Concrete.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:926][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_WallArch_Mat_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:931][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Wood_Floor.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:937][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Materials/M_Wood_Floor_Scaled_Inst.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:941][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/EditorPlane.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:946][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_256_Grass_Clean.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:952][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Background.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.41:958][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Boulder02.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:423][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_COG_City_Decos_Bench.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:517][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_COG_City_JusticePlinth2.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:526][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_COG_City_Roof_Trim_VarA_Bent_45.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:531][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_COG_Demo_Theatre_Floor_Whole.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:536][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_COG_Justice_Floor_Infra_01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:543][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Tunnel_Ceiling_Pipes_1x1000.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:548][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Tunnel_Ceiling_Pipes_2x1000.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:553][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Tunnel_Ceiling_Pipes_3x1000.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:558][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Tunnel_Ceiling_Pipes_Bracket_01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:563][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Tunnel_Ceiling_Pipes_Bracket_02Double.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:567][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Tunnel_Ceiling_Pipes_Bracket_02Single.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:573][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Tunnel_Wires_Twisted_1_500.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:577][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Underground_Console_Monitor.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:582][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Underground_Console_Panel_Button.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:589][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Underground_Console_Panel_Button_Base01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:593][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Underground_Console_Panel_NoButton.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:598][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Underground_Pipe01_100.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:603][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Underground_Pipe01_100_Bent_90.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:607][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Underground_Pipe01_100_Bent_90Tight.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:612][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Underground_Pipe01_200.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:617][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Underground_Pipe01_200_Bent_S.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:622][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Cog_Underground_PipeCap_Top.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.43:628][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_COG_Underground_Pipe_Valve_FrontSection.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:458][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_COG_Underground_Pipe_Valve_TJunction.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:569][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_COG_Underground_Pipe_Valve_Whole.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:574][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_FogSheet_Plane.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:578][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_GodRay_Plane.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:585][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_HR_Grass01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:589][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_HR_Grass02.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:593][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_HR_Grass04.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:598][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_HR_Grass05.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:603][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Plant.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:607][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Security_Camera_Base.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:613][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Security_Camera_Lens.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:618][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Security_Camera_Viewcone.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:623][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Security_Flashing_Alarm.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:629][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Swing_Door.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:635][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Underground_Pipe_Bracket01_WallMount.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:640][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Underground_Pipe_Bracket01_WallMount02.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:647][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_Underground_Pipe_Clamp04.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:652][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_WallArch_Support_Buttress.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:658][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_WallArch_Support_Extruded.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.45:663][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_WallArch_Support_Slope.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:206][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/SM_WallArch_Support_Top.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:313][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_BuildingSetA_Building_01e.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:318][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_BuildingSetA_Building_02b.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:322][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_BuildingSetA_Building_02b_05.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:329][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_BuildingSetA_Door_01f_02c.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:334][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_BuildingSetA_Door_01f_05.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:340][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_BuildingSetA_Door_01g_06.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:346][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_BuildingSetA_Door_01g_07.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:351][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_BuildingSetA_Tree_02.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:356][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Building_01d.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:361][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Building_01f.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:366][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Butterfly_Body.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:371][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Butterfly_Left_Wing.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:377][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Butterfly_Right_Wing.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:382][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Dirt_Pile.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:388][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Door_Hinged_Metal_Frame_01.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:393][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Floor_Grate_2.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:399][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Floor_Grate_4.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:404][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Floor_Grate_5.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.47:410][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Floor_Grate_6.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.48:975][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Keyhole_Deco_Sign_NoCross.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:095][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Keyhole_Deco_Sign_NoEntry.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:101][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Keyhole_Deco_Sign_NoEntrySM.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:106][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_MetalPillar_2.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:112][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_MetalPillar_2_c.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:117][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_MetalPillar_4.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:121][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Metal_Stair_1.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:127][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Metal_Stair_Rail_1.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:133][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Metal_Stair_Rail_1_Cap_2.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:138][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Metal_Stair_Rail_2.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:143][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Metal_Stair_Rail_6.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:147][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Metal_Stair_Rail_8.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:155][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Scattered_Leaves.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:161][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_TextBox_Border_Background.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:167][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_TextBox_Border_Corner.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:175][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_TextBox_Border_Segment.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.49:180][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_TextBox_Icon_Info.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:565][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Meshes/S_Underground_Floor_2.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:652][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/TRT_SecurityCamera_A.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:657][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/TRT_SecurityCamera_B.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:663][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/TRT_SecurityCamera_C.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:669][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_Background_D.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:675][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_Bark01_D.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:679][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_Bark01_N.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:685][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_Boulder01_D.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:690][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_Boulder01_N.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:694][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_Building_01_D.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:699][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_Building_01_N.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:705][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_Butterfly_Holographic_M.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:710][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_Butterfly_M.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:716][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_Butterfly_Wing_M.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:722][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_CleanGrass_D.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:727][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_CleanGrass_N.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:731][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_BuildingSetA_Door_M.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:740][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_BuildingSetA_Door_N.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:748][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_City_AboveGround_Railing_D.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:756][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_City_AboveGround_Railing_N.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:762][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_City_Decos_Bench_M.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.50:768][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_City_Decos_Bench_N.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.52:827][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_City_JusticePlinths_M.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.55:428][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_City_JusticePlinths_N.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.55:519][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_City_Justice_Floor_Trims_M.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.55:536][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_City_Justice_Floor_Trims_N.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.55:553][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_City_Roof_Trim_Var1_AO.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.55:569][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_City_WhiteMarble01_D.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.55:587][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_City_WhiteMarble01_N.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.55:602][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_Concrete_Wall01_D.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.55:621][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_Concrete_Wall01_N.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.55:631][967]LogAssetTools: Warning: Failed to import 'H:\Project\ReBirth\Content\Maps\Technology Map/Assets/Textures/T_COG_Foliage_Leaves_AO.uasset'. Unknown extension 'uasset'.
+[2021.12.01-07.31.57:568][967]LogRHI: Error: Present Fail Count 1
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SyncInterval 0
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.BufferDesc.Width 73
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.BufferDesc.Height 68
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Numerator 0
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.BufferDesc.RefreshRate.Denominator 0
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.BufferDesc.Format 24
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.BufferDesc.ScanlineOrdering 0
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.BufferDesc.Scaling 0
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.SampleDesc.Count 1
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.SampleDesc.Quality 0
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.BufferUsage 48
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.BufferCount 2
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.OutputWindow 0000000000050B66
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.Windowed true
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.SwapEffect 4
+[2021.12.01-07.31.57:569][967]LogRHI: Error: SwapChainDesc.Flags 2050
+[2021.12.01-07.31.57:569][967]LogD3D11RHI: Error: SwapChain->ResizeBuffers(0, SizeX, SizeY, RenderTargetFormat, SwapChainFlags) failed 
+ at D:/Build/++UE4/Sync/Engine/Source/Runtime/Windows/D3D11RHI/Private/D3D11Viewport.cpp:298 
+ with error DXGI_ERROR_DEVICE_REMOVED, 
+ (Size=8x8 Fullscreen=0 Format=DXGI_FORMAT_R10G10B10A2_UNORM(0x00000018)) -> (Size=72x68 Fullscreen=0 Format=DXGI_FORMAT_R10G10B10A2_UNORM(0x00000018))
+[2021.12.01-07.31.57:569][967]LogD3D11RHI: [Aftermath] GDynamicRHI=000001B5A3FC4800, GDX11NVAfterMathEnabled=0, Result=0xFFFFFFFF, bDeviceActive=0
+[2021.12.01-07.31.57:569][967]LogOutputDevice: Warning: 
+
+Script Stack (0 frames):
+
+[2021.12.01-07.31.57:569][967]LogWindows: Windows GetLastError: 操作成功完成。 (0)

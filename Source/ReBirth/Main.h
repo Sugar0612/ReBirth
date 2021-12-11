@@ -233,4 +233,9 @@ public:
 	class ALevenSend* Leven;
 
 	void SwitchLeven(FName nextLeven);
+
+	void LoadGameLevel();
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "LoadGame")
+	bool bLoadGame;
 };

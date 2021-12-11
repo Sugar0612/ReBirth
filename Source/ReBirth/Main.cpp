@@ -78,6 +78,9 @@ AMain::AMain()
 	/* *是否显示暂停菜单 */
 	bShowEsc = false;
 
+	/*是否加载玩家信息*/
+	bLoadGame = false;
+
 	//获取玩家控制器
 	AutoPossessPlayer = EAutoReceiveInput::Player0;
 }
@@ -89,6 +92,13 @@ void AMain::BeginPlay()
 	
 	//控制器
 	PlayerController = Cast<AMainPlayerController>(GetController());
+
+	if (PlayerController) {
+		PlayerController->CloseMouseGame();
+	}
+
+
+	LoadGameLevel();
 }
 
 // Called every frame
@@ -411,6 +421,11 @@ void AMain::SaveGame() {
 	SaveGame->CharacterState.MaxEp = MaxEp;
 	SaveGame->CharacterState.CoinCnt = cntCoins;
 
+	FString Map_name = GetWorld()->GetMapName();
+	Map_name.RemoveFromStart(GetWorld()->StreamingLevelsPrefix);
+
+	SaveGame->CharacterState.MapName = FName(Map_name);
+
 	if (equipWeapon != nullptr) {
 		SaveGame->CharacterState.SName = equipWeapon->SaveName;
 	}
@@ -432,6 +447,7 @@ void AMain::LoadGame(bool bLoad) {
 	CurrentEp = LoadGameInstance->CharacterState.CurEp;
 	MaxEp = LoadGameInstance->CharacterState.MaxEp;
 	cntCoins = LoadGameInstance->CharacterState.CoinCnt;
+	FName Map_name = LoadGameInstance->CharacterState.MapName;
 
 	if (SaveWeapon) {
 		/* *生成AActor 需要在世界中生成. */
@@ -448,6 +464,47 @@ void AMain::LoadGame(bool bLoad) {
 	if (bLoad) {
 		SetActorLocation(LoadGameInstance->CharacterState.Location);
 		SetActorRotation(LoadGameInstance->CharacterState.Rotation);
+	}
+
+	SetMovementState(EMovementStatus::EMS_LDLE);
+	GetMesh()->bPauseAnims = false;
+	GetMesh()->bNoSkeletonUpdate = false;
+
+
+	FString CurName = GetWorld()->GetMapName();
+	CurName.RemoveFromStart(GetWorld()->StreamingLevelsPrefix);
+
+	if (FName(CurName) != Map_name) {
+		UWorld* world = GetWorld();
+		if (world) {
+			bLoadGame = true;
+			UGameplayStatics::OpenLevel(world, Map_name);
+		}
+	}
+}
+
+void AMain::LoadGameLevel()
+{
+	USaveMyGame* LoadGame = Cast<USaveMyGame>(UGameplayStatics::CreateSaveGameObject(USaveMyGame::StaticClass()));
+	USaveMyGame* LoadGameInstance = Cast<USaveMyGame>(UGameplayStatics::LoadGameFromSlot(LoadGame->GameName, LoadGame->PlayerIndex));
+	if (LoadGameInstance == nullptr) return;
+
+	CurrentHp = LoadGameInstance->CharacterState.CurHp;
+	MaxHp = LoadGameInstance->CharacterState.MaxHp;
+	CurrentEp = LoadGameInstance->CharacterState.CurEp;
+	MaxEp = LoadGameInstance->CharacterState.MaxEp;
+	cntCoins = LoadGameInstance->CharacterState.CoinCnt;
+
+	if (SaveWeapon) {
+		/* *生成AActor 需要在世界中生成. */
+		AActorStorage* WeaponStorage = GetWorld()->SpawnActor<AActorStorage>(SaveWeapon);
+		if (WeaponStorage) {
+			FString LoadName = LoadGameInstance->CharacterState.SName;
+			if (WeaponStorage->WeaponMap.Contains(LoadName)) {
+				AWeapon* LoadWeapon = GetWorld()->SpawnActor<AWeapon>(WeaponStorage->WeaponMap[LoadName]);
+				LoadWeapon->equipWeapon(this);
+			}
+		}
 	}
 
 	SetMovementState(EMovementStatus::EMS_LDLE);
@@ -503,7 +560,7 @@ bool AMain::CanMove() {
 	if (PlayerController) {
 		return (MovementStatus != EMovementStatus::EMS_Death) &&
 			(MovementStatus != EMovementStatus::EMS_Repel) && (!bAttacking) &&
-			(!PlayerController->bshowPauseBar) && PlayerController->bCanMove;
+			(!PlayerController->bshowPauseBar);
 	} 
 	else {
 		return false;

@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"F:\\win\\Github\\ReBirth\\Source\\ReBirth\\ReBirth.Build.cs",
+		"F:\\win\\Github\\ReBirth\\Source\\ReBirth.Target.cs",
+		"F:\\win\\Github\\ReBirth\\Source\\ReBirthEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.0"
+}

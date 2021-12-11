@@ -1,0 +1,36 @@
+AndroidPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.AndroidPlatformSDK has no valid SDK
+IOSPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.IOSPlatformSDK has no valid SDK
+LinuxPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.LinuxPlatformSDK has no valid SDK
+WindowsPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.WindowsPlatformSDK using manually installed SDK
+UnrealBuildTool.Main: ERROR: Unhandled exception: Tools.DotNETCommon.JsonParseException: Missing or invalid 'Name' field (in H:\Project\ReBirth\ReBirth.uproject)
+UnrealBuildTool.Main:           在 UnrealBuildTool.ProjectDescriptor.FromFile(FileReference FileName) 位置 D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\System\ProjectDescriptor.cs:行号 223
+UnrealBuildTool.Main:           在 UnrealBuildTool.ProjectFileGenerator.ConfigureProjectFileGeneration(String[] Arguments, Boolean& IncludeAllPlatforms) 位置 D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:行号 1267
+UnrealBuildTool.Main:           在 UnrealBuildTool.ProjectFileGenerator.GenerateProjectFiles(PlatformProjectGeneratorCollection PlatformProjectGenerators, String[] Arguments) 位置 D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:行号 661
+UnrealBuildTool.Main:           在 UnrealBuildTool.GenerateProjectFilesMode.Execute(CommandLineArguments Arguments) 位置 D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\Modes\GenerateProjectFilesMode.cs:行号 208
+UnrealBuildTool.Main:           在 UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) 位置 D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs:行号 557
+UnrealBuildTool.Main: JsonParseException: Missing or invalid 'Name' field (in H:\Project\ReBirth\ReBirth.uproject)
+UnrealBuildTool.Main:    在 UnrealBuildTool.ProjectDescriptor.FromFile(FileReference FileName) 位置 D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\System\ProjectDescriptor.cs:行号 223
+UnrealBuildTool.Main:    在 UnrealBuildTool.ProjectFileGenerator.ConfigureProjectFileGeneration(String[] Arguments, Boolean& IncludeAllPlatforms) 位置 D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:行号 1267
+UnrealBuildTool.Main:    在 UnrealBuildTool.ProjectFileGenerator.GenerateProjectFiles(PlatformProjectGeneratorCollection PlatformProjectGenerators, String[] Arguments) 位置 D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs:行号 661
+UnrealBuildTool.Main:    在 UnrealBuildTool.GenerateProjectFilesMode.Execute(CommandLineArguments Arguments) 位置 D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\Modes\GenerateProjectFilesMode.cs:行号 208
+UnrealBuildTool.Main:    在 UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) 位置 D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs:行号 557
+Timeline.Print: Timeline:
+Timeline.Print: 
+Timeline.Print: [ 0.000]
+Timeline.Print: [ 0.000](+0.052) <unknown>
+Timeline.Print: [ 0.052](+0.154) XmlConfig.ReadConfigFiles()
+Timeline.Print: [ 0.207](+0.000) SingleInstanceMutex.Acquire()
+Timeline.Print: [ 0.207](+0.075) UEBuildPlatform.RegisterPlatforms()
+Timeline.Print:   0.208          [ 0.000](+0.036) Initializing InstalledPlatformInfo
+Timeline.Print:   0.244          [ 0.037](+0.000) Querying types
+Timeline.Print:   0.246          [ 0.039](+0.001) MacPlatformFactory
+Timeline.Print:   0.247          [ 0.040](+0.000) TVOSPlatformFactory
+Timeline.Print:   0.248          [ 0.040](+0.020) AndroidPlatformFactory
+Timeline.Print:   0.268          [ 0.061](+0.000) HoloLensPlatformFactory
+Timeline.Print:   0.268          [ 0.061](+0.007) IOSPlatformFactory
+Timeline.Print:   0.276          [ 0.068](+0.005) LinuxPlatformFactory
+Timeline.Print:   0.281          [ 0.074](+0.000) LuminPlatformFactory
+Timeline.Print:   0.281          [ 0.074](+0.001) WindowsPlatformFactory
+Timeline.Print: [ 0.282](+0.102) <unknown>
+Timeline.Print: [ 0.385](+0.001) FileMetadataPrefetch.Stop()
+Timeline.Print: [ 0.388]

@@ -37,6 +37,9 @@ struct FCharacterState {
 
 	UPROPERTY(VisibleAnywhere, Category = "SaveGameData")
 	FRotator Rotation;
+
+	UPROPERTY(VisibleAnywhere, Category = "SaveGameMap")
+	FName MapName;
 };
 
 UCLASS()
