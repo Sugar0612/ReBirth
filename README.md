@@ -298,4 +298,4 @@ Currently, C++ development is the main focus.
 - Cutscenes. This is more troublesome to talk about, and there is no good way to express it. It is easier to learn directly by watching the video.
   [Clipscenes](https://search.bilibili.com/all?keyword=ue4%E8%BF%87%E5%9C%BA%E5%8A%A8%E7%94%BB&from_source=webtop_search&spm_id_from=333.1007)
 ## Learning and Communication
-<img src = "https://userblink.csdnimg.cn/20211216/qq_49091977/pic/540b513f557cd0cd4c81733e329b5853-3.png" height = "500" alt="wechat">
+<img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">
