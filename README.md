@@ -90,7 +90,7 @@ Currently, C++ development is the main focus.
       4. Create slot:'combet'
   ``
   The next step is the setting of AnimInstance_BP. 
-  ![image](https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/montage.png)
+  ![image](https://userblink.csdnimg.cn/20211216/qq_49091977/pic/3c7ffade652e5d78a810381e47c396c6-2.png)
   Then modify the state machine according to different standards. Regarding the definition and use of Montage in C++:
   Define montage:
   ```cpp
@@ -108,7 +108,7 @@ Currently, C++ development is the main focus.
 - Ai follow/auto attack Use `blackboard + behavior tree + AIContorller` to realize AI's random finding point and see the player's chasing action. Create the variables you need in the blackboard. Variables are used to make `Selector` judgments in the behavior tree. You need to change
   The variables of the blackboard are attached to different `Sequence` with the attribute `Both` to implement different `Task` (you need to go to `New Task` in the behavior tree).  In AIController, you first need to set up the Ai Perception organ `Ai Perception`
   For `AI Sight Config`, then in Blueprint:  
-  ![image](https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/aiController.png)  
+  ![image](https://userblink.csdnimg.cn/20211216/qq_49091977/pic/0519d7bf8f7dd527e3ac74165d78d6f9-0.png)  
   Finally, you only need to set `AI Controller Class => AIController` in Monster_BP to achieve the action you want.
   For the triggering of the attack action, I chose to set the box collision in C++ and created the enemy's emun state:
   ```cpp
@@ -263,7 +263,7 @@ Currently, C++ development is the main focus.
 
 - Pause the window. Like the previous HUD windows, they are all set in `PlayerController`. The difference is how to display the HUD window more beautifully is very important. You can design its animation in the HUD blueprint class and implement it in `PlayController` At the same time the window is opened/closed, the HUD animation is called.  
   The difference is that C++ implemented functions are called in the blueprint (but called events in the blueprint). We want to implement different functions, so we must add `_Implementation` at the end of the C++ function in the `.cpp` file to achieve an effect similar to the rewriting of the parent class. Of course, you also need to implement the call of the parent class in the blueprint.  
-  ![image](https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Implementation.png) 
+  ![image](https://userblink.csdnimg.cn/20211216/qq_49091977/pic/2a936bdc0e5d00414496fcd955ebfae6-1.png) 
   The following is about the interaction and hiding of the mouse, it is very simple and not too much description:  
 
   ```cpp
@@ -298,4 +298,4 @@ Currently, C++ development is the main focus.
 - Cutscenes. This is more troublesome to talk about, and there is no good way to express it. It is easier to learn directly by watching the video.
   [Clipscenes](https://search.bilibili.com/all?keyword=ue4%E8%BF%87%E5%9C%BA%E5%8A%A8%E7%94%BB&from_source=webtop_search&spm_id_from=333.1007)
 ## Learning and Communication
-<img src = "https://raw.githubusercontent.com/Sugar0612/ReBirth/main/image/Wechat.png" width="500" alt="wechat">
+<img src = "https://userblink.csdnimg.cn/20211216/qq_49091977/pic/540b513f557cd0cd4c81733e329b5853-3.png" width="500" alt="wechat">
