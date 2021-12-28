@@ -108,7 +108,7 @@ Currently, C++ development is the main focus.
 - Ai follow/auto attack Use `blackboard + behavior tree + AIContorller` to realize AI's random finding point and see the player's chasing action. Create the variables you need in the blackboard. Variables are used to make `Selector` judgments in the behavior tree. You need to change
   The variables of the blackboard are attached to different `Sequence` with the attribute `Both` to implement different `Task` (you need to go to `New Task` in the behavior tree).  In AIController, you first need to set up the Ai Perception organ `Ai Perception`
   For `AI Sight Config`, then in Blueprint:  
-  ![image](./aiController.png)  
+  ![image](./image/aiController.png)  
   Finally, you only need to set `AI Controller Class => AIController` in Monster_BP to achieve the action you want.
   For the triggering of the attack action, I chose to set the box collision in C++ and created the enemy's emun state:
   ```cpp
