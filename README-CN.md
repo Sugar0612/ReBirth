@@ -6,6 +6,11 @@
   
   ![image](https://img.shields.io/badge/Base-ue4-blue.svg)   ![image](https://img.shields.io/badge/Language-c++-orange.svg)
   
+## 百度云盘下载  
+如果发现Github没有办法clone或者clone下来使用不了, 可以通过百度云盘下载包.  
+链接: `https://pan.baidu.com/share/init?surl=j29lQBxlbbym0uaCpKxfzg`  
+密码: `qwer`  
+  
 ## 目前的进程
 
 这是我在学习使用C++/BluePrint开发的时候的最近Demo。
