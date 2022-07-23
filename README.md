@@ -6,6 +6,12 @@
 
  ![image](https://img.shields.io/badge/Base-ue4-blue.svg)   ![image](https://img.shields.io/badge/Language-c++-orange.svg)
 
+## Cloud disk download
+If GitHub can't clone or clone download can't run, you can now download the package through Baidu cloud disk.  
+link: `https://pan.baidu.com/share/init?surl=j29lQBxlbbym0uaCpKxfzg`  
+password: `qwer`  
+
+
 ## Current process
 
 This is the most recent demo when I was learning to develop with C++/BluePrint.
